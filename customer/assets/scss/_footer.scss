@@ -1,0 +1,74 @@
+
+// ##################  FOOTER CODE START  ################## //
+
+
+.footer {
+    & .footerInner {
+        height: 68px;
+        background-color: lighten($theme1, 42);
+        & .footerItem {
+            & .footerItemIcon {
+                position: relative;
+                & img {
+                    width: 18px;
+                    height: 18px;
+                    object-fit: contain;
+                    object-position: center;
+                    filter: grayscale(1) brightness(0.5);
+                }
+                & .badgeCount {
+                    width: 18px;
+                    height: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 700;
+                    font-size: 12px;
+                    color: $white;
+                    background-color: darken($warning, 5);
+                    border-radius: 50%;
+                    position: absolute;
+                    inset: 0px 2px auto auto;
+                }
+            }
+            & .footerItemText {
+                font-weight: 400;
+                font-size: 12px;
+                color: $theme1;
+                filter: grayscale(1);
+            }
+            &.active {
+                & .footerItemIcon {
+                    & img {
+                        filter: grayscale(0);
+                    }
+                }
+                & .footerItemText {
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
+    & .footerInnerBtns {
+        height: 48px;
+        & .addToBagBtn {
+            font-weight: 400;
+            font-size: 14px;
+            color: $black;
+            &:hover {
+                background-color: $gray-100;
+            }
+        }
+        & .BuyNowBtn {
+            font-weight: 400;
+            font-size: 14px;
+            color: $white;
+            background-color: $theme1;
+            &:hover {
+                background-color: darken($theme1, 10);
+            }
+        }
+    }
+}
+
+// ##################  FOOTER CODE END  ################## //

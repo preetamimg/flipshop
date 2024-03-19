@@ -1,0 +1,39 @@
+
+
+//? ################  Navbar Start  ###########################
+nav.navbar {
+    height: 52px;
+    & .navInner {
+        width: 100%;
+        & .logo {
+            & img {
+                width: 46px;
+                height: 24.19px;
+            }
+        }
+        & .title {
+            color: $white;
+            font-weight: bold;
+        }
+        & .searchBtn {
+            & img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+        & .backArrowWhite {
+            & img {
+                width: 19px;
+                height: 13.82px;
+            }
+        }
+        & .bagWhiteBtn {
+            & img {
+                width: 12px;
+                height: 17.74px;
+                filter: grayscale(1) brightness(15);
+            }
+        }
+    }
+}
+//! ################  End Navbar  ###########################

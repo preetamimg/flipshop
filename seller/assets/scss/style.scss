@@ -1,0 +1,104 @@
+//  For LTR to RTL Convertion
+//  https://rtlcss.com/playground/index.html
+
+@charset "UTF-8";
+@import "variables";
+@import "fonts";
+@import "preloader";
+@import "forms";
+@import "heading";
+@import "buttons";
+@import "navbar";
+@import "footer";
+
+// ##################  SCROLLBODY CODE START  ################## //
+html {
+    // max-width: 600px;
+}
+main.main {
+    min-height: 100vh;
+    & .bodyPart {
+        & .scrollPart {
+            overflow:hidden auto;
+            height: 100%;
+        }
+    }
+}
+
+@import "pages";
+// ##################  SCROLLBODY CODE END  ################## //
+
+@import "responsive";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

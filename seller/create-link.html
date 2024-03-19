@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipshop | FlipKart</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- <script src="assets/libs/jquery/jquery-3.6.1.min.js"></script> -->
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#2873F0" />
+</head>
+<body>
+
+    <div class="container-fluid vh-100" page-name="createLink">
+        <div class="row h-100 flex-column flex-nowrap">
+            <nav class="col-12 navbar d-block py-0 bg-theme1">
+                <div class="row navInner mx-0 h-100 align-items-center">
+                    <a class="col flipshopLogo">
+                        <img src="assets/img/logo/flip.png" alt="Flipshop Logo">
+                    </a>
+                    <a class="col-auto flipkartLogo">
+                        <img src="assets/img/logo/flipkart_logo.png" alt="Flipkart Logo">
+                    </a>
+                </div>
+            </nav>
+            <div class="col-12 body flex-fill">
+                <div class="row scrollPart h-100 justify-content-center align-items-center">
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-7 col-sm-9 h-100 scrollInner">
+                        <form class="row g-3 needs-validation-createLink h-100 py-4" novalidate autocomplete="off">
+                            <div class="col-12 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 input-group has-validation flex-column">
+                                        <label for="createLink" class="row user-select-none mx-0 inputLabel flex-nowrap w-100 align-items-center pb-2">
+                                            <span class="col-auto pe-2 ">Create your FlipShop website</span>
+                                        </label>
+                                        <div class="row pb-3">
+                                            <div class="col-12 user-select-none alreadyTakken d-none">This website name is already taken. Please enter a unique website name</div>
+                                        </div>
+                                        <div class="row flex-nowrap w-100 mx-0">
+                                            <div class="col mobileInput">
+                                                <div class="inputBox form-control shadow-none w-100 d-flex align-items-center text-nowrap overflow-hidden" domainName=".flipshop.com">
+                                                    <div class="overflow-hidden shadow-none border-0 ps-1" soldDomain="vishal-mega-mart" contenteditable="true" role="textbox" id="createLink" placeholder="yourshop.flipshop.com" required autocomplete="off">vishal-mega-mart</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-1 pb-2 justify-content-end mx-0">
+                                            <div class="col-auto changeWarn">You can't change your website later.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row mx-0 recommendedLinkName pt-4">
+                                            <div class="col-12 ps-3 mb-2 recommendTitle">Recommended Names:</div>
+                                            <div class="col-12">
+                                                <ul class="row mx-n2 recommendOptions list-unstyled gy-3">
+                                                    <li class="col-auto px-2"><a class="d-block text-nowrap" href="javascript:;">vishal-mega-mart-2628 </a></li>
+                                                    <li class="col-auto px-2"><a class="d-block text-nowrap" href="javascript:;">vishal-store-103</a></li>
+                                                    <li class="col-auto px-2"><a class="d-block text-nowrap" href="javascript:;">vishal-shop-501</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row mx-0">
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 btnStyle1 user-select-none shadow-none" id="shopLinkBtn" type="submit">Confirm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#urlConfirmPopup" id="urlConfirmPopupBtn" class="d-none"></a>
+        <div class="modal fade modalurlConfirmPopup" id="urlConfirmPopup" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="urlConfirmPopupLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form class="row needs-validation-urlConfirmPopup" novalidate autocomplete="off">
+                            <div class="col-12 text-center modalHeader pb-3">Confirm Shop Website</div>
+                            <div class="col-12 modalBody">
+                                <div class="row">
+                                    <div class="col-12 labels text-dark py-2 text-center">Do you want to proceed with this website?</div>
+                                    <div class="col-12 px-0">
+                                        <div class="row flex-nowrap w-100 mx-0 justify-content-center">
+                                            <!-- <div class="col mobileInput">
+                                                <div class="form-control shadow-none w-100 d-flex align-items-center text-nowrap overflow-hidden" domainName=".flipshop.com">vishal-mega-mart</div>
+                                            </div> -->
+                                            <div class="col-auto text-center border border-dark p-3 rounded finalUrlView">https://<b>radha-electronics</b>.flipshop.com</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 modalFooter pt-3">
+                                <div class="row justify-content-center">
+                                    <div class="col-auto">
+                                        <button type="button" class="resendBtn" data-bs-dismiss="modal">Edit Website</button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="resendBtn">Confirm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

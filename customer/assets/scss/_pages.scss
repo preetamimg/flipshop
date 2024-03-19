@@ -1,0 +1,4108 @@
+[page-name] {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    inset: 0px;
+    padding: 0;
+    z-index: 1051;
+
+    & .innerDialog {
+        position: relative;
+        width: 100vw;
+        max-width: none;
+        height: 100%;
+        margin: 0;
+
+        & .innerContent {
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+
+            & .body {
+                position: relative;
+                flex: 1 1 auto;
+                overflow-y: auto;
+            }
+        }
+    }
+
+    & .modal {
+        backdrop-filter: blur(8px);
+        background-color: rgba($black, .6);
+
+    }
+
+    &~.modal-backdrop {
+        background-color: transparent;
+    }
+}
+
+.overflow-hidden-auto {
+    overflow: hidden auto;
+}
+
+.overflow-auto-hidden {
+    overflow: auto hidden;
+}
+
+
+
+//? ################  Splash Screen Start  ###########################
+.splashScreen {
+    & .splashInner {
+        & img {
+            width: 50px;
+        }
+    }
+}
+
+//! ################  End Splash Screen Start  ###########################
+
+
+
+
+//? ################  Home Page Start  ###########################
+//? ################  Home Page Start  ###########################
+[page-name="home"] {
+    & .innerDialog {
+        & .innerContent {
+            & .firstFace {
+                height: 108px;
+                background-image: var(--bg);
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    inset: 0px;
+                    z-index: 0;
+                    background-color: rgba($black, .7);
+                }
+
+                & .shopName {
+                    font-weight: 900;
+                    font-size: 21px;
+                    color: $white;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                & .callBtn {
+                    & img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+
+                & .heartBtn {
+                    display: block;
+
+                    & img {
+                        width: 16px;
+                        height: 16px;
+                        filter: brightness(100);
+                    }
+
+                    &.active {
+                        & img {
+                            filter: brightness(1);
+                            animation: jellyEffect;
+                            animation-duration: .5s;
+                            animation-delay: 0s;
+                            animation-fill-mode: forwards;
+
+                            @keyframes jellyEffect {
+
+                                from,
+                                to {
+                                    opacity: 1
+                                }
+
+                                25% {
+                                    transform: scale(.9, 1.5)
+                                }
+
+                                50% {
+                                    transform: scale(1.5, .9)
+                                }
+
+                                75% {
+                                    transform: scale(.95, 1.5)
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .shareBtn {
+                    & img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+
+                & .shopCategory {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $white;
+                }
+
+                & .divider {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $white;
+                }
+
+                & .heartRed {
+                    & img {
+                        width: 14px;
+                        height: 12px;
+                    }
+                }
+
+                & .totleLikes {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $white;
+                }
+            }
+
+            & .oneDayDelivery {
+                height: 38px;
+                font-weight: 300;
+                font-size: 12px;
+                color: $black;
+                background-color: lighten($theme1, 42);
+            }
+
+            & .notAcceptingOrder {
+                height: 38px;
+                font-weight: 500;
+                font-size: 12px;
+                color: $white;
+                background-color: darken($warning, 5);
+            }
+
+            & .topCategory {
+                & .topCategoryTitle {
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: $black;
+                }
+
+                & .topCatItems {
+                    &::-webkit-scrollbar {
+                        width: 0px;
+                        height: 0px;
+                    }
+
+                    & .topCatItem {
+                        width: 94px;
+                        height: 92px;
+                        border: 1px solid lighten($theme1, 42);
+                        border-radius: 10px;
+
+                        & .topCatImg {
+                            & img {
+                                width: 35px;
+                                height: 35px;
+                                object-fit: contain;
+                                object-position: center;
+                            }
+                        }
+
+                        & .topCatName {
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: $gray-600;
+                        }
+
+                        &.active {
+                            background-color: lighten($theme1, 42);
+                        }
+                    }
+                }
+            }
+
+            & .topSubCategory {
+                & .topSubCatInner {
+                    border-color: $gray-200 !important;
+                }
+
+                & .topCategoryTitle {
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: $black;
+                }
+
+                & .topCatItems {
+                    &::-webkit-scrollbar {
+                        width: 0px;
+                        height: 0px;
+                    }
+
+                    & .topCatItem {
+                        width: 65px;
+                        height: 65px;
+                        border: 1px solid lighten($theme1, 42);
+                        border-radius: 10px;
+
+                        & .topCatImg {
+                            & img {
+                                width: 28px;
+                                height: 28px;
+                                object-fit: contain;
+                                object-position: center;
+                            }
+                        }
+
+                        & .topCatName {
+                            font-weight: 500;
+                            font-size: 12px;
+                            color: $black;
+                        }
+
+                        &.active {
+                            border-width: 2px;
+                            border-color: $theme1;
+                        }
+                    }
+                }
+            }
+
+            & .bestSelling {
+                & .topCategoryTitle {
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: $black;
+                }
+
+                & .outStockLabel {
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: $danger;
+                }
+
+                & .bestSellCard {
+                    & .bestSellImg {
+                        width: 75px;
+                        height: 75px;
+                        border-radius: 10px;
+                        background: $gray-100;
+
+                        & img {
+                            object-fit: contain;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    & .bestSellTitle {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: $black;
+                    }
+
+                    & .bestSellDes {
+                        & span {
+                            font-size: 12px;
+                            font-weight: 500;
+
+                            &:first-child {
+                                font-size: 14px;
+                                font-weight: 700;
+                                color: $black;
+                            }
+
+                            &:nth-child(2) {
+                                color: $gray-600;
+                                text-decoration: line-through;
+                            }
+
+                            &:last-child {
+                                color: $success;
+                            }
+                        }
+                    }
+                    & .bestSellGSTInfo {
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: $gray-600;
+                    }
+
+                    & .bestSellOpt {
+                        color: darken($warning, 5);
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+
+                    & .shopBtn {
+                        border: 1px solid $gray-200;
+                        width: 39px;
+                        height: 33px;
+                        display: grid;
+                        padding: 0;
+                        align-items: center;
+                        justify-content: center;
+
+                        & img:first-child {
+                            width: 14.89px;
+                            height: 18.8px;
+                            filter: grayscale(1);
+                        }
+
+                        & img:last-child {
+                            width: 14.89px;
+                            height: 18.8px;
+                            display: none;
+                        }
+
+                        &.active {
+                            border: 2px solid $theme1;
+
+                            & img:first-child {
+                                display: none;
+                            }
+
+                            & img:last-child {
+                                display: block;
+                                animation: jellyEffect;
+                                animation-duration: .5s;
+                                animation-delay: 0s;
+                                animation-fill-mode: forwards;
+
+                                @keyframes jellyEffect {
+
+                                    from,
+                                    to {
+                                        opacity: 1
+                                    }
+
+                                    25% {
+                                        transform: scale(.9, 1.5)
+                                    }
+
+                                    50% {
+                                        transform: scale(1.5, .9)
+                                    }
+
+                                    75% {
+                                        transform: scale(.95, 1.5)
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & .bestSellSpecs {
+                        border-bottom: 1px solid $gray-200;
+
+                        & .bestSellSpec {
+                            background-color: $gray-100;
+                            color: $gray-600;
+                            font-size: 12px;
+                            font-weight: 400;
+                            border-radius: 5px;
+                            padding: 4px 8px;
+                            display: block;
+                        }
+
+                        &:not(.active) .bestSellSpec:nth-child(6),
+                        &:not(.active) .bestSellSpec:nth-child(6)~.bestSellSpec {
+                            display: none;
+                        }
+                    }
+
+                    // & :not(.active) .bestSellSpec:nth-child(n - 1) 
+                    & .bestSellSpecMore {
+                        color: $theme1;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 12px;
+                        font-weight: 400;
+
+                        & span:last-child {
+                            display: none;
+                        }
+
+                        &.active {
+                            & span:first-child {
+                                display: none;
+                            }
+
+                            & span:last-child {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .modal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & .backWhiteBtn {
+                        border: none;
+
+                        & img {
+                            width: 19px;
+                            height: 13.82px;
+                        }
+                    }
+
+                    & .searchInput {
+                        & input {
+                            font-weight: 500;
+                            font-size: 14px;
+
+                            &::placeholder {
+                                color: $gray-500;
+                            }
+                        }
+                    }
+
+                    & .searchWhiteBtn {
+                        border: none;
+
+                        & img {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+
+                & .modal-body {
+                    & .items {
+                        & .item {
+                            & .itemInner {
+                                & .productIcon {
+                                    width: 35px;
+                                    height: 35px;
+
+                                    & img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: contain;
+                                        object-position: center;
+                                    }
+                                }
+
+                                & .productName {
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    color: $black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .shareApp {
+        background-color: #252525;
+        height: auto;
+        border-radius: 15px 15px 0px 0px;
+    
+        & .offcanvas-header {
+            & .offcanvas-title {
+                font-weight: 700;
+                font-size: 16px;
+            }
+    
+            & .closeBtn {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    
+        & .offcanvas-body {
+            
+            & .SharingApp{
+                & .CopyApp {
+                    & img{
+                        width: 50px;
+                    }
+                }
+                & .ShareUrl{
+                    column-gap: 15px;
+                    row-gap: 15px;
+
+                    & .shareCopyUrl{
+                        color: rgba($white, 0.7);
+                        font-size: 12px;
+                        font-weight: 400;
+                        border:2px solid #545454;
+                    }
+                }
+
+                & .shareAppItems{
+                    &::-webkit-scrollbar {
+                        width: 0px;
+                        height: 0px;
+                    }
+                    & .shareAppItem{
+                        width: 80px;
+                        & .ShareAppImg {
+                            & img{
+                                width: 50px;
+                            }
+                        }
+                    }
+                    & .shareNotesName{
+                        color: rgba($white, 0.7);
+                        font-size:12px;
+                        font-weight: 400;
+
+                        & .shareAppChat{
+                            color: rgba($white, 0.4);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    & .offcanvas-backdrop {
+        opacity: 1;
+        backdrop-filter: blur(0px);
+        background-color: rgba($black, .4);
+        transition: 0.3s all;
+    
+        &.show {
+            backdrop-filter: blur(10px);
+        }
+    }
+
+
+}
+
+// Small devices (landscape phones, 576px and up)
+
+@mixin home-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin home-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin home-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin home-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin home-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin home-mixin-max-xs() {}
+
+// Small devices (landscape phones, less than 768px)
+@mixin home-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin home-mixin-max-md() {}
+
+// Large devices (desktops, less than 1200px)
+@mixin home-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin home-mixin-max-xl() {}
+
+//! ################  End Home Page  ###########################
+
+
+
+
+//? ################  Product Detail Page Start  ###########################
+[page-name="product-detail"] {
+    & .innerDialog {
+        & .innerContent {
+            & .items {
+                border-bottom: 1px solid $gray-200;
+
+                & .item {
+                    & .itemImg {
+                        & img {
+                            max-width: 300px;
+                            width: 100%;
+                            max-height: 300px;
+                            height: 100%;
+                            object-fit: contain;
+                            object-position: center;
+                        }
+                    }
+
+                    & .shareOptions {
+                        position: absolute;
+                        inset: 20px 5px auto auto;
+                        width: 50px;
+
+                        & .shareWhiteBtn {
+                            width: 39px;
+                            height: 33px;
+                            border-radius: 5px;
+                            background-color: lighten($theme1, 40);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            & img {
+                                width: 15.32px;
+                                height: 18.39px;
+                                object-fit: contain;
+                                object-position: center;
+                            }
+                        }
+
+                        & .phoneWhiteBtn {
+                            width: 39px;
+                            height: 33px;
+                            border-radius: 5px;
+                            background-color: lighten($theme1, 40);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            & img {
+                                width: 15.32px;
+                                height: 18.39px;
+                                object-fit: contain;
+                                object-position: center;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .instockText {
+                font-weight: 500;
+                font-size: 14px;
+                color: darken($warning, 5)
+            }
+
+            & .productName {
+                font-weight: 400;
+                font-size: 18px;
+                color: $black;
+            }
+
+            & .discountedPricing {
+                font-weight: 700;
+                font-size: 16px;
+                color: $black;
+            }
+
+            & .mainPricing {
+                font-weight: 500;
+                font-size: 14px;
+                color: $gray-500
+            }
+
+            & .pricingPer {
+                font-weight: 700;
+                font-size: 14px;
+                color: darken($success, 5)
+            }
+
+            & .highlights {
+                font-weight: 700;
+                font-size: 14px;
+                color: $black;
+            }
+
+            & .viewDetailsBtn {
+                font-weight: 400;
+                font-size: 14px;
+                color: $theme1;
+            }
+
+            & .allDetails {
+                border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+
+                & .item {
+                    & .itemInner {
+                        & .label {
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: $gray-500;
+                        }
+
+                        & .value {
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: $black;
+                        }
+                    }
+                }
+            }
+
+            & .otherOptionAvailable {
+                font-weight: 700;
+                font-size: 14px;
+                color: $black;
+
+                & span {
+                    font-weight: 300;
+                    color: $gray-700;
+                }
+            }
+
+            & .otherProducts {
+                &::-webkit-scrollbar {
+                    width: 0px;
+                    height: 0px;
+                }
+
+                & .product {
+                    border: 1px solid lighten($theme1, 42);
+                    background-color: lighten($theme1, 42);
+                    border-radius: 8px;
+                    width: 130px;
+                    height: 161px;
+                    position: relative;
+
+                    & .discountLabel {
+                        background: lighten($success, 5);
+                        border-radius: 8px 0px 0px 0px;
+                        font-weight: 700;
+                        font-size: 10px;
+                        color: $white;
+                        display: inline-grid;
+                        width: 40px;
+                        height: 30px;
+                        position: absolute;
+                        inset: 0px auto auto 0px;
+                    }
+
+                    & .productImg {
+                        & img {
+                            width: 60px;
+                            height: 60px;
+                            object-fit: contain;
+                            object-position: center;
+                        }
+                    }
+
+                    & .productDetail {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $black;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                    }
+
+                    & .pricings {
+                        & .discountedPrice {
+                            font-weight: 700;
+                            font-size: 14px;
+                            color: $black;
+                        }
+
+                        & .actualPrice {
+                            font-weight: 500;
+                            font-size: 12px;
+                            color: $gray-600;
+                        }
+                    }
+                }
+            }
+
+            & .additionalFeaturesItems {
+                & .item {
+                    & .itemIcon {
+                        width: 31px;
+                        height: 31px;
+                        background-color: $gray-100;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        & img {
+                            width: 20.75px;
+                            height: 20.75px;
+                        }
+                    }
+
+                    & .itemTitle {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $gray-600;
+                    }
+
+                    & .itemSubTitle {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $black;
+                    }
+                }
+            }
+
+            & .productDescriptionTitle {
+                font-weight: 700;
+                font-size: 14px;
+                color: $black;
+            }
+
+            & .productDescriptionData {
+                font-weight: 400;
+                font-size: 14px;
+                color: $black;
+            }
+        }
+    }
+
+    & .addToBagPopup {
+        background-color: lighten($theme1, 42);
+        height: auto;
+
+        & .offcanvas-header {
+            & .offcanvas-title {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            & .closeBtn {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        & .offcanvas-body {
+            & .removePopUp {
+                & .innerText {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: $black;
+                }
+
+                & .removerWarn {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+
+            & .removeOption {
+                & .Confirm {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $black;
+                }
+
+                & .Cancel {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $theme1;
+                }
+
+            }
+
+        }
+    }
+
+    & .offcanvas-backdrop {
+        opacity: 1;
+        backdrop-filter: blur(0px);
+        background-color: rgba($black, .4);
+        transition: 0.3s all;
+
+        &.show {
+            backdrop-filter: blur(10px);
+        }
+    }
+
+    & .modal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & .backWhiteBtn {
+                        border: none;
+
+                        & img {
+                            width: 19px;
+                            height: 13.82px;
+                        }
+                    }
+
+                    & .searchInput {
+                        & input {
+                            font-weight: 500;
+                            font-size: 14px;
+
+                            &::placeholder {
+                                color: $gray-500;
+                            }
+                        }
+                    }
+
+                    & .searchWhiteBtn {
+                        border: none;
+
+                        & img {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+
+                & .modal-body {
+                    & .items {
+                        & .item {
+                            & .itemInner {
+                                & .productIcon {
+                                    width: 35px;
+                                    height: 35px;
+
+                                    & img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: contain;
+                                        object-position: center;
+                                    }
+                                }
+
+                                & .productName {
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    color: $black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.specificationOverlay {
+            & .modal-dialog {
+                & .modal-content {
+                    & .modal-body {
+                        & .productName {
+                            font-weight: 400;
+                            font-size: 18px;
+                            color: $black;
+                        }
+
+                        & .discountedPricing {
+                            font-weight: 700;
+                            font-size: 16px;
+                            color: $black;
+                        }
+
+                        & .mainPricing {
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: $gray-500
+                        }
+
+                        & .pricingPer {
+                            font-weight: 700;
+                            font-size: 14px;
+                            color: darken($success, 5)
+                        }
+
+                        & .highlights {
+                            font-weight: 700;
+                            font-size: 14px;
+                            color: $black;
+                        }
+
+                        & .allDetails {
+                            border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+
+                            & .item {
+                                & .itemInner {
+                                    & .label {
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        color: $gray-500;
+                                    }
+
+                                    & .value {
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        color: $black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+
+@mixin product-detail-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin product-detail-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin product-detail-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin product-detail-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin product-detail-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin product-detail-mixin-max-xs() {}
+
+// Small devices (landscape phones, less than 768px)
+@mixin product-detail-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin product-detail-mixin-max-md() {}
+
+// Large devices (desktops, less than 1200px)
+@mixin product-detail-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin product-detail-mixin-max-xl() {}
+
+//! ################  End Product Detail Page  ###########################
+
+
+//? ################  Login Page Start  ###########################
+
+[page-name="login"] {
+    & .innerDialog {
+        & .innerContent {
+            & .info {
+                font-weight: 400;
+                font-size: 14px;
+                color: $gray-600;
+
+                & span {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $black;
+                }
+
+                & .btn {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $theme1;
+                }
+            }
+
+            & .loginSignupTitle {
+                font-weight: 800;
+                font-size: 24px;
+                color: $black;
+            }
+
+            & .inputLabel {
+                font-weight: 500;
+                font-size: 14px;
+                color: $gray-600;
+            }
+
+            & .inputStyleBox {}
+
+            & .cuntryCode {
+                & input {
+                    height: 48px;
+                    width: 48px;
+                    font-size: 14px;
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+
+            & .mobileInput {
+                & input {
+                    height: 48px;
+                    font-size: 14px;
+                    border-width: 2px;
+                    background-image: none !important;
+                    border-radius: 8px;
+
+                    &.phoneNumberInput {
+                        padding-left: 46px;
+                    }
+
+                    &.commonOtps {
+                        max-width: 48px !important;
+                    }
+
+                    &:valid {
+                        border-color: lighten($black, 80);
+                    }
+
+                    &::placeholder {
+                        color: lighten($black, 80);
+                    }
+
+                    &:-webkit-autofill,
+                    &:-webkit-autofill:hover,
+                    &:-webkit-autofill:focus {
+                        -webkit-text-fill-color: $black;
+                        transition: background-color 5000s ease-in-out 0s;
+                    }
+                }
+
+                & .resendOtpBox {
+                    & .otpTiming {
+                        font-weight: 450;
+                        font-size: 12px;
+                        color: $black;
+                    }
+
+                    & .otpResendBtn {
+                        font-weight: 700;
+                        font-size: 12px;
+                        color: $theme1;
+                    }
+                }
+            }
+
+            & .invalid-feedback {
+                font-weight: 450;
+                font-size: 12px;
+            }
+
+            & .termsAndConditions {
+                & .form-check-input {
+                    width: 16px;
+                    height: 16px;
+                    background: lighten($theme1, 40);
+                    border: 2px solid $theme1;
+                    border-radius: 2px;
+                    transition: 0.3s cubic-bezier(0.68, -0.85, 0.87, 2.49);
+
+                    &:checked {
+                        background-image: url("../img/icons/checked.png");
+                        background-size: cover;
+                        border-width: 0px;
+                    }
+                }
+
+                & .form-check-label {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+
+    & .modalResendOTP {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-body {
+                    & .modalBody {
+                        & .cuntryCode {
+                            position: absolute;
+                            left: 4px;
+
+                            & .form-control {
+                                height: 48px;
+                                width: 48px;
+                                font-size: 14px;
+                                border: none;
+                                background: transparent;
+                            }
+                        }
+
+                        & .mobileInput {
+                            & .form-control {
+                                height: 48px;
+                                font-size: 14px;
+                                border-width: 2px;
+                                background-image: none !important;
+                                border-radius: 8px;
+                                font-weight: 450;
+                                font-size: 14px;
+                                padding-left: 46px;
+
+                                &:valid {
+                                    border-color: lighten($black, 80);
+                                }
+
+                                &::placeholder {
+                                    color: lighten($black, 80);
+                                }
+
+                                &:-webkit-autofill,
+                                &:-webkit-autofill:hover,
+                                &:-webkit-autofill:focus {
+                                    -webkit-text-fill-color: $black;
+                                    transition: background-color 5000s ease-in-out 0s;
+                                }
+                            }
+
+                            & .resendOtpBox {
+                                & .otpTiming {
+                                    font-weight: 450;
+                                    font-size: 12px;
+                                    color: $black;
+                                }
+
+                                & .otpResendBtn {
+                                    font-weight: 700;
+                                    font-size: 12px;
+                                    color: $theme1;
+                                }
+                            }
+                        }
+
+                        & .invalid-feedback {
+                            font-weight: 450;
+                            font-size: 12px;
+                        }
+
+                        & .otpWarn {
+                            font-weight: 400;
+                            font-size: 16px;
+                        }
+                    }
+
+                    & .modalFooter {
+                        & .resendBtn {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+
+@mixin login-mixin-min-sm() {}
+
+// Medium devices (tablets, 768px and up)
+@mixin login-mixin-min-md() {}
+
+// Large devices (desktops, 992px and up)
+@mixin login-mixin-min-lg() {}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin login-mixin-min-xl() {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin login-mixin-min-xxl() {}
+
+// X-Small devices (portrait phones, less than 576px)
+@mixin login-mixin-max-xs() {}
+
+// Small devices (landscape phones, less than 768px)
+@mixin login-mixin-max-sm() {}
+
+// Medium devices (tablets, less than 992px)
+@mixin login-mixin-max-md() {}
+
+// Large devices (desktops, less than 1200px)
+@mixin login-mixin-max-lg() {}
+
+// X-Large devices (large desktops, less than 1400px)
+@mixin login-mixin-max-xl() {}
+
+//! ################  End Login Page  ###########################
+
+
+//? ################  Bag Page Start  ###########################
+
+[page-name="bag"] {
+    & .innerDialog {
+        & .innerContent {
+
+            & .addBag {
+                & .addBagInner {
+                    min-height: 100%;
+                }
+
+                & .bestSellCard {
+                    & .bestSellImg {
+                        width: 75px;
+                        height: 75px;
+                        border-radius: 10px;
+                        background: $gray-100;
+
+                        & img {
+                            object-fit: contain;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    & .bestSellTitle {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: $black;
+                    }
+
+                    & .bestSellDes {
+                        & span {
+                            font-size: 12px;
+                            font-weight: 500;
+
+                            &:first-child {
+                                font-size: 14px;
+                                font-weight: 700;
+                                color: $black;
+                            }
+
+                            &:nth-child(2) {
+                                color: $gray-600;
+                                text-decoration: line-through;
+                            }
+
+                            &:last-child {
+                                color: $success;
+                            }
+                        }
+                    }
+                    & .bestSellGSTInfo {
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: $gray-600;
+                    }
+
+                    & .bestSellOpt {
+                        color: darken($warning, 5);
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+
+                    & .shopBtn {
+                        border: 1px solid $gray-200;
+                        width: 39px;
+                        height: 33px;
+                        display: grid;
+                        padding: 0;
+                        align-items: center;
+                        justify-content: center;
+
+                        & img:first-child {
+                            width: 14.89px;
+                            height: 18.8px;
+                            filter: grayscale(1);
+                        }
+
+                        & img:last-child {
+                            width: 14.89px;
+                            height: 18.8px;
+                            display: none;
+                        }
+
+                        &.active {
+                            border: 2px solid $theme1;
+
+                            & img:first-child {
+                                display: none;
+                            }
+
+                            & img:last-child {
+                                display: block;
+                                animation: jellyEffect;
+                                animation-duration: .5s;
+                                animation-delay: 0s;
+                                animation-fill-mode: forwards;
+
+                                @keyframes jellyEffect {
+
+                                    from,
+                                    to {
+                                        opacity: 1
+                                    }
+
+                                    25% {
+                                        transform: scale(.9, 1.5)
+                                    }
+
+                                    50% {
+                                        transform: scale(1.5, .9)
+                                    }
+
+                                    75% {
+                                        transform: scale(.95, 1.5)
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & .bestSellSpecs {
+                        border-bottom: 1px solid $gray-200;
+
+                        &.mx-15 {
+                            margin: 0px -15px;
+                        }
+
+                        &.bag-button {
+                            & .btn {
+                                font-size: 14px;
+                            }
+
+                            & .remove-button {
+                                color: $gray-600 !important;
+                                font-weight: 400;
+                                letter-spacing: 0.05em;
+                                font-size: 14px;
+                                border-right: 1px solid $gray-200;
+                            }
+                        }
+
+                        & .bestSellSpec {
+                            background-color: $gray-100;
+                            color: $gray-600;
+                            font-size: 12px;
+                            font-weight: 400;
+                            border-radius: 5px;
+                            padding: 4px 8px;
+                            display: block;
+
+                        }
+
+
+                        &:not(.active) .bestSellSpec:nth-child(6),
+                        &:not(.active) .bestSellSpec:nth-child(6)~.bestSellSpec {
+                            display: none;
+                        }
+                    }
+
+                    & .bestSellButton {
+                        border-bottom: 1px solid $gray-200;
+
+                        & .btn {
+                            font-size: 14px;
+                        }
+
+                        & .bagRemove {
+                            color: $gray-600 !important;
+                            font-weight: 400;
+                            letter-spacing: 0.05em;
+                            font-size: 14px;
+                            border-right: 1px solid $gray-200;
+                        }
+                    }
+
+                    // & :not(.active) .bestSellSpec:nth-child(n - 1) 
+                    & .bestSellSpecMore {
+                        color: $theme1;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 12px;
+                        font-weight: 400;
+
+                        & span:last-child {
+                            display: none;
+                        }
+
+                        &.active {
+                            & span:first-child {
+                                display: none;
+                            }
+
+                            & span:last-child {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            & .priceDetails {
+                & .bagDetailsHeading {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: $black;
+                }
+
+                & .priceDetailBg {
+
+                    & .bagitemPrice {
+                        border-bottom: 2px solid $gray-100;
+
+                        & .itemInner {
+                            & .value {
+                                font-weight: 400;
+                                font-size: 14px;
+                                color: $black;
+                            }
+
+                            & .discountedPricing {
+                                font-weight: 500;
+                                font-size: 14px;
+                                color: $black;
+                            }
+
+                            & .discountedPricingTotal {
+                                font-weight: 700;
+                                font-size: 14px;
+                                color: $black;
+                            }
+
+                            & .discount {
+                                color: lighten($success, 10) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & .bagContinueBtn {
+            font-size: 14px;
+            font-weight: 700;
+            color: $white;
+        }
+    }
+
+    & .DeleteItemConfirmOffcanvas {
+        background-color: lighten($theme1, 42);
+        height: auto;
+
+        & .offcanvas-header {
+            & .offcanvas-title {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            & .closeBtn {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        & .offcanvas-body {
+            & .removePopUp {
+                & .innerText {
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+
+                & .removerWarn {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+
+            & .removeOption {
+                & .bagConfirm {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $black;
+                }
+
+                & .bagCancel {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $theme1;
+                }
+
+            }
+
+        }
+    }
+
+    & .offcanvas-backdrop {
+        opacity: 1;
+        backdrop-filter: blur(0px);
+        background-color: rgba($black, .4);
+        transition: 0.3s all;
+
+        &.show {
+            backdrop-filter: blur(10px);
+        }
+    }
+}
+
+//! ################  End Bag Page   ###########################
+
+
+//? ################  Bag-Empty Page Start  ###########################
+
+[page-name="bagEmpty"] {
+    & .innerDialog {
+        & .innerContent {
+            & .bagEmpty {
+                & .bagStatus {
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: $black;
+
+                }
+
+                & .empty-bag-description {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $gray-600;
+                }
+
+                & .emptyBagButton {
+                    background: $theme1;
+                    border-radius: 5px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    padding: 0px 40px;
+                    height: 50px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                & .topCategory {
+                    & .topCategoryTitle {
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: $black;
+                    }
+
+                    & .topCatItems {
+                        &::-webkit-scrollbar {
+                            width: 0px;
+                            height: 0px;
+                        }
+
+                        & .topCatItem {
+                            width: 94px;
+                            height: 92px;
+                            border: 1px solid lighten($theme1, 42);
+                            border-radius: 10px;
+
+                            & .topCatImg {
+                                & img {
+                                    width: 35px;
+                                    height: 35px;
+                                    object-fit: contain;
+                                    object-position: center;
+                                }
+                            }
+
+                            & .topCatName {
+                                font-weight: 500;
+                                font-size: 14px;
+                                color: $gray-600;
+                            }
+
+                            &.active {
+                                background-color: lighten($theme1, 42);
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+//! ################  End Bag-Empty Page  ###########################
+
+//? ################  Address Page Start  ###########################
+
+[page-name="address"] {
+    & .innerDialog {
+        & .innerContent {
+            & .addressGps {
+                & .btn {
+                    border: 1px solid lighten($theme1, 40);
+                    border-radius: 5px;
+                    background-color: lighten($theme1, 40);
+                    height: 48px;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+
+            & .selectedAddressFromMap {
+                background: lighten($warning, 40);
+                border: 1px solid $gray-200;
+                border-radius: 5px;
+                font-weight: 400;
+                font-size: 14px;
+                color: $black;
+            }
+
+            & .addressHeading {
+                font-weight: 800;
+                font-size: 24px;
+                color: $black;
+            }
+
+            & .addressLabel {
+                font-weight: 500;
+                font-size: 14px;
+                color: $gray-600;
+            }
+
+            & .form-control,
+            & .form-select {
+                background: $white;
+                border-radius: 5px;
+                border-width: 2px;
+                height: 56px;
+                font-weight: 500;
+                font-size: 16px;
+                color: $black;
+
+                &:invalid {
+                    background-image: none;
+                }
+
+                &:valid {
+                    border-color: $gray-400;
+                    background-image: none;
+                }
+            }
+
+            & .form-select {
+                & option:disabled {
+                    color: $gray-300;
+                }
+
+                & option {
+                    color: $black;
+                }
+
+                &:invalid {
+                    color: $gray-500;
+                }
+            }
+
+            & .bagContinueBtn {
+                & .btn {}
+            }
+
+        }
+    }
+}
+
+//! ################  End Address Page  ###########################
+
+
+//? ################  Personal Detail Page Start  ###########################
+
+[page-name="personalDetail"] {
+    & .innerDialog {
+        & .innerContent {
+            & .personalDetail {
+                & .personalDetailHeading {
+                    font-weight: 800;
+                    font-size: 24px;
+                    color: $black;
+                }
+
+                & .personalDetailLabel {
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: $gray-600;
+                }
+
+                & .form-control {
+                    background: $white;
+                    border: 1px solid darken($white, 6);
+                    border-radius: 5px;
+                    height: 56px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $black;
+                }
+
+                & .form-select {
+                    border: 1px solid darken($white, 6);
+                    border-radius: 5px;
+                    height: 56px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $black;
+                }
+
+                & .btnStyle2 {
+                    height: 48px;
+                }
+            }
+
+        }
+    }
+}
+
+//! ################  End Personal Detail Page  ###########################
+
+//? ################  Summary Page Start  ###########################
+[page-name="summary"] {
+    & .innerDialog {
+        & .innerContent {
+            & .body {
+                & .summaryInner {
+                    min-height: 100%;
+                }
+
+                & .summaryBar {
+                    & .progressContent {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $gray-400;
+
+                        &.active {
+                            color: $theme1;
+
+                            &.progressBar {
+                                &::after {
+                                    border-bottom: 1px dashed $theme1;
+                                }
+                            }
+
+                            &~.progressContent {
+                                color: $theme1;
+
+                                &.progressBar {
+                                    &::after {
+                                        border-bottom: 1px dashed $theme1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & .progressBar {
+                        & span {
+                            z-index: 1;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 1px;
+                            border-bottom: 1px dashed;
+                            inset: 50% -50% 0px 50%;
+                            z-index: 0;
+                        }
+
+                        &:first-child::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                & .addDeilverAddress {
+                    & .summaryHeading {
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: $black;
+                    }
+
+                    & .deilverAddAddress {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $theme1;
+                        border: 1px solid $theme1;
+                        border-radius: 5px;
+                        padding: 15px;
+                    }
+                }
+
+                & .summaryAddressDetail {
+                    & .summaryHeading {
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: $black;
+                    }
+
+                    & .orderCustomeName {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $black;
+                    }
+
+                    & .orderSummaryEdit {
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: $theme1;
+                    }
+
+                    & .addresssummary {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $gray-600;
+                    }
+                }
+
+                & .productItem {
+                    & .summaryHeading {
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: $black;
+                    }
+
+                    & .orderSendingTime {
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: rgba($black, 0.99);
+                        background: #EAF1FE;
+                        border-bottom: 1px solid #FAFAFA;
+                        border-radius: 5px;
+                        padding: 3px 10px;
+                        display: inline-block;
+                    }
+
+                    & .bestSellCard {
+                        & .bestSellImg {
+                            width: 75px;
+                            height: 75px;
+                            border-radius: 10px;
+                            background: $gray-100;
+
+                            & img {
+                                object-fit: contain;
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+
+                        & .closeOrder {
+                            cursor: pointer;
+                        }
+
+                        & .bestSellTitle {
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: $black;
+                        }
+
+                        & .bestSellDes {
+                            & span {
+                                font-size: 12px;
+                                font-weight: 500;
+
+                                &:first-child {
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    color: $black;
+                                }
+
+                                &:nth-child(2) {
+                                    color: $gray-600;
+                                    text-decoration: line-through;
+                                }
+
+                                &:last-child {
+                                    color: $success;
+                                }
+                            }
+                        }
+                        & .bestSellGSTInfo {
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: $gray-600;
+                        }
+                    }
+
+                }
+
+                & .priceDetails {
+                    & .bagDetailsHeading {
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: $black;
+                    }
+
+                    & .priceDetailBg {
+
+                        & .bagitemPrice {
+                            border-bottom: 2px solid $gray-100;
+
+                            & .itemInner {
+                                & .value {
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    color: $black;
+                                }
+
+                                & .discountedPricing {
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    color: $black;
+                                }
+
+                                & .discountedPricingTotal {
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    color: $black;
+                                }
+
+                                & .discount {
+                                    color: lighten($success, 10) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .bagContinueBtn {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    & .DeleteItemConfirmOffcanvas {
+        background-color: lighten($theme1, 42);
+        height: auto;
+
+        & .offcanvas-header {
+            & .offcanvas-title {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            & .closeBtn {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        & .offcanvas-body {
+            & .removePopUp {
+                & .innerText {
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+
+                & .removerWarn {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+
+            & .removeOption {
+                & .bagConfirm {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $black;
+                }
+
+                & .bagCancel {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $theme1;
+                }
+
+            }
+
+        }
+    }
+
+    & .offcanvas-backdrop {
+        opacity: 1;
+        backdrop-filter: blur(0px);
+        background-color: rgba($black, .4);
+        transition: 0.3s all;
+
+        &.show {
+            backdrop-filter: blur(10px);
+        }
+    }
+}
+
+//! ################  End Summary Page  ###########################
+
+//? ################  Location Page Start  ###########################
+
+[page-name="location"] {
+    & .innerDialog {
+        & .innerContent {
+            & .location {
+                & .locationHeaing {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: $black;
+                }
+
+                & .addressArea {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $gray-600;
+                }
+            }
+
+        }
+    }
+}
+
+//! ################  End Location Page  ###########################
+
+//? ################  Payment Page Start  ###########################
+
+[page-name="payment"] {
+    & .innerDialog {
+        & .innerContent {
+            & .body {
+
+                & .summaryBar {
+                    & .progressContent {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $gray-400;
+
+                        &.active {
+                            color: $theme1;
+
+                            &.progressBar {
+                                &::after {
+                                    border-bottom: 1px dashed $theme1;
+                                }
+                            }
+
+                            &~.progressContent {
+                                color: $theme1;
+
+                                &.progressBar {
+                                    &::after {
+                                        border-bottom: 1px dashed $theme1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & .progressBar {
+                        & span {
+                            z-index: 1;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 1px;
+                            border-bottom: 1px dashed;
+                            inset: 50% -50% 0px 50%;
+                            z-index: 0;
+                        }
+
+                        &:first-child::after {
+                            display: none;
+                        }
+                    }
+                }
+
+
+                & .paymentOptionSection {
+                    & .paymentOptionSectionInner {
+                        min-height: 100%;
+                    }
+
+                    & .paymentHeading {
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: $black;
+                    }
+
+                    & .deilverAddAddress {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $theme1;
+                        border: 1px solid $theme1;
+                        border-radius: 5px;
+                        padding: 15px;
+                    }
+
+                    & .orderSendingTime {
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: rgba($black, 0.99);
+                        background: #EAF1FE;
+                        border-bottom: 1px solid #FAFAFA;
+                        border-radius: 5px;
+                        padding: 3px 10px;
+                        display: inline-block;
+                    }
+
+                    & .bestSellCard {
+                        & .bestSellImg {
+                            width: 75px;
+                            height: 75px;
+                            border-radius: 10px;
+                            background: $gray-100;
+
+                            & img {
+                                object-fit: contain;
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+
+                        & .closeOrder {
+                            cursor: pointer;
+                        }
+
+                        & .bestSellTitle {
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: $black;
+                        }
+
+                        & .bestSellDes {
+                            & span {
+                                font-size: 12px;
+                                font-weight: 500;
+
+                                &:first-child {
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    color: $black;
+                                }
+
+                                &:nth-child(2) {
+                                    color: $gray-600;
+                                    text-decoration: line-through;
+                                }
+
+                                &:last-child {
+                                    color: $success;
+                                }
+                            }
+                        }
+                        & .bestSellGSTInfo {
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: $gray-600;
+                        }
+                    }
+
+                    & .orderCustomeName {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $black;
+                    }
+
+                    & .orderSummaryEdit {
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: $theme1;
+                    }
+
+                    & .addresssummary {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $gray-600;
+                    }
+
+                    & .paymentOption {
+                        & .paymentList {
+                            background: $white;
+                            border: 1px solid #DDDDDD;
+                            border-radius: 5px;
+
+                            & input {
+                                &~label {
+                                    padding-left: 28px;
+                                    height: 40px;
+                                    font-weight: 400;
+                                    font-size: 14px;
+
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        width: 16px;
+                                        height: 16px;
+                                        border-radius: 50%;
+                                        border: 1px solid $theme1;
+                                        inset: 0px auto 0px 0px;
+                                        margin: auto;
+                                    }
+                                }
+
+                                &:checked {
+                                    &~label {
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            width: 10px;
+                                            height: 10px;
+                                            border-radius: 50%;
+                                            inset: 0px auto 0px 3px;
+                                            margin: auto;
+                                            background-color: $theme1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .codWarning {
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: darken($warning, 10);
+                        }
+                    }
+
+                    & .bagContinueBtn {
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: $white;
+                    }
+
+                }
+
+                & .priceDetails {
+                    & .bagDetailsHeading {
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: $black;
+                    }
+
+                    & .priceDetailBg {
+                        & .bagitemPrice {
+                            border-bottom: 2px solid $gray-100;
+
+                            & .itemInner {
+                                & .value {
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    color: $black;
+                                }
+
+                                & .discountedPricing {
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    color: $black;
+                                }
+
+                                & .discountedPricingTotal {
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    color: $black;
+                                }
+
+                                & .discount {
+                                    color: lighten($success, 10) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+//! ################  End Payment Page  ###########################
+
+//? ################  Order Processing Page Start  ###########################
+
+[page-name="orderProcessing"] {
+    & .innerDialog {
+        & .innerContent {
+            & .body {
+                & .showbox {
+                    & .loader {
+                        position: relative;
+                        margin: 0 auto;
+                        width: 120px;
+                        &:before {
+                            content: '';
+                            display: block;
+                            padding-top: 100%;
+                        }
+                        & .circular {
+                            animation: rotate 2s linear infinite;
+                            height: 100%;
+                            transform-origin: center center;
+                            width: 100%;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            & .path {
+                                stroke-dasharray: 1, 200;
+                                stroke-dashoffset: 0;
+                                animation: dash 1s ease-in-out infinite, color 4s ease-in-out infinite;
+                                stroke-linecap: round;
+                                
+                                @keyframes rotate {
+                                    100% {
+                                        transform: rotate(360deg);
+                                    }
+                                }
+                                
+                                @keyframes dash {
+                                    0% {
+                                        stroke-dasharray: 1, 200;
+                                        stroke-dashoffset: 0;
+                                    }
+                                    50% {
+                                        stroke-dasharray: 89, 200;
+                                        stroke-dashoffset: -35px;
+                                    }
+                                    100% {
+                                        stroke-dasharray: 89, 200;
+                                        stroke-dashoffset: -124px;
+                                    }
+                                }
+                                
+                                @keyframes color {
+                                    100%,
+                                    0% {
+                                        stroke: $black;
+                                    }
+                                    40% {
+                                        stroke: $black;
+                                    }
+                                    66% {
+                                        stroke: $black;
+                                    }
+                                    80%,
+                                    90% {
+                                        stroke: $black;
+                                    }
+                                }
+                            }
+                            & .path2 {
+                                stroke-dasharray: 200, 200;
+                                stroke-dashoffset: 0;
+                                stroke-linecap: round;
+                                stroke: rgba($black, .2);
+                            }
+                        }
+                    }
+                    & .orderProcessing {
+                        font-weight: 500;
+                        font-size: 26px;
+                        color: $black;
+                    }
+                    & .doNotClickBack {
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: $gray-600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! ################  End Order Processing Page  ###########################
+
+
+//? ################  Payment Success Page Start  ###########################
+[page-name="paymentSuccess"] {
+    & .innerDialog {
+        & .innerContent {
+            & .body {
+                & .summaryBar {
+                    & .progressContent {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $gray-400;
+
+                        &.active {
+                            color: $theme1;
+
+                            &.progressBar {
+                                &::after {
+                                    border-bottom: 1px dashed $theme1;
+                                }
+                            }
+
+                            &~.progressContent {
+                                color: $theme1;
+
+                                &.progressBar {
+                                    &::after {
+                                        border-bottom: 1px dashed $theme1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    & .progressBar {
+                        & span {
+                            z-index: 1;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 1px;
+                            border-bottom: 1px dashed;
+                            inset: 50% -50% 0px 50%;
+                            z-index: 0;
+                        }
+
+                        &:first-child::after {
+                            display: none;
+                        }
+                    }
+                }
+
+                & .paymentSuccess {
+                    & .bagStatus {
+                        font-weight: 500;
+                        font-size: 20px;
+                        color: $black;
+                    }
+
+                    & .emptyBagDescription {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $gray-500;
+
+                        & .bagCode {
+                            color: $black;
+                            font-weight: 500;
+                        }
+                    }
+
+                    & .emptyBagButton {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: $gray-600;
+                    }
+
+                    & .continueShoppingButton {
+                        background: transparent;
+                        border-radius: 5px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        padding: 0px 10px;
+                        height: 50px;
+                        border: 1px solid $theme1;
+                        color: $theme1;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                    }
+
+                    & .trackOrderButton {
+                        background: $theme1;
+                        border-radius: 5px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        padding: 0px 10px;
+                        height: 50px;
+                        border: 1px solid $theme1;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                    }
+
+                    & .topCategory {
+                        & .topCategoryTitle {
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: $black;
+                        }
+
+                        & .topCatItems {
+                            &::-webkit-scrollbar {
+                                width: 0px;
+                                height: 0px;
+                            }
+
+                            & .topCatItem {
+                                width: 94px;
+                                height: 92px;
+                                border: 1px solid lighten($theme1, 42);
+                                border-radius: 10px;
+
+                                & .topCatImg {
+                                    & img {
+                                        width: 35px;
+                                        height: 35px;
+                                        object-fit: contain;
+                                        object-position: center;
+                                    }
+                                }
+
+                                & .topCatName {
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    color: $gray-600;
+                                }
+
+                                &.active {
+                                    background-color: lighten($theme1, 42);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! ################  End Payment Success Page  ###########################
+
+//? ################  Order Deatil Track Page Start  ###########################
+[page-name="orderTrackAccept"] {
+    & .innerDialog {
+        & .innerContent {
+            & .body {
+                & .estimatedDelivery {
+                    background: #EAF1FE;
+                    border: 1px solid #C5D7FA;
+                    border-radius: 5px;
+
+                    & .estimateTitle {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $gray-500;
+                    }
+
+                    & .estimateDate {
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: $black;
+                    }
+                }
+
+                & .trackOrder {
+                    border-radius: 8px;
+                    background-color: $white;
+
+                    & .trackTitleID {
+                        & .trackTitle {
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: $black;
+                        }
+
+                        & .trackID {
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: $gray-600;
+                        }
+                    }
+
+                    & .trackStatusCard {
+                        & .item {
+                            filter: grayscale(1) brightness(0);
+                            opacity: 0.3;
+                            position: relative;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                border-left: 1px dashed $success;
+                                inset: 28px auto -10px 19.2px;
+                            }
+
+                            &:last-child::before {}
+
+                            &:first-child::before {}
+
+                            & .trackStatusDot {
+                                width: 15px;
+                                height: 15px;
+                                padding: 0px;
+                                border-radius: 50px;
+                                background-color: lighten($success, 10);
+                                margin-top: 3px;
+                            }
+
+                            & .trackStatus {
+                                font-weight: 600;
+                                font-size: 14px;
+                                color: $black;
+                            }
+
+                            & .trackStatusDate {
+                                font-weight: 400;
+                                font-size: 14px;
+                                color: $gray-600;
+                            }
+
+                            & .cancelOrder {
+                                display: none;
+                                & .btn {
+                                    background: lighten($theme1, 42);
+                                    border: 1px solid $gray-200;
+                                    border-radius: 5px;
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    color: $black;
+                                    width: 111px;
+                                    height: 28px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                            }
+
+                            & .cancelWarning {
+                                display: none;
+                                font-weight: 400;
+                                font-size: 12px;
+                                color: darken($warning, 5);
+                            }
+
+                            &.active,
+                            &.active~.item {
+                                filter: grayscale(0) brightness(1);
+                                opacity: 1;
+                            }
+                            &.active {
+                                & .cancelOrder {
+                                    display: block;
+                                }
+    
+                                & .cancelWarning {
+                                    display: block;
+                                }
+                            }
+
+                            &.orderRejected {
+                                filter: grayscale(0);
+                                opacity: 1;
+
+                                & .trackStatusDot {
+                                    background-color: lighten($danger, 1);
+                                }
+
+                                & .trackStatus {
+                                    color: lighten($danger, 1);
+                                }
+                            }
+
+                            &:first-child {
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .needHelp {
+                    & .needHelpInner {
+                        & .btn {
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: $theme1;
+                        }
+                    }
+                }
+
+                & .trackOrderDetail {
+                    & .orderTrackSteps {
+                        & .orderTrackList {
+                            & .orderTrackListFill {
+                                background-image: url('../img/icons/DoneIcon.svg');
+                                background: lighten($success, 10);
+                                width: 15px;
+                                height: 15px;
+                                border-radius: 100%;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+
+                            & .orderTrackLisTitle {
+                                font-weight: 700;
+                                font-size: 16px;
+                                color: $black;
+                            }
+
+                            & .orderTrackLisDAte {
+                                font-weight: 400;
+                                font-size: 14px;
+                                color: $gray-500;
+                            }
+                        }
+                    }
+                }
+
+                & .orderTrackItems {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: $black;
+                }
+
+                & .orderSpecification {
+                    & .orderSpecificationList {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $black;
+                        padding-bottom: 10px;
+
+                        &:last-child {
+                            padding-bottom: 0px;
+                        }
+                    }
+                }
+
+                & .orderTrackUser {
+                    & .orderTrackHeading {
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: $black;
+                    }
+
+                    & .orderCustomerName {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $black;
+                    }
+
+                    & .orderTRackSummary {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $gray-600;
+                    }
+                }
+
+                & .priceDetails {
+                    & .bagDetailsHeading {
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: $black;
+                    }
+
+                    & .priceDetailBg {
+                        & .bagitemPrice {
+                            border-bottom: 2px solid $gray-100;
+
+                            & .itemInner {
+                                & .value {
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    color: $black;
+                                }
+
+                                & .discountedPricing {
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    color: $black;
+                                }
+
+                                & .discountedPricingTotal {
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    color: $black;
+                                }
+
+                                & .discount {
+                                    color: lighten($success, 10) !important;
+                                }
+                            }
+                        }
+
+                        & .orderTrackVoice {
+                            & .orderTrackVoiceBtn {
+                                border: 1px solid $theme1;
+                                color: $theme1;
+                                font-weight: 500;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .orderCancelPopup {
+        background-color: lighten($theme1, 42);
+        height: auto;
+
+        & .offcanvas-header {
+            & .offcanvas-title {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            & .closeBtn {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        & .offcanvas-body {
+            & .removePopUp {
+                & .innerText {
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+
+                & .removerWarn {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+
+            & .removeOption {
+                & .bagConfirm {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $black;
+                }
+
+                & .bagCancel {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $theme1;
+                }
+
+            }
+
+        }
+    }
+
+    & .offcanvas-backdrop {
+        opacity: 1;
+        backdrop-filter: blur(0px);
+        background-color: rgba($black, .4);
+        transition: 0.3s all;
+
+        &.show {
+            backdrop-filter: blur(10px);
+        }
+    }
+}
+
+//! ################  End Order Detail Track Page  ###########################
+
+
+//? ################  Order List Page Start  ###########################
+
+[page-name="orders"] {
+    & .innerDialog {
+        & .innerContent {
+            & .body {
+                & .orderListId {
+                    font-weight: 700;
+                    font-size: 12px;
+                    color: $black ;
+                }
+
+                & .orderListPlaced {
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: $gray-500 ;
+                }
+
+                & .orderSendingTime {
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: rgba($black, 0.99);
+                    background: #EAF1FE;
+                    border-bottom: 1px solid #FAFAFA;
+                    border-radius: 5px;
+                    padding: 3px 10px;
+                    display: inline-block;
+                    letter-spacing: 0.05em;
+                }
+
+                & .orderListAmount {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $black;
+                }
+
+                & .orderSpecification {
+                    & .orderSpecificationList {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $black;
+                        padding-bottom: 10px;
+
+                        & .moreItems {
+                            font-weight: 400;
+                            font-size: 12px;
+                            width: 59px;
+                            height: 20px;
+                            background: $white;
+                            border: 1px solid $gray-300;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 5px;
+                        }
+
+                        &:last-child {
+                            padding-bottom: 0px;
+                        }
+                    }
+                }
+
+                & .trackOrderBtn {
+                    font-size: 14px;
+                    font-weight: 700;
+                    border-bottom: 1px solid rgba($theme1, 0.1);
+                    border-top: 1px solid rgba($theme1, 0.1);
+                    background-color: rgba($theme1, 0.05);
+                }
+
+                & .orderDelivered {
+                    background-color: lighten($success, 10);
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+
+                & .orderRejected {
+                    background-color: $red;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+//! ################  End Order List Page  ###########################
+
+
+//? ################  Account Page Start  ###########################
+
+[page-name="account"] {
+    & .innerDialog {
+
+        & .innerContent {
+
+            & .body {
+
+                & .accountMinHeight {
+                    min-height: 100%;
+
+                    & .accountProfile {
+
+                        & .accountHoldername {
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: $black;
+                        }
+
+                        & .accountHolderEmail {
+                            font-weight: 400;
+                            font-size: 14px;
+                        }
+
+                        & .editProfile {
+
+                            & .editProfileBtn {
+                                background-color: rgba($theme1, 0.05);
+                                border: 1px solid rgba($theme1, 0.1);
+                                font-size: 12px;
+                                font-weight: 400;
+                            }
+
+                        }
+                    }
+
+                    & .accountList {
+                        & .accountListItem {
+                            & .accountListItemName {
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: $black;
+                            }
+                        }
+                    }
+
+                    & .deactivateAccountSpace {
+                        margin: 70px 0px 50px 0px;
+
+                        & .deactivateAccount {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $red;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    & .ttOffcanvas {
+        background-color: lighten($theme1, 42);
+        height: auto;
+
+        & .offcanvas-header {
+            & .offcanvas-title {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            & .closeBtn {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        & .offcanvas-body {
+            & .removePopUp {
+                & .innerText {
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+
+                & .removerWarn {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+
+            & .removeOption {
+                & .Confirm {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $black;
+                }
+
+                & .Cancel {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $theme1;
+                }
+
+            }
+
+        }
+    }
+
+    & .offcanvas-backdrop {
+        opacity: 1;
+        backdrop-filter: blur(0px);
+        background-color: rgba($black, .4);
+        transition: 0.3s all;
+
+        &.show {
+            backdrop-filter: blur(10px);
+        }
+    }
+}
+
+//! ################  End Account Page  ###########################
+
+
+//? ################  Account Page Start  ###########################
+
+[page-name="accountSetting"] {
+    & .innerDialog {
+
+        & .innerContent {
+
+            & .body {
+
+                & .accountMinHeight {
+                    min-height: 100%;
+
+                    & .accountProfile {
+
+                        & .accountHoldername {
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: $black;
+                        }
+
+                        & .accountHolderEmail {
+                            font-weight: 400;
+                            font-size: 14px;
+                        }
+
+                        & .editProfile {
+
+                            & .editProfileBtn {
+                                background-color: rgba($theme1, 0.05);
+                                border: 1px solid rgba($theme1, 0.1);
+                                font-size: 12px;
+                                font-weight: 400;
+                            }
+
+                        }
+                    }
+
+                    & .accountList {
+                        & .accountListItem {
+                            & .accountListItemName {
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: $black;
+                            }
+                        }
+                    }
+
+                    & .deactivateAccountSpace {
+                        margin: 70px 0px 50px 0px;
+
+                        & .deactivateAccount {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $red;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    & .logoutPopup {
+        background-color: lighten($theme1, 42);
+        height: auto;
+
+        & .offcanvas-header {
+            & .offcanvas-title {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            & .closeBtn {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        & .offcanvas-body {
+            & .removePopUp {
+                & .innerText {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: $black;
+                }
+
+                & .removerWarn {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+
+            & .removeOption {
+                & .Confirm {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $black;
+                }
+
+                & .Cancel {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $theme1;
+                }
+
+            }
+
+        }
+    }
+
+    & .deactivateAccountConfirmationPopup {
+        background-color: lighten($theme1, 42);
+        height: auto;
+
+        & .offcanvas-header {
+            & .offcanvas-title {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            & .closeBtn {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        & .offcanvas-body {
+            & .removePopUp {
+                & .innerText {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: $black;
+                }
+
+                & .removerWarn {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+
+                & .removerWarn2 {
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: $danger;
+                }
+            }
+
+            & .removeOption {
+                & .Confirm {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $black;
+                }
+
+                & .Cancel {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $theme1;
+                }
+
+            }
+
+        }
+    }
+
+    & .otpForDeletionPopup {
+        background-color: $white;
+        height: auto;
+
+        & .offcanvas-header {
+            & .offcanvas-title {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            & .closeBtn {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        & .offcanvas-body {
+            & .loginSignupTitle {
+                font-weight: 800;
+                font-size: 24px;
+                color: $black;
+            }
+
+            & .inputLabel {
+                font-weight: 500;
+                font-size: 14px;
+                color: $gray-600;
+            }
+
+            & .needs-validation-otpForDeletionPopup {
+
+                & .mobileInput {
+                    & input {
+                        height: 48px;
+                        font-size: 14px;
+                        border-width: 2px;
+                        background-image: none !important;
+                        border-radius: 8px;
+
+                        &.phoneNumberInput {
+                            padding-left: 46px;
+                        }
+
+                        &.commonOtps {
+                            max-width: 48px !important;
+                        }
+
+                        &:valid {
+                            border-color: lighten($black, 80);
+                        }
+
+                        &::placeholder {
+                            color: lighten($black, 80);
+                        }
+
+                        &:-webkit-autofill,
+                        &:-webkit-autofill:hover,
+                        &:-webkit-autofill:focus {
+                            -webkit-text-fill-color: $black;
+                            transition: background-color 5000s ease-in-out 0s;
+                        }
+                    }
+
+                    & .resendOtpBox {
+                        & .otpTiming {
+                            font-weight: 450;
+                            font-size: 12px;
+                            color: $black;
+                        }
+
+                        & .otpResendBtn {
+                            font-weight: 700;
+                            font-size: 12px;
+                            color: $theme1;
+                        }
+                    }
+                }
+
+                & .invalid-feedback {
+                    font-weight: 450;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    & .deactivateAccountReason {
+        background-color: $white;
+        height: auto;
+
+        & .offcanvas-header {
+            & .offcanvas-title {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            & .closeBtn {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        & .offcanvas-body {
+            & .removePopUp {
+                & .innerText {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: $black;
+                }
+
+                & .removerWarn {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+
+            & .removeOption {
+                & .Confirm {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $black;
+                }
+
+                & .Cancel {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $theme1;
+                }
+
+            }
+
+            & .deactivateReason {
+                & .reasonList {
+                    background: $white;
+                    // border: 1px solid $gray-400;
+                    border-radius: 5px;
+
+                    & .otherOption {
+                        & .form-control {
+                            height: 0px !important;
+                            min-height: 0px !important;
+                            transition: 0.3s height;
+                            visibility: hidden;
+                            padding: 0px !important;
+                            margin-top: -4px;
+                            background-image: none;
+                        }
+                    }
+
+                    & input {
+                        &~label {
+                            padding-left: 28px;
+                            height: 20px;
+                            font-weight: 400;
+                            font-size: 14px;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 16px;
+                                height: 16px;
+                                border-radius: 50%;
+                                border: 1px solid $theme1;
+                                inset: 0px auto 0px 0px;
+                                margin: auto;
+                            }
+                        }
+
+                        &:checked~label {
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50%;
+                                inset: 0px auto 0px 3px;
+                                margin: auto;
+                                background-color: $theme1;
+                            }
+
+                            &~.otherOption {
+                                & .form-control {
+                                    transition: 0.3s height;
+                                    height: 150px !important;
+                                    max-height: 150px !important;
+                                    min-height: 0px;
+                                    visibility: visible;
+                                    margin-bottom: 12px;
+                                    padding: 10px !important;
+                                    margin-top: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & .accountSuccessfullyDeletedPopup {
+        background-color: $white;
+        height: auto;
+
+        & .offcanvas-body {
+            & .removePopUp {
+                & .innerText {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: $black;
+                }
+
+                & .removerWarn {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    & .offcanvas-backdrop {
+        opacity: 1;
+        backdrop-filter: blur(0px);
+        background-color: rgba($black, .4);
+        transition: 0.3s all;
+
+        &.show {
+            backdrop-filter: blur(10px);
+        }
+    }
+}
+
+//! ################  End Account Page  ###########################
+
+
+//? ################  edit Profile Page Start  ###########################
+
+[page-name="editprofile"] {
+    & .innerDialog {
+
+        & .innerContent {
+
+            & .body {
+
+                & .accountHeading {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $black;
+                }
+
+                & label {
+                    color: $gray-600;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+
+                & .form-control {
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $black;
+                    border-width: 2px;
+                    background-image: none;
+                }
+
+                & .submitBtnBox {
+                    & .btn {
+                        height: 48px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    & .ttOffcanvas {
+        background-color: lighten($theme1, 42);
+        height: auto;
+
+        & .offcanvas-header {
+            & .offcanvas-title {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            & .closeBtn {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        & .offcanvas-body {
+            & .removePopUp {
+                & .innerText {
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+
+                & .removerWarn {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+
+            & .removeOption {
+                & .Confirm {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $black;
+                }
+
+                & .Cancel {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $theme1;
+                }
+
+            }
+
+        }
+    }
+
+    & .offcanvas-backdrop {
+        opacity: 1;
+        backdrop-filter: blur(0px);
+        background-color: rgba($black, .4);
+        transition: 0.3s all;
+
+        &.show {
+            backdrop-filter: blur(10px);
+        }
+    }
+}
+
+//! ################  End edit Profile Page  ###########################
+
+//? ################  Saved Address Page Start  ###########################
+
+[page-name="saveaddress"] {
+    & .innerDialog {
+
+        & .innerContent {
+
+            & .body {
+
+                & .accountMinHeight {
+                    min-height: 100%;
+
+                    & .accountHeading {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: $black;
+                    }
+
+                    & .saveAddAddress {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $theme1;
+                        border: 2px solid $theme1;
+                        border-radius: 5px;
+                        padding: 15px;
+                    }
+
+                    & .orderCustomerName {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $black;
+                    }
+
+                    & .orderTRackSummary {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $gray-600;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    & .DeleteItemConfirmOffcanvas {
+        background-color: lighten($theme1, 42);
+        height: auto;
+
+        & .offcanvas-header {
+            & .offcanvas-title {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            & .closeBtn {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        & .offcanvas-body {
+            & .removePopUp {
+                & .innerText {
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+
+                & .removerWarn {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+            }
+
+            & .removeOption {
+                & .bagConfirm {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $black;
+                }
+
+                & .bagCancel {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: $theme1;
+                }
+
+            }
+
+        }
+    }
+
+    & .offcanvas-backdrop {
+        opacity: 1;
+        backdrop-filter: blur(0px);
+        background-color: rgba($black, .4);
+        transition: 0.3s all;
+
+        &.show {
+            backdrop-filter: blur(10px);
+        }
+    }
+}
+
+//! ################  End Saved Address Page  ###########################
+
+//? ################  Terms & Condition Page Start  ###########################
+
+[page-name="termscondition"] {
+    & .innerDialog {
+        & .innerContent {
+            & .body {
+
+                & .accountHeading {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $black;
+                }
+
+                & .settingBox {
+                    border-radius: 8px;
+
+                    & .policyTitle {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $black;
+                    }
+
+                    & .policyPara {
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: $gray-600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! ################  End Terms & Condition Page  ###########################
+
+//? ################  Privacy Policy Page Start  ###########################
+
+[page-name="privacypolicy"] {
+    & .innerDialog {
+        & .innerContent {
+            & .body {
+
+                & .accountHeading {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $black;
+                }
+
+                & .settingBox {
+                    border-radius: 8px;
+
+                    & .policyTitle {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $black;
+                    }
+
+                    & .policyPara {
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: $gray-600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! ################  End Privacy Policy Page  ###########################
+
+//? ################ FAQ's Page Start  ###########################
+
+[page-name="faq"] {
+    & .innerDialog {
+
+        & .innerContent {
+
+            & .body {
+
+                & .accountHeading {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $black;
+                }
+
+                & .settingBox {
+                    border-radius: 8px;
+                    border: 2px solid $gray-300;
+
+                    & .accordion {
+
+                        & .accordion-item {
+                            border: none;
+                        }
+
+                        & .accordion-header {
+                            & .accordion-button {
+                                padding: 0;
+                                color: lighten($black, 2);
+                                cursor: pointer;
+                                background: transparent;
+                                width: 100%;
+                                text-align: left;
+                                border: none;
+                                outline: none;
+                                font-weight: 700;
+                                font-size: 14px;
+                                transition: 0.4s;
+                                position: relative;
+
+                                &:focus {
+                                    box-shadow: none !important;
+                                }
+
+                                &:not(.collapsed) {
+                                    box-shadow: none !important;
+                                }
+
+                                &::after {
+                                    content: "";
+                                    font-size: 10px;
+                                    position: absolute;
+                                    color: #777;
+                                    float: right;
+                                    height: 9px;
+                                    width: 9px;
+                                    top: 50%;
+                                    right: 19px;
+                                    margin-left: 5px;
+                                    background-image: url(../img/icons/plusIcon.svg);
+                                    transform: translate(0, -50%);
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                }
+
+                                &:not(.collapsed)::after {
+                                    content: "";
+                                    font-size: 10px;
+                                    position: absolute;
+                                    color: #777;
+                                    float: right;
+                                    height: 2px;
+                                    width: 10px;
+                                    top: 50%;
+                                    right: 19px;
+                                    margin-left: 5px;
+                                    transform: translate(0, -50%);
+                                    background-image: url('../img/icons/subtractIcon.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                }
+
+                            }
+
+                        }
+
+                        & .accordion-body {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: lighten($black, 2);
+                        }
+                    }
+
+                    & .supportIcon {
+                        background: #F2F3F7;
+                        border-radius: 100%;
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    & .supportheading {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: ligthen($black, 2);
+                    }
+
+                    & .supportContent {
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: ligthen($black, 2);
+                    }
+
+                    & .policyTitle {
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: $black;
+                    }
+
+                    & .policyPara {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: lighten($black, 2);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+//! ################  End FAQ's Page  ###########################
+
+//? ################ Notifications Page Start  ###########################
+
+[page-name="notifications"] {
+    & .innerDialog {
+        & .innerContent {
+            & .body {
+                & .title {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: $black;
+                }
+
+                & .notificationGroup {
+                    & .notificationGroupTitle {
+                        background: lighten($theme1, 42);
+                        border: 1px solid $gray-200;
+                        height: 42px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: $black;
+                    }
+
+                    & .items {
+                        & .item {
+                            & input {
+                                &~label {
+                                    height: 48px;
+
+                                    & .notificationType {
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        color: $black;
+                                    }
+
+                                    & .toggleBtn {
+                                        width: 38.75px;
+                                        height: 17.22px;
+                                        background: $white;
+                                        border: 1px solid $gray-500;
+                                        border-radius: 30px;
+                                        padding: 2px;
+                                        position: relative;
+
+                                        &::before {
+                                            content: '';
+                                            width: 11px;
+                                            height: 11px;
+                                            border-radius: 50px;
+                                            position: absolute;
+                                            background-color: $gray-500;
+                                            transition: 0.3s all;
+                                        }
+
+                                        &::after {}
+                                    }
+                                }
+
+                                &:checked~label {
+                                    height: 48px;
+
+                                    & .notificationType {
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        color: $black;
+                                    }
+
+                                    & .toggleBtn {
+                                        width: 38.75px;
+                                        height: 17.22px;
+                                        background-color: lighten($success, 10);
+                                        border: 1px solid lighten($success, 10);
+                                        border-radius: 30px;
+                                        padding: 2px;
+                                        position: relative;
+
+                                        &::before {
+                                            content: '';
+                                            width: 11px;
+                                            height: 11px;
+                                            border-radius: 50px;
+                                            position: absolute;
+                                            background-color: $white;
+                                            transform: translateX(200%);
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:last-child {
+                                & label {
+                                    border-bottom: none !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! ################  End Notifications Page  ###########################

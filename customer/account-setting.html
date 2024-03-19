@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipshop | FlipKart</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#2873F0" />
+</head>
+<body>
+
+    <div class="container-fluid" page-name="accountSetting">
+        <div class="row innerDialog">
+            <div class="col-12 innerContent">
+                <div class="row header mx-0">
+                    <nav class="navbar col-12 bg-theme1 px-1">
+                        <div class="row navInner h-100 align-items-center mx-0">
+                            <div class="col-auto">
+                                <a href="account.html" class="btn backArrowWhite p-0 d-grid">
+                                    <img src="assets/img/icons/backArrowWhite.svg" alt="backArrowWhite">
+                                </a>
+                            </div>
+                            <div class="col-auto logo ps-0">
+                                <p class="header-heading text-white mb-0">Account Setting</p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="row body mx-0">
+                    <div class="col-12 ">
+                        <div class="row flex-column flex-nowrap accountMinHeight">
+                            <div class="col-12 flex-fill overflow-hidden-auto">
+                                <div class="row gap-3 mx-0">
+                                    <div class="col-12 px-0">
+                                        <div class="accountProfile pt-3 border-bottom pb-3">
+                                            <div class="row gap-2 text-center ">
+                                                <div class="col-12">
+                                                    <div class="accountHoldername">
+                                                        Md. Danish Imam
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="accountHolderEmail">
+                                                        danish.imam@anscommerce.com
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 pt-1">
+                                                    <div class="editProfile d-block">
+                                                        <a class="btn editProfileBtn text-black py-1 px-3" href="edit-profile.html">Edit Profile</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 px-0">
+                                                <div class="accountList pb-3 px-2 border-bottom">
+                                                    <a href="javascript:;" data-bs-title="Upload Images" data-bs-toggle="offcanvas" data-bs-target="#logoutPopup" class="row accountListItem align-items-center d-flex">
+                                                        <div class="col accountListItemName">
+                                                            <img src="assets/img/icons/logOutIcon.svg" class="img-fluid pe-2" alt="logOutIcon">
+                                                            Logout
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 px-0">
+                                                <div class="accountList pb-3 pt-3 px-2">
+                                                    <a href="javascript:;" data-bs-title="Upload Images" data-bs-toggle="offcanvas" data-bs-target="#deactivateAccountConfirmationPopup" class="row accountListItem align-items-center d-flex">
+                                                        <div class="col accountListItemName">
+                                                            <img src="assets/img/icons/deactivateIcon.svg" class="img-fluid pe-2" alt="deactivateIcon">
+                                                            Deactivate Account
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Logout Confirmation Popup -->
+        <div class="offcanvas offcanvas-bottom logoutPopup border-0" tabindex="-1" id="logoutPopup" aria-labelledby="logoutPopupLabel">
+            <div class="offcanvas-body p-0">
+                <div class="removePopUp  px-5 py-4 bg-white">
+                    <!-- <div class="innerText">Logout</div> -->
+                    <div class="removerWarn">Are you sure you want to log out</div>
+                </div>
+                <div class="removeOption bag-button bg-white">
+                    <div class="btn-group d-flex border-top rounded-0 ">
+                        <button type="button" class="btn border-0 rounded-0 Confirm border-end shadow-none">Yes</button>
+                        <button type="button" class="btn border-0 rounded-0 Cancel" data-bs-dismiss="offcanvas">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deactivate Account Confirmation Popup -->
+        <div class="offcanvas offcanvas-bottom deactivateAccountConfirmationPopup border-0" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" id="deactivateAccountConfirmationPopup" aria-labelledby="deactivateAccountConfirmationPopupLabel">
+            <div class="offcanvas-body p-0">
+                <div class="removePopUp  p-3 bg-white">
+                    <div class="row gap-2">
+                        <div class="col-12">
+                            <div class="row align-items-center d-flex">
+                                <div class="col innerText">Deactivate Account</div>
+                                <div class="col-auto"><a href="javascript:;" data-bs-dismiss="offcanvas">
+                                    <img src="assets/img/icons/closeIcon.svg" class="img-fluid" alt="closeIcon"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 removerWarn">We are sorry to see you leaving </div>
+                        <div class="col-12 removerWarn2">Note:- Once deactivated  all your account information will be deleted</div>
+                    </div>
+                </div>
+                <div class="removeOption bag-button bg-white">
+                    <div class="btn-group d-flex border-top rounded-0 ">
+                        <button type="button" class="btn border-0 rounded-0 Confirm border-end shadow-none" data-bs-toggle="offcanvas" data-bs-target="#otpForDeletionPopup">
+                            Deactivate Account
+                        </button>
+                        <button type="button" class="btn border-0 rounded-0 Cancel" data-bs-dismiss="offcanvas">
+                            Keep Account
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OTP For Deletion Popup -->
+        <div class="offcanvas offcanvas-bottom otpForDeletionPopup border-0" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" id="otpForDeletionPopup" aria-labelledby="otpForDeletionPopupLabel">
+            <div class="offcanvas-body p-0">
+                <form class="row g-3 needs-validation-otpForDeletionPopup" novalidate autocomplete="off">
+                    <div class="col-12">
+                        <div class="row mx-0">
+                            <div class="col-12">
+                                <div class="row align-items-center flex-fill me-n1">
+                                    <div class="col loginSignupTitle pt-4">Deactivation OTP</div>
+                                    <div class="col-auto">
+                                        <a href="javascript:;" data-bs-dismiss="offcanvas">
+                                            <img src="assets/img/icons/closeIcon.svg" class="img-fluid" alt="closeIcon">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-3">
+                            <div class="col-12 info">A 4-digit OTP has been sent to  &nbsp; <b>7042192283</b></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 input-group has-validation pt-1 mt-3 otpField">
+                                <label for="otp" class="row user-select-none mx-0 inputLabel flex-nowrap w-100 align-items-center pb-2">
+                                    <span class="col-auto pe-2 ">Enter OTP</span> 
+                                </label>
+                                <div class="row flex-nowrap w-100 mx-0">
+                                    <div class="col mobileInput">
+                                        <div class="row mx-0 gap-md-4 gap-4 otpFields" id="otp2">
+                                            <input required type="tel" class="col form-control px-0 shadow-none w-100 text-center fw-bold commonOtps otpInput" autocomplete="off" minlength="1" maxlength="1" id="" name="digit-1" />
+                                            <input required type="tel" class="col form-control px-0 shadow-none w-100 text-center fw-bold commonOtps otpInput2" autocomplete="off" minlength="1" maxlength="1" id="second" name="digit-2" />
+                                            <input required type="tel" class="col form-control px-0 shadow-none w-100 text-center fw-bold commonOtps otpInput3" autocomplete="off" minlength="1" maxlength="1" id="third" name="digit-3" />
+                                            <input required type="tel" class="col form-control px-0 shadow-none w-100 text-center fw-bold commonOtps otpInput4" autocomplete="off" minlength="1" maxlength="1" id="fourth" name="digit-4" />
+                                            <div class="invalid-feedback user-select-none px-0 mt-n2">Incorrect OTP, please re-enter the OTP that you received on your mobile.</div>
+                                        </div>
+                                        <div class="row resendOtpBox align-items-center my-3">
+                                            <a href="javascript:;" class="col-12 text-center otpResendBtn">Resend</a>
+                                            <div class="col-12 text-center otpTiming pt-2">Resend OTP in 00:22 Seconds</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row mx-0">
+                            <div class="col-12 px-0">
+                                <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-0" id="otpForDeletionPopupBtn" disabled type="submit">Verify</button>
+                                <a href="javascript:;" class="deactivateAccountReasonPopupOpen" hidden data-bs-toggle="offcanvas" data-bs-target="#deactivateAccountReason"></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- deactivate Account Reason -->
+        <div class="offcanvas offcanvas-bottom deactivateAccountReason border-0" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" id="deactivateAccountReason" aria-labelledby="deactivateAccountReasonLabel">
+            
+            <form class="offcanvas-body p-0 needs-validation-deactivateAccountReason" novalidate autocomplete="off">
+                <div class="removePopUp  p-3 bg-white">
+                    <div class="row gap-2">
+                        <div class="col-12">
+                            <div class="row align-items-center d-flex">
+                                <div class="col innerText">Why are you leaving?</div>
+                                <div class="col-auto">
+                                    <a href="javascript:;" data-bs-dismiss="offcanvas">
+                                        <img src="assets/img/icons/closeIcon.svg" class="img-fluid" alt="closeIcon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 removerWarn">Help us improve</div>
+                        <div class="col-12 deactivateReason">
+                            <div class="row gap-2 py-2 mx-0">
+                                <div class="col-12">
+                                    <div class="row reasonList px-2 py-1 position-relative">
+                                        <input type="radio" id="reasonList1" name="selectreason" hidden="" required="">
+                                        <label for="reasonList1" class="col-12 position-relative align-items-center d-flex">Lorem Ipsum is simply dummy text</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row reasonList px-2 py-1 position-relative">
+                                        <input type="radio" id="reasonList2" name="selectreason" hidden="" required="">
+                                        <label for="reasonList2" class="col-12 position-relative align-items-center d-flex">Lorem Ipsum is simply dummy text</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row reasonList px-2 py-1 position-relative">
+                                        <input type="radio" id="reasonList3" name="selectreason" hidden="" required="">
+                                        <label for="reasonList3" class="col-12 position-relative align-items-center d-flex">Lorem Ipsum is simply dummy text</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row reasonList px-2 py-1 position-relative">
+                                        <input type="radio" id="reasonList4" name="selectreason" hidden="" required="">
+                                        <label for="reasonList4" class="col-12 position-relative align-items-center d-flex">Others</label>
+                                        <div class="otherOption col-12 px-0">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <textarea name="" id="" class="form-control shadow-none border-2 border"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="removeOption bag-button bg-white">
+                    <div class="btn-group d-flex">
+                        <button type="submit" class="btn btn-primary rounded-0 w-100 btnStyle2 user-select-none shadow-none" id="deactivateAccountReasonBtn" disabled>Confirm Deactivation</button>
+                        <a href="javascript:;" class="accountSuccessfullyDeletedPopupOpen" hidden data-bs-toggle="offcanvas" data-bs-target="#accountSuccessfullyDeletedPopup"></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+
+
+        <!-- Account Successfully Deleted Popup -->
+        <div class="offcanvas offcanvas-bottom accountSuccessfullyDeletedPopup border-0" tabindex="-1" id="accountSuccessfullyDeletedPopup" aria-labelledby="accountSuccessfullyDeletedPopupLabel">
+            <div class="offcanvas-body p-0">
+                <div class="removePopUp p-4 bg-white">
+                    <div class="innerText pb-3">Your account has been deactivated successfully</div>
+                    <div class="removerWarn">Thanks for using our product, We look forward to seeing you again</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

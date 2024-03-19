@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipshop | FlipKart</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#2873F0" />
+</head>
+<body>
+
+    <div class="container-fluid" page-name="payment">
+        <div class="row innerDialog">
+            <div class="col-12 innerContent">
+                <div class="row header mx-0">
+                    <nav class="navbar col-12 bg-theme1 px-1">
+                        <div class="row navInner h-100 align-items-center mx-0">
+                            <div class="col-auto">
+                                <a href="summary.html" class="btn backArrowWhite p-0 d-grid">
+                                    <img src="assets/img/icons/backArrowWhite.svg" alt="backArrowWhite">
+                                </a>
+                            </div>
+                            <div class="col-auto logo ps-0">
+                                <p class="header-heading text-white mb-0">Order Summary</p>
+                            </div>
+                        </div>
+                    </nav>
+                
+                </div>
+                <div class="row body mx-0">
+                    <di class="col-12 h-100">
+                        <form class="row h-100 flex-column flex-nowrap needs-validation-payment" novalidate autocomplete="off">
+                                    <div class="col-12 summaryBar">
+                                        <div class="row py-3 border-bottom flex-row-reverse flex-nowrap">
+                                            <div class="col px-0 text-center position-relative progressContent progressBar"><span class="bg-white position-relative px-2">Confirmation</span></div>
+                                            <div class="col px-0 text-center position-relative progressContent progressBar active"><span class="bg-white position-relative px-2">Payment</span></div>
+                                            <div class="col px-0 text-center position-relative progressContent progressBar"><span class="bg-white position-relative px-2">Summary</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 paymentOptionSection flex-fill overflow-hidden-auto">
+                                        <div class="row flex-column flex-nowrap paymentOptionSectionInner">
+                                            <div class="col-12 flex-fill overflow-hidden-auto">
+                                                <div class="row mx-n1">
+                                                    <div class="col-12 paymentHeading py-3">
+                                                        Payment Options
+                                                    </div>
+                                                    <div class="col-12 px-4">
+                                                        <div class="paymentOption">
+                                                                <div class="row gap-3">
+                                                                    <div class="col-12">
+                                                                        <div class="row paymentList px-3 py-1 position-relative">
+                                                                            <input type="radio" id="online" name="selectCategory" hidden required>
+                                                                            <label for="online" class="col-12 position-relative align-items-center d-flex">Online</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- <div class="col-12">
+                                                                        <div class="row paymentList px-3 py-1 position-relative">
+                                                                            <input type="radio" id="upi" name="selectCategory" hidden required>
+                                                                            <label for="upi" class="col-12 position-relative align-items-center d-flex">UPI</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="row paymentList px-3 py-1 position-relative">
+                                                                            <input type="radio" id="wallets" name="selectCategory" hidden required>
+                                                                            <label for="wallets" class="col-12 position-relative align-items-center d-flex">Wallets</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <div class="row paymentList px-3 py-1 position-relative">
+                                                                            <input type="radio" id="creditanddebic" name="selectCategory" hidden required>
+                                                                            <label for="creditanddebic" class="col-12 position-relative align-items-center d-flex">Credit / Debit / ATM Card</label>
+                                                                        </div>
+                                                                    </div> -->
+                                                                    <div class="col-12">
+                                                                        <div class="row paymentList px-3 py-1 position-relative">
+                                                                            <input type="radio" id="cashondelivery" name="selectCategory" hidden required>
+                                                                            <label for="cashondelivery" class="col-12 position-relative align-items-center d-flex">Cash on Delivery</label>
+                                                                        </div>
+                                                                        <div class="row pt-2 codWarning">Cash on delivery charges will be applied</div>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 priceDetails overflow-hidden">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="row py-2 flex-nowrap align-items-center">
+                                                            <div class="col bagDetailsHeading">Price Details</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 priceDetailBg">
+                                                        <div class="row  mx-1">
+                                                            <div class="col-12 item py-2 px-0 bagitemPrice">
+                                                                <div class="row flex-nowrap align-items-center itemInner">
+                                                                    <div class="col value">Item Total</div>
+                                                                    <div class="col-auto discountedPricing">₹ 134000 </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 item py-2 px-0 bagitemPrice">
+                                                                <div class="row flex-nowrap align-items-center itemInner">
+                                                                    <div class="col value">Discount</div>
+                                                                    <div class="col-auto discountedPricing discount">₹ 129000 </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 item py-2 px-0 bagitemPrice">
+                                                                <div class="row flex-nowrap align-items-center itemInner">
+                                                                    <div class="col value">Delivery Fee</div>
+                                                                    <div class="col-auto discountedPricing">₹ 0.00 </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 item py-2 px-0 bagitemPrice">
+                                                                <div class="row flex-nowrap align-items-center itemInner">
+                                                                    <div class="col value">COD Fee</div>
+                                                                    <div class="col-auto discountedPricing">₹ 0.00 </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 item py-2 px-0 bagitemPrice">
+                                                                <div class="row flex-nowrap align-items-center itemInner">
+                                                                    <div class="col discountedPricingTotal">Total</div>
+                                                                    <div class="col-auto discountedPricingTotal">₹ 105000</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 bagContinueBtn px-0">
+                                        <button type="submit" class="btn rounded-0 btn-primary w-100 btnStyle2 user-select-none shadow-none" id="paymentBtn" disabled>Continue Payment</button>
+                                    </div>
+
+                                    
+                        </form>
+                    </di>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipshop | FlipKart</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#2873F0" />
+</head>
+<body>
+    <div class="container-fluid" page-name="orderTrackAccept">
+        <div class="row innerDialog">
+            <div class="col-12 innerContent">
+                <div class="row header mx-0">
+                    <nav class="navbar col-12 bg-theme1 px-1">
+                        <div class="row navInner h-100 align-items-center mx-0">
+                            <div class="col-auto">
+                                <a href="orders.html" class="btn backArrowWhite p-0 d-grid">
+                                    <img src="assets/img/icons/backArrowWhite.svg" alt="backArrowWhite">
+                                </a>
+                            </div>
+                            <div class="col-auto logo ps-0">
+                                <p class="header-heading text-white mb-0">Order Detail</p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="row body mx-0">
+                    <div class="col-12">
+                        <div class="row gap-4">
+                            <div class="col-12 pt-3">
+                                <div class="estimatedDelivery p-2 text-center">
+                                    <div class="estimateTitle">
+                                        Estimated Delivery
+                                    </div>
+                                    <div class="estimateDate">
+                                        17 Nov 2022 - 20 Nov 2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 trackOrder py-2 px-3">
+                                <div class="row trackTitleID align-items-center flex-nowrap border-bottom mx-0 pb-2">
+                                    <div class="col trackTitle px-0">Track Order</div>
+                                    <div class="col-auto trackID px-0">#123456</div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-12">
+                                        <div class="row trackStatusCard flex-column-reverse">
+                                            <div class="col-12 item py-2 orderRejected">
+                                                <div class="row align-items-start flex-nowrap ms-0">
+                                                    <div class="col-auto trackStatusDot"></div>
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col-12 trackStatus">Order Rejected</div>
+                                                            <div class="col-12 trackStatusDate">Sat, 12th Nov, 2022, 11:22 am</div>
+                                                            <div class="col-12 trackStatusDate">Order Rejected by Seller</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 item py-2">
+                                                <div class="row align-items-start flex-nowrap ms-0">
+                                                    <div class="col-auto trackStatusDot"></div>
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col-12 trackStatus">Delivered</div>
+                                                            <div class="col-12 trackStatusDate">Thurs, 17th Nov, 2022</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 item py-2">
+                                                <div class="row align-items-start flex-nowrap ms-0">
+                                                    <div class="col-auto trackStatusDot"></div>
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col-12 trackStatus">Out for Delivery</div>
+                                                            <div class="col-12 trackStatusDate">Mon, 14th Nov, 2022, 01:00 am</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 item py-2 active">
+                                                <div class="row align-items-start flex-nowrap ms-0">
+                                                    <div class="col-auto trackStatusDot"></div>
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col-12 trackStatus">Ready to be Picked</div>
+                                                            <div class="col-12 trackStatusDate">Mon, 14th Nov, 2022, 01:00 am</div>
+                                                            <div class="col-12 cancelOrder pt-2">
+                                                                <a href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#orderCancelPopup" class="btn">Cancel Order</a>
+                                                            </div>
+                                                            <div class="col-12 pt-1 cancelWarning">Order cannot be cancelled once it is Ready to be picked</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 item py-2">
+                                                <div class="row align-items-start flex-nowrap ms-0">
+                                                    <div class="col-auto trackStatusDot"></div>
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col-12 trackStatus">Order Accepted</div>
+                                                            <div class="col-12 trackStatusDate">Sat, 12th Nov, 2022, 11:22 am</div>
+                                                            <div class="col-12 cancelOrder pt-2">
+                                                                <a href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#orderCancelPopup" class="btn">Cancel Order</a>
+                                                            </div>
+                                                            <div class="col-12 pt-1 cancelWarning">Order cannot be cancelled, once its ready to be picked</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 item py-2">
+                                                <div class="row align-items-start flex-nowrap ms-0">
+                                                    <div class="col-auto trackStatusDot"></div>
+                                                    <div class="col">
+                                                        <div class="row">
+                                                            <div class="col-12 trackStatus">Order Placed</div>
+                                                            <div class="col-12 trackStatusDate">Fri, 11th Nov, 2022, 09:22 am</div>
+                                                            <div class="col-12 cancelOrder pt-2">
+                                                                <a href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#orderCancelPopup" class="btn">Cancel Order</a>
+                                                            </div>
+                                                            <div class="col-12 pt-1 cancelWarning">Order cannot be cancelled, once its ready to be picked</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 needHelp">
+                                <div class="row needHelpInner py-2 border-top border-bottom mx-0">
+                                    <a href="javascript:;" class="col-12 btn">Need Help?</a>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-12">
+                                <div class="row mx-0">
+                                    <div class="col-12 orderTrackDetails px-0 pt-3">
+                                        <div class="row">
+                                            <div class="col-12 orderTrackItems pb-2">
+                                                Items
+                                            </div>
+                                            <div class="orderSpecification">
+                                                <ul class="m-0 ps-3 pe-0">
+                                                    <li class="orderSpecificationList">
+                                                        Apple iPhone 13 Mini, 6 GB RAM | 128 GB...
+                                                    </li>
+                                                    <li class="orderSpecificationList">
+                                                        20W USB-C Power Adapter
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row mx-0">
+                                    <div class="col-12 orderTrackUser border-top px-0 pt-3">
+                                        <div class="row">
+                                            <div class="col-12 orderTrackHeading pb-2 fw-bold">
+                                                Shipping Details
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="orderCustomerName">
+                                                            Md. Danish Imam
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="orderTRackSummary">
+                                                            Pocket 3, Mayur Vihar Phase 1, Near Mayur Vihar Metro, New Delhi-110091
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                        
+                            <div class="col-12 priceDetails overflow-hidden">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row py-2 flex-nowrap align-items-center">
+                                            <div class="col bagDetailsHeading fw-bold">Price Details</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 priceDetailBg">
+                                        <div class="row  mx-1">
+                                            <div class="col-12 item py-2 px-0 bagitemPrice">
+                                                <div class="row flex-nowrap align-items-center itemInner">
+                                                    <div class="col value">Item Total</div>
+                                                    <div class="col-auto discountedPricing">₹ 134000 </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 item py-2 px-0 bagitemPrice">
+                                                <div class="row flex-nowrap align-items-center itemInner">
+                                                    <div class="col value">Discount</div>
+                                                    <div class="col-auto discountedPricing discount">₹ 129000 </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 item py-2 px-0 bagitemPrice">
+                                                <div class="row flex-nowrap align-items-center itemInner">
+                                                    <div class="col value">Delivery Fee</div>
+                                                    <div class="col-auto discountedPricing">₹ 0.00 </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 item py-2 px-0 bagitemPrice">
+                                                <div class="row flex-nowrap align-items-center itemInner">
+                                                    <div class="col discountedPricingTotal">Total</div>
+                                                    <div class="col-auto discountedPricingTotal">₹ 105000</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 item px-0 orderTrackVoice py-2 rounded-1 mb-3">
+                                                <buttton class="btn text-center orderTrackVoiceBtn py-2 w-100" typp="button">Download Invoice</buttton>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Order Cancel Popup -->
+        <div class="offcanvas offcanvas-bottom orderCancelPopup border-0 px-0" tabindex="-1" id="orderCancelPopup" aria-labelledby="orderCancelPopupLabel">
+            <div class="offcanvas-body p-0">
+                <div class="removePopUp  px-5 py-4 bg-white">
+                    <!-- <div class="innerText">
+                        Remove Item
+                        
+                    </div> -->
+                    <div class="removerWarn">
+                        Are you sure you want to cancel this order
+                    </div>
+                </div>
+                <div class="removeOption bag-button bg-white">
+                    <div class="btn-group d-flex border-top rounded-0 flex-nowrap">
+                        <button type="button" class="btn col px-0 bagConfirm border-end rounded-0 border-0 shadow-none" autocomplete="off">Yes</button>
+                        <button type="button" class="btn col px-0 bagCancel rounded-0 border-0 shadow-none" data-bs-dismiss="offcanvas" autocomplete="off">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

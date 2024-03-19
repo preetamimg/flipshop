@@ -1,0 +1,213 @@
+body {
+    & .btnStyle1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 12px 32px;
+        gap: 10px;
+        border-radius: 8px;
+        background-color: lighten($theme1, 35) !important;
+        border-color: lighten($theme1, 35) !important;
+        color: $black !important;
+        font-weight: 700;
+        font-size: 16px;
+        &:active {
+            background-color: lighten($theme1, 35) !important;
+            border-color: lighten($theme1, 35) !important;
+            color: $black !important;
+        }
+        &:hover {
+            background-color: lighten($theme1, 10) !important;
+            border-color: lighten($theme1, 10) !important;
+            color: $white !important;
+        }
+        &:disabled,
+        &.disabled,
+        &[disabled] {
+            opacity: 1;
+            background-color: lighten($black, 80) !important;
+            border-color: lighten($black, 80) !important;
+            color: $black !important;
+        }
+    }
+    & .btnStyle2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 32px;
+        gap: 10px;
+        border-radius: 8px;
+        background-color: lighten($theme1, 0) !important;
+        border-color: lighten($theme1, 0) !important;
+        color: $white !important;
+        font-weight: 700;
+        font-size: 16px;
+        height: 44px;
+        &:active {
+            background-color: lighten($theme1, 0) !important;
+            border-color: lighten($theme1, 0) !important;
+            color: $white !important;
+        }
+        &:hover {
+            background-color: lighten($theme1, 10) !important;
+            border-color: lighten($theme1, 10) !important;
+            color: $white !important;
+        }
+        &:disabled,
+        &.disabled,
+        &[disabled] {
+            opacity: 1;
+            background-color: lighten($black, 80) !important;
+            border-color: lighten($black, 80) !important;
+            color: $white !important;
+        }
+    }
+    & .btnStyle2Second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 32px;
+        gap: 10px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 16px;
+        height: 44px;
+        background-color: lighten($gray-600, 0) !important;
+        border-color: lighten($gray-600, 0) !important;
+        color: $white !important;
+        &:active {
+            background-color: lighten($gray-600, 0) !important;
+            border-color: lighten($gray-600, 0) !important;
+            color: $white !important;
+        }
+        &:hover {
+            background-color: lighten($gray-600, 10) !important;
+            border-color: lighten($gray-600, 10) !important;
+            color: $white !important;
+        }
+        &:disabled,
+        &.disabled,
+        &[disabled] {
+            opacity: 1;
+            background-color: lighten($black, 80) !important;
+            border-color: lighten($black, 80) !important;
+            color: $white !important;
+        }
+    }
+    & .btnStyle2Second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 32px;
+        gap: 10px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 16px;
+        height: 44px;
+        background-color: lighten($gray-600, 0) !important;
+        border-color: lighten($gray-600, 0) !important;
+        color: $white !important;
+        &:active {
+            background-color: lighten($gray-600, 0) !important;
+            border-color: lighten($gray-600, 0) !important;
+            color: $white !important;
+        }
+        &:hover {
+            background-color: lighten($gray-600, 10) !important;
+            border-color: lighten($gray-600, 10) !important;
+            color: $white !important;
+        }
+        &:disabled,
+        &.disabled,
+        &[disabled] {
+            background-color: lighten($black, 80) !important;
+            border-color: lighten($black, 80) !important;
+            color: $white !important;
+        }
+    }
+    & .btnStyle2SecondOutline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 32px;
+        gap: 10px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 16px;
+        height: 44px;
+        border-width: 2px;
+        background-color: transparent !important;
+        border-color: lighten($gray-600, 0) !important;
+        color: lighten($gray-600, 0) !important;
+        &:active {
+            background-color: transparent !important;
+            border-color: lighten($gray-600, 0) !important;
+            color: lighten($gray-600, 0) !important;
+        }
+        &:hover {
+            background-color: transparent !important;
+            border-color: lighten($gray-600, 10) !important;
+            color: lighten($gray-600, 10) !important;
+        }
+        &:disabled,
+        &.disabled,
+        &[disabled] {
+            background-color: transparent !important;
+            border-color: lighten($black, 80) !important;
+            color: lighten($black, 80) !important;
+        }
+    }
+}
+@media only screen and (max-device-width: 600px) {
+    body {
+        & .btnStyle1 {
+            &:hover {
+                background-color: lighten($theme1, 35) !important;
+                border-color: lighten($theme1, 35) !important;
+                color: $black !important;
+            }
+            &:active {
+                background-color: lighten($theme1, 10) !important;
+                border-color: lighten($theme1, 10) !important;
+                color: $white !important;
+            }
+        }
+        & .btnStyle2 {
+            &:hover {
+                background-color: lighten($theme1, 0) !important;
+                border-color: lighten($theme1, 0) !important;
+                color: $white !important;
+            }
+            &:active {
+                background-color: lighten($theme1, 25) !important;
+                border-color: lighten($theme1, 25) !important;
+                color: $white !important;
+            }
+        }
+        & .btnStyle2Second {
+            &:hover {
+                background-color: lighten($gray-600, 0) !important;
+                border-color: lighten($gray-600, 0) !important;
+                color: $white !important;
+            }
+            &:active {
+                background-color: lighten($gray-600, 25) !important;
+                border-color: lighten($gray-600, 25) !important;
+                color: $white !important;
+            }
+        }
+        & .btnStyle2SecondOutline {
+            &:hover {
+                background-color: transparent !important;
+                border-color: lighten($gray-600, 0) !important;
+                color: lighten($gray-600, 0) !important;
+            }
+            &:active {
+                background-color: transparent !important;
+                border-color: lighten($gray-600, 25) !important;
+                color: lighten($gray-600, 25) !important;
+            }
+        }
+    }
+}

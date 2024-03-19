@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipshop | FlipKart</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#2873F0" />
+</head>
+<body>
+    
+
+    <div class="container-fluid vh-100" page-name="addItem">
+        <div class="row h-100 flex-column flex-nowrap">
+            <nav class="col-12 navbar d-block py-0 bg-white shadow-sm">
+                <div class="row navInner mx-0 h-100 align-items-center">
+                    <a href="javascript:;"onClick="history.go(-1); return false;" class="col-auto backArrow">
+                        <img src="assets/img/icons/backArrow.svg" alt="backArrow">
+                    </a>
+                    <div class="col navTitle ps-0 text-theme1">Add Item</div>
+                </div>
+            </nav>
+            <div class="col-12 body flex-fill">
+                <div class="row scrollPart h-100 justify-content-center">
+                    <div class="col-12 h-100 scrollInner">
+                        <form class="row needs-validation-addItem h-100 flex-column pt-4 flex-nowrap overflow-hidden" novalidate autocomplete="off">
+                            <div class="col-12 align-self-center flex-fill overflow-auto">
+                                <div class="row">
+                                    <div class="col-12 input-group has-validation">
+                                        <div class="row w-100 mx-0 gy-2">
+                                            <div class="col-12 customInput">
+                                                <input class="form-control shadow-none w-100" type="text" id="productName" pattern="[a-zA-Z]{0,50}[a-zA-Z]{0,50}[0-9]{0,9}" minlength="2" maxlength="50" placeholder="Product Name" required autocomplete="off">
+                                                <div class="invalid-feedback user-select-none">Please enter product name.</div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row customInput">
+                                                    <input type="text" class="form-control" hidden>
+                                                    <label class="col-12">
+                                                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#selectCategory" class="row productCatBtn form-control mx-0 shadow-none">
+                                                            <div class="col ps-0 pcText">Product Category</div>
+                                                            <div class="col-auto pe-0 pcIcon"><img src="assets/img/icons/rightArrow.svg" alt="rightArrow"></div>
+                                                        </a>
+                                                    </label>
+                                                    <div class="invalid-feedback user-select-none">Please choose product category.</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row dividerBar mx-1 py-1">
+                                                    <div class="col-12"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row mx-0 customInput position-relative">
+                                                    <input type="file" id="uploadImg" hidden class="form-control" required accept="image/*" multiple onchange="showPreview(event);">
+                                                    <div class="position-absolute questionMarkForUpload" data-bs-title="Upload Images" data-bs-content="These photos will be visible to your customers on your website along with the product details in the same ordering as you list here." data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip"><img src="assets/img/icons/questionMark.svg" alt="questionMark"></div>
+                                                    <label for="uploadImg" class="col-12 uploadImg bg-white form-control d-flex align-items-center justify-content-center gap-2">
+                                                        <span><img src="assets/img/icons/plus.svg" alt="plus"></span>
+                                                        <span>Upload Images</span>
+                                                        <img class="w-100 h-100 d-none rounded" id="uploadImg-preview">
+                                                        <button type="button" class="removeImg d-none bg-white border-0 position-absolute"><img src="assets/img/icons/close.png" alt="close"></button>
+                                                    </label>
+                                                    <div class="invalid-feedback user-select-none">Please upload product image.</div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-6 customInput">
+                                                <input class="form-control shadow-none w-100" type="tel" id="MRP" pattern="[0-9]{1,7}" minlength="1" maxllength="9999999" onkeypress="return isNumberKey(event)" placeholder="₹ MRP" required autocomplete="off">
+                                                <div class="invalid-feedback user-select-none">Please enter MRP.</div>
+                                            </div>
+                                            <div class="col-6 customInput discountedInput position-relative">
+                                                <input class="form-control shadow-none w-100" type="tel" id="discount" pattern="[0-9]{1,7}" minlength="1" maxllength="9999999" onkeypress="return isNumberKey(event)" placeholder="₹ Discounted Price" autocomplete="off">
+                                                <div class="position-absolute questionMark d-grid" data-bs-title="Discounted Price" data-bs-content="These photos will be visible to your customers on your website along with the product details in the same ordering as you list here." data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip"><img src="assets/img/icons/questionMark.svg" alt="questionMark"></div>
+                                            </div>
+                                            <div class="col-12 dynamicPartOfFields">
+                                                <div class="row gy-2 pb-4">
+                                                    <div class="col-12">
+                                                        <div class="row">
+                                                            <div class="col-12 customInput position-relative productDes">
+                                                                <textarea class="form-control shadow-none w-100" name="productDes" maxlength="1000" id="productDes" rows="5" placeholder="Add a product desription"></textarea>
+                                                                <label for="productDes" class="bg-white position-absolute"><span>0</span>/1000</label>
+                                                                <div class="position-absolute questionMark d-grid" data-bs-title="Product Description" data-bs-content="These photos will be visible to your customers on your website along with the product details in the same ordering as you list here." data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip"><img src="assets/img/icons/questionMark.svg" alt="questionMark"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="row dividerBar mx-1 py-1">
+                                                            <div class="col-12"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 customInput">
+                                                        <input class="form-control shadow-none w-100" type="text" id="itemColor" placeholder="Colour" autocomplete="off">
+                                                        <div class="invalid-feedback user-select-none">Please enter product colour.</div>
+                                                    </div>
+                                                    <div class="col-6 customInput">
+                                                        <input class="form-control shadow-none w-100" type="text" id="itemSize" placeholder="Size" autocomplete="off">
+                                                        <div class="invalid-feedback user-select-none">Please enter product size.</div>
+                                                    </div>
+                                                    <div class="col-6 customInput">
+                                                        <input class="form-control shadow-none w-100" type="text" id="itemPower" placeholder="Power" autocomplete="off">
+                                                        <div class="invalid-feedback user-select-none">Please enter product Power.</div>
+                                                    </div>
+                                                    <div class="col-6 customInput">
+                                                        <input class="form-control shadow-none w-100" type="text" id="itemBattery" placeholder="Battery" autocomplete="off">
+                                                        <div class="invalid-feedback user-select-none">Please enter product Battery.</div>
+                                                    </div>
+                                                    <div class="col-6 customInput">
+                                                        <input class="form-control shadow-none w-100" type="text" id="itemMaterial" placeholder="Material" autocomplete="off">
+                                                        <div class="invalid-feedback user-select-none">Please enter product Material.</div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="row customInput mx-0">
+                                                            <div class="col-12 form-control mx-0 shadow-none addAttributesBtn">
+                                                                <div class="row h-100 align-items-center justify-content-center">
+                                                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#AddAttributes" class="col justify-content-center ms-3 mb-n1 gap-1 d-inline-flex align-items-center"><span class="d-inline-grid mt-n1"><img src="assets/img/icons/plus-blue.svg" alt="plus-blue"></span><span class="d-inline-grid">Add/Remove Features</span></a>
+                                                                    <div class="col-auto" data-bs-title="Attributes" data-bs-content="You can add more attributes here, to give better understanding about of product to your customers" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip"><img src="assets/img/icons/questionMark.svg" alt="questionMark"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="row dividerBar mx-1 py-1">
+                                                            <div class="col-12"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="row customInput mx-0">
+                                                            <div class="col-12 px-0 addVariantsBtn form-control shadow-none">
+                                                                <div class="row align-items-center justify-content-center variantBtn mx-0">
+                                                                    <div class="col text-dark">Variants</div>
+                                                                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#AddVariants" class="col-auto justify-content-center ms-3 mb-n1 gap-1 d-inline-flex align-items-center"><span class="d-inline-grid mt-n1"><img src="assets/img/icons/plus-blue.svg" alt="plus-blue"></span><span class="d-inline-grid">Add Variants</span></a>
+                                                                    <div class="col-auto ps-0" data-bs-title="Add Variants" data-bs-content="You can add more attributes here, to give better understanding about of product to your customers" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip"><img src="assets/img/icons/questionMark.svg" alt="questionMark"></div>
+                                                                </div>
+                                                                <div class="row variantsCard mx-2 pt-3">
+                                                                    <div class="col-12 variantCardBtn collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button">
+                                                                        <div class="row variantBtnInner align-items-center flex-nowrap">
+                                                                            <div class="col-auto variantIcon p-0">
+                                                                                <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                            </div>
+                                                                            <div class="col variantBtnContent">
+                                                                                <div class="row variantBtnContentInner">
+                                                                                    <div class="col-auto pb-2">Mivi Play 5 W Bluetooth Speaker</div>
+                                                                                </div>
+                                                                                <div class="row variantBtnSecondInner align-items-center flex-nowrap">
+                                                                                    <div class="col-auto variantBtnPrice">₹2,149</div>
+                                                                                    <span class="col-auto variantBtnDivider px-0"></span>
+                                                                                    <div class="col-auto variantBtnColor">Colour :5</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-auto variantCardToggle">
+                                                                                <img src="assets/img/icons/rightArrow.svg" alt="rightArrow">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="collapse col-12 variantContent" id="collapseExample">
+                                                                        <div class="card card-body variantBody ps-3 pe-0 border-0 d-flex flex-column gap-2">
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                                </div>
+                                                                                <div class="col variantBodyContent">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Black, 5000 mAh, Metal</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a href="javascript:;" class="col-auto variantCardDeleteBtn">Delete</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerBlue.svg" alt="speakerBlue">
+                                                                                </div>
+                                                                                <div class="col variantBodyContent">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Blue, 5000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a href="javascript:;" class="col-auto variantCardDeleteBtn">Delete</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerOrange.svg" alt="speakerOrange">
+                                                                                </div>
+                                                                                <div class="col variantBodyContent">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Orange, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a href="javascript:;" class="col-auto variantCardDeleteBtn">Delete</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerTurquies.svg" alt="speakerTurquies">
+                                                                                </div>
+                                                                                <div class="col variantBodyContent">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Turquise, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,090</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a href="javascript:;" class="col-auto variantCardDeleteBtn">Delete</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerWhite.svg" alt="speakerWhite">
+                                                                                </div>
+                                                                                <div class="col variantBodyContent">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">White, 5000 mAh, Plastic</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a href="javascript:;" class="col-auto variantCardDeleteBtn">Delete</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="row dividerBar mx-1 py-1">
+                                                            <div class="col-12"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="row customInput mx-0">
+                                                            <div class="col-12 policy form-control shadow-none">
+                                                                <div class="row flex-nowrap py-1 mb-2">
+                                                                    <div class="col headings">Policy</div>
+                                                                    <div class="col-auto" data-bs-title="Policy" data-bs-content="You can add more attributes here, to give better understanding about of product to your customers" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip"><img src="assets/img/icons/questionMark.svg" alt="questionMark"></div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-12 d-flex flex-column gap-2">
+                                                                        <div class="row policyItem">
+                                                                            <div class="col policyText">Apply Store’s Exchange Policy</div>
+                                                                            <div class="col-auto policyToggle" data-bs-toggle="modal" data-bs-target="#SetExchangePolicy">
+                                                                                <input name="exchangePolicy" id="exchangePolicyYes" type="radio" hidden>
+                                                                                <label for="exchangePolicyYes" class="position-relative">Yes</label>
+                                                                            </div>
+                                                                            <div class="col-auto policyToggle ps-0 me-4">
+                                                                                <input name="exchangePolicy" id="exchangePolicyNo" type="radio" hidden>
+                                                                                <label for="exchangePolicyNo" class="position-relative">No</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row policyItem">
+                                                                            <div class="col policyText">Accept Returns</div>
+                                                                            <div class="col-auto policyToggle" data-bs-toggle="modal" data-bs-target="#SetReturnPolicy">
+                                                                                <input name="acceptReturns" id="acceptReturnsYes" type="radio" hidden>
+                                                                                <label for="acceptReturnsYes" class="position-relative">Yes</label>
+                                                                            </div>
+                                                                            <div class="col-auto policyToggle ps-0 me-4">
+                                                                                <input name="acceptReturns" id="acceptReturnsNo" type="radio" hidden>
+                                                                                <label for="acceptReturnsNo" class="position-relative">No</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row policyItem">
+                                                                            <div class="col-12">
+                                                                                <div class="row">
+                                                                                    <div class="col policyText">Give Product Warranty</div>
+                                                                                    <div class="col-auto policyToggle">
+                                                                                        <input name="giveProductWarranty" id="giveProductWarrantyYes" type="radio" hidden>
+                                                                                        <label for="giveProductWarrantyYes" class="position-relative">Yes</label>
+                                                                                    </div>
+                                                                                    <div class="col-auto policyToggle ps-0 me-4">
+                                                                                        <input name="giveProductWarranty" id="giveProductWarrantyNo" type="radio" hidden>
+                                                                                        <label for="giveProductWarrantyNo" class="position-relative">No</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12">
+                                                                                <div class="row customPolicyBox ms-0 position-relative align-items-center mt-1">
+                                                                                    <div class="col customPolicyName">Warranty Upto</div>
+                                                                                    <div class="col-auto customPolicyInput">
+                                                                                        <input type="tel" onkeypress="return isNumberKey(event)" pattern="[0-9]{0,2}" minlength="0" maxlength="2" class="text-center" placeholder="Months">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row policyItem">
+                                                                            <div class="col policyText">Give Free Repairs</div>
+                                                                            <div class="col-auto policyToggle">
+                                                                                <input name="giveFreeRepairs" id="giveFreeRepairsYes" type="radio" hidden>
+                                                                                <label for="giveFreeRepairsYes" class="position-relative">Yes</label>
+                                                                            </div>
+                                                                            <div class="col-auto policyToggle ps-0 me-4">
+                                                                                <input name="giveFreeRepairs" id="giveFreeRepairsNo" type="radio" hidden>
+                                                                                <label for="giveFreeRepairsNo" class="position-relative">No</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 pt-3">
+                                                        <div class="row mx-0">
+                                                            <a href="javascript:;" class="col-12 bg-white d-flex justify-content-center align-items-center deleteProduct">Delete Product</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 py-3 bg-white">
+                                <div class="row mx-0">
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" disabled id="loginBtn" type="submit">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Dynamic Tooltip Popup -->
+        <div class="offcanvas offcanvas-bottom ttOffcanvas border-0" tabindex="-1" id="offcanvasTooltip" aria-labelledby="offcanvasTooltipLabel">
+            <div class="offcanvas-header bg-theme1">
+                <h5 class="offcanvas-title text-white" id="offcanvasTooltipLabel"></h5>
+                <div class="closeBtn d-grid" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="assets/img/icons/closeWhite.svg" alt="closeWhite">
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="innerText p-3 bg-white"></div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal selectCategory -->
+        <div class="modal fade" id="selectCategory" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="selectCategoryLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid vh-100" page-name="addItem">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <nav class="col-12 navbar d-block py-0 bg-white shadow-sm">
+                                    <div class="row navInner mx-0 h-100 align-items-center">
+                                        <a href="javascript:;" class="col-auto backArrow" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="assets/img/icons/backArrow.svg" alt="backArrow">
+                                        </a>
+                                        <div class="col navTitle ps-0 text-theme1">Select Category</div>
+                                    </div>
+                                </nav>
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <form class="row needs-validation-selectCategory h-100 flex-column flex-nowrap" novalidate autocomplete="off">
+                                                <div class="col-12 align-self-center flex-fill overflow-auto py-3">
+                                                    <div class="row gy-3">
+                                                        <div class="col-12">
+                                                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#addNewCategory" class="row mx-0 addNewCat flex-row align-items-center bg-white position-relative">
+                                                                <div class="col-auto addNewCatTitle text-dark">Add New Category</div>
+                                                                <div class="col-auto addNewCatIcon ps-0 mt-n1"><img src="assets/img/icons/plus-blue.svg" alt="plus-blue"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-12 customInput position-relative" data-bs-toggle="modal" data-bs-target="#searchCategory">
+                                                            <input class="form-control shadow-none w-100" type="search" id="search" placeholder="Search" autocomplete="on" readonly>
+                                                            <label for="search" class="position-absolute d-grid align-items-center"><img src="assets/img/icons/search-blue.svg" alt="search-blue"></label>
+                                                        </div>
+                                                        <div class="accordion d-flex flex-column gap-2" id="accordionExample">
+                                                            <div class="accordion-item overflow-hidden border-0">
+                                                                <h2 class="accordion-header position-relative" id="headingOne">
+                                                                    <button class="accordion-button shadow-none bg-white ps-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                        <span class="text-dark">Speakers</span>
+                                                                    </button>
+                                                                    <a class="position-absolute top-0 bottom-0 d-inline-flex gap-1 align-items-center" href="javascript:;" data-bs-toggle="modal" data-bs-target="#addSubCategory">
+                                                                        <span class="mt-n1"><img src="assets/img/icons/plus-blue.svg" alt="plus-blue"></span> 
+                                                                        <span>Add More</span>
+                                                                    </a>
+                                                                </h2>
+                                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                                    <div class="accordion-body">
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="products1" name="selectCategory" hidden required>
+                                                                                    <label for="products1" class="col-12 position-relative align-items-center d-flex">Bluetooth Speakers</label>
+                                                                                </div>
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="products2" name="selectCategory" hidden required>
+                                                                                    <label for="products2" class="col-12 position-relative align-items-center d-flex">Home Audio Speakers</label>
+                                                                                </div>
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="products3" name="selectCategory" hidden required>
+                                                                                    <label for="products3" class="col-12 position-relative align-items-center d-flex">Soundbars</label>
+                                                                                </div>
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="products4" name="selectCategory" hidden required>
+                                                                                    <label for="products4" class="col-12 position-relative align-items-center d-flex">Home Theatres</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-item overflow-hidden border-0">
+                                                                <h2 class="accordion-header position-relative" id="headingTwo">
+                                                                    <button class="accordion-button shadow-none bg-white ps-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                                        <span class="text-dark">Mobiles</span>
+                                                                    </button>
+                                                                    <a class="position-absolute top-0 bottom-0 d-inline-flex gap-1 align-items-center" href="javascript:;" data-bs-toggle="modal" data-bs-target="#addSubCategory">
+                                                                        <span class="mt-n1"><img src="assets/img/icons/plus-blue.svg" alt="plus-blue"></span> 
+                                                                        <span>Add More</span>
+                                                                    </a>
+                                                                </h2>
+                                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                                    <div class="accordion-body">
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="product1" name="selectCategory" hidden required>
+                                                                                    <label for="product1" class="col-12 position-relative align-items-center d-flex">Bluetooth Speakers</label>
+                                                                                </div>
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="product2" name="selectCategory" hidden required>
+                                                                                    <label for="product2" class="col-12 position-relative align-items-center d-flex">Home Audio Speakers</label>
+                                                                                </div>
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="product3" name="selectCategory" hidden required>
+                                                                                    <label for="product3" class="col-12 position-relative align-items-center d-flex">Soundbars</label>
+                                                                                </div>
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="product4" name="selectCategory" hidden required>
+                                                                                    <label for="product4" class="col-12 position-relative align-items-center d-flex">Home Theatres</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-item overflow-hidden border-0">
+                                                                <h2 class="accordion-header position-relative" id="headingThree">
+                                                                    <button class="accordion-button shadow-none bg-white ps-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                                        <span class="text-dark">Laptops</span>
+                                                                    </button>
+                                                                    <a class="position-absolute top-0 bottom-0 d-inline-flex gap-1 align-items-center" href="javascript:;" data-bs-toggle="modal" data-bs-target="#addSubCategory">
+                                                                        <span class="mt-n1"><img src="assets/img/icons/plus-blue.svg" alt="plus-blue"></span> 
+                                                                        <span>Add More</span>
+                                                                    </a>
+                                                                </h2>
+                                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                                    <div class="accordion-body">
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="produc1" name="selectCategory" hidden required>
+                                                                                    <label for="produc1" class="col-12 position-relative align-items-center d-flex">Bluetooth Speakers</label>
+                                                                                </div>
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="produc2" name="selectCategory" hidden required>
+                                                                                    <label for="produc2" class="col-12 position-relative align-items-center d-flex">Home Audio Speakers</label>
+                                                                                </div>
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="produc3" name="selectCategory" hidden required>
+                                                                                    <label for="produc3" class="col-12 position-relative align-items-center d-flex">Soundbars</label>
+                                                                                </div>
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="produc4" name="selectCategory" hidden required>
+                                                                                    <label for="produc4" class="col-12 position-relative align-items-center d-flex">Home Theatres</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-item overflow-hidden border-0">
+                                                                <h2 class="accordion-header position-relative" id="headingFour">
+                                                                    <button class="accordion-button shadow-none bg-white ps-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                                        <span class="text-dark">Smart Watch</span>
+                                                                    </button>
+                                                                    <a class="position-absolute top-0 bottom-0 d-inline-flex gap-1 align-items-center" href="javascript:;" data-bs-toggle="modal" data-bs-target="#addSubCategory">
+                                                                        <span class="mt-n1"><img src="assets/img/icons/plus-blue.svg" alt="plus-blue"></span> 
+                                                                        <span>Add More</span>
+                                                                    </a>
+                                                                </h2>
+                                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                                    <div class="accordion-body">
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="prod1" name="selectCategory" hidden required>
+                                                                                    <label for="prod1" class="col-12 position-relative align-items-center d-flex">Bluetooth Speakers</label>
+                                                                                </div>
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="prod2" name="selectCategory" hidden required>
+                                                                                    <label for="prod2" class="col-12 position-relative align-items-center d-flex">Home Audio Speakers</label>
+                                                                                </div>
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="prod3" name="selectCategory" hidden required>
+                                                                                    <label for="prod3" class="col-12 position-relative align-items-center d-flex">Soundbars</label>
+                                                                                </div>
+                                                                                <div class="row productsList position-relative">
+                                                                                    <input type="radio" class="" id="prod4" name="selectCategory" hidden required>
+                                                                                    <label for="prod4" class="col-12 position-relative align-items-center d-flex">Home Theatres</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 py-3 bg-white">
+                                                    <div class="row mx-0">
+                                                        <div class="col-12">
+                                                            <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" data-bs-dismiss="modal" aria-label="Close" disabled id="selectCategoryBtn" type="submit">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal addNewCategory -->
+        <div class="modal fade" id="addNewCategory" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="addNewCategoryLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <form class="modal-content bg-transparent needs-validation-addNewCategory" novalidate autocomplete="off">
+                    <div class="modal-header p-0">
+                        <nav class="col-12 navbar d-block py-0 bg-theme1 shadow-sm">
+                            <div class="row navInner mx-0 h-100 align-items-center">
+                                <div class="col navTitle text-white">Add New Category</div>
+                                <a href="javascript:;" class="col-auto closeModal" data-bs-toggle="modal" data-bs-target="#selectCategory">
+                                    <img src="assets/img/icons/plus-white.svg" alt="plus-white">
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="container-fluid" page-name="addItem">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <div class="row h-100 flex-column py-3">
+                                                <div class="col-12 align-self-center flex-fill">
+                                                    <div class="row gy-3">
+                                                        <div class="col-12 customInput position-relative">
+                                                            <input class="form-control shadow-none w-100" type="text" required placeholder="Category Name" autocomplete="off">
+                                                        </div>
+                                                        <div class="col-12 customInput position-relative">
+                                                            <input class="form-control shadow-none w-100" type="text" required placeholder="Sub-category Name" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer p-0">
+                        <div class="col-12 py-2 bg-white m-0">
+                            <div class="row mx-0 justify-content-center">
+                                <div class="col-10">
+                                    <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" data-bs-toggle="modal" data-bs-target="#selectCategory" id="addNewCategoryBtn" disabled type="submit">Submit Request</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Modal SetExchangePolicy -->
+        <div class="modal fade overflow-hidden" id="SetExchangePolicy" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="SetExchangePolicyLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <form class="modal-content bg-transparent needs-validation-SetExchangePolicy" novalidate autocomplete="off">
+                    <div class="modal-header p-0">
+                        <nav class="col-12 navbar d-block py-0 bg-theme1 shadow-sm">
+                            <div class="row navInner mx-0 h-100 align-items-center">
+                                <div class="col navTitle text-white d-flex align-items-center gap-2">Set Exchange Policy <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip3" class="mt-n1"><img src="assets/img/icons/questionMarkWhite.svg" alt="questionMarkWhite"></span></div>
+                                <a href="javascript:;" class="col-auto closeModal" data-bs-dismiss="modal">
+                                    <img src="assets/img/icons/plus-white.svg" alt="plus-white">
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="container-fluid" page-name="addItem">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <div class="row customInput mx-0 my-3">
+                                                <div class="col-12 policy form-control shadow-none">
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex flex-column gap-2">
+                                                            <div class="row policyItem">
+                                                                <div class="col-12">
+                                                                    <div class="row customPolicyBox2">
+                                                                        <div class="col policyText">Accept exchange upto</div>
+                                                                        <div class="col-auto customPolicyInput">
+                                                                            <input type="tel" onkeypress="return isNumberKey(event)" pattern="[0-9]{0,2}" minlength="0" maxlength="2" class="text-center" placeholder="Days" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row policyItem">
+                                                                <div class="col policyText">Accept exchange without box</div>
+                                                                <div class="col-auto policyToggle">
+                                                                    <input name="exchangeWithoutBox" id="exchangeWithoutBoxYes" type="radio" hidden required>
+                                                                    <label for="exchangeWithoutBoxYes" class="position-relative">Yes</label>
+                                                                </div>
+                                                                <div class="col-auto policyToggle ps-0 me-4">
+                                                                    <input name="exchangeWithoutBox" id="exchangeWithoutBoxNo" type="radio" hidden required>
+                                                                    <label for="exchangeWithoutBoxNo" class="position-relative">No</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row policyItem">
+                                                                <div class="col-12">
+                                                                    <div class="row customPolicyBox2">
+                                                                        <div class="col policyText">Charge exchange fee</div>
+                                                                        <div class="col-auto customPolicyInput">
+                                                                            <input type="tel" onkeypress="return isNumberKey(event)" pattern="[0-9]{0,2}" minlength="0" maxlength="2" class="text-center" placeholder="Price" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer p-0">
+                        <div class="col-12 py-2 bg-white m-0">
+                            <div class="row mx-0 justify-content-center">
+                                <div class="col-10">
+                                    <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" data-bs-dismiss="modal" id="SetExchangePolicyBtn" disabled type="submit">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>        
+            <!-- Dynamic Tooltip Popup -->
+            <div class="offcanvas offcanvas-bottom ttOffcanvas border-0" tabindex="-1" id="offcanvasTooltip3" aria-labelledby="offcanvasTooltipLabel">
+                <div class="offcanvas-header bg-theme1">
+                    <h5 class="offcanvas-title text-white" id="offcanvasTooltipLabel">Set Exchange Policy</h5>
+                    <div class="closeBtn d-grid" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <img src="assets/img/icons/closeWhite.svg" alt="closeWhite">
+                    </div>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="innerText p-3 bg-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vitae? Doloribus, iure deserunt eos reiciendis earum atque ea! Earum dolorem odio at, laudantium in facilis eaque amet? Natus, distinctio eligendi!</div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal SetReturnPolicy -->
+        <div class="modal fade" id="SetReturnPolicy" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="SetReturnPolicyLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <form class="modal-content bg-transparent needs-validation-SetReturnPolicy" novalidate autocomplete="off">
+                    <div class="modal-header p-0">
+                        <nav class="col-12 navbar d-block py-0 bg-theme1 shadow-sm">
+                            <div class="row navInner mx-0 h-100 align-items-center">
+                                <div class="col navTitle text-white d-flex align-items-center gap-2">Set Return Policy <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip4" class="mt-n1"><img src="assets/img/icons/questionMarkWhite.svg" alt="questionMarkWhite"></span></div>
+                                <a href="javascript:;" class="col-auto closeModal" data-bs-dismiss="modal">
+                                    <img src="assets/img/icons/plus-white.svg" alt="plus-white">
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="container-fluid" page-name="addItem">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <div class="row customInput mx-0 my-3">
+                                                <div class="col-12 policy form-control shadow-none">
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex flex-column gap-2">
+                                                            <div class="row policyItem">
+                                                                <div class="col-12">
+                                                                    <div class="row customPolicyBox2">
+                                                                        <div class="col policyText">Accept returns upto</div>
+                                                                        <div class="col-auto customPolicyInput">
+                                                                            <input type="tel" onkeypress="return isNumberKey(event)" pattern="[0-9]{0,2}" minlength="0" maxlength="2" class="text-center" placeholder="Days" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row policyItem">
+                                                                <div class="col policyText">Accept returns without box</div>
+                                                                <div class="col-auto policyToggle">
+                                                                    <input name="returnsWithoutBox" id="returnsWithoutBoxYes" type="radio" hidden required>
+                                                                    <label for="returnsWithoutBoxYes" class="position-relative">Yes</label>
+                                                                </div>
+                                                                <div class="col-auto policyToggle ps-0 me-4">
+                                                                    <input name="returnsWithoutBox" id="returnsWithoutBoxNo" type="radio" hidden required>
+                                                                    <label for="returnsWithoutBoxNo" class="position-relative">No</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row policyItem">
+                                                                <div class="col-12">
+                                                                    <div class="row customPolicyBox2">
+                                                                        <div class="col policyText">Minimum return fee</div>
+                                                                        <div class="col-auto customPolicyInput">
+                                                                            <input type="tel" onkeypress="return isNumberKey(event)" pattern="[0-9]{0,2}" minlength="0" maxlength="2" class="text-center" placeholder="₹10" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row policyItem">
+                                                                <div class="col-12">
+                                                                    <div class="row customPolicyBox2">
+                                                                        <div class="col policyText">Maximum return fee</div>
+                                                                        <div class="col-auto customPolicyInput">
+                                                                            <input type="tel" onkeypress="return isNumberKey(event)" pattern="[0-9]{0,2}" minlength="0" maxlength="2" class="text-center" placeholder="₹35" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer p-0">
+                        <div class="col-12 py-2 bg-white m-0">
+                            <div class="row mx-0 justify-content-center">
+                                <div class="col-10">
+                                    <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" data-bs-dismiss="modal" id="SetReturnPolicyBtn" disabled type="submit">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>     
+            <!-- Dynamic Tooltip Popup -->
+            <div class="offcanvas offcanvas-bottom ttOffcanvas border-0" tabindex="-1" id="offcanvasTooltip4" aria-labelledby="offcanvasTooltipLabel">
+                <div class="offcanvas-header bg-theme1">
+                    <h5 class="offcanvas-title text-white" id="offcanvasTooltipLabel">Set Return Policy</h5>
+                    <div class="closeBtn d-grid" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <img src="assets/img/icons/closeWhite.svg" alt="closeWhite">
+                    </div>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="innerText p-3 bg-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquid sapiente similique corrupti ducimus eius? Quaerat ipsa ad odio quas hic laboriosam incidunt voluptatem nisi, provident commodi veritatis voluptate dolor!</div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal addSubCategory -->
+        <div class="modal fade" id="addSubCategory" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="addSubCategoryLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <form class="modal-content bg-transparent needs-validation-addSubCategory" novalidate autocomplete="off">
+                    <div class="modal-header p-0">
+                        <nav class="col-12 navbar d-block py-0 bg-theme1 shadow-sm">
+                            <div class="row navInner mx-0 h-100 align-items-center">
+                                <div class="col navTitle text-white">Add New Category</div>
+                                <a href="javascript:;" class="col-auto closeModal" data-bs-toggle="modal" data-bs-target="#selectCategory">
+                                    <img src="assets/img/icons/plus-white.svg" alt="plus-white">
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="container-fluid" page-name="addItem">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <div class="row h-100 flex-column py-3">
+                                                <div class="col-12 align-self-center flex-fill">
+                                                    <div class="row gy-3">
+                                                        <div class="col-12 customInput position-relative">
+                                                            <input class="form-control shadow-none w-100" type="text" required placeholder="Sub-category Name" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer p-0">
+                        <div class="col-12 py-2 bg-white m-0">
+                            <div class="row mx-0 justify-content-center">
+                                <div class="col-10">
+                                    <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill"  data-bs-toggle="modal" data-bs-target="#selectCategory" id="addSubCategoryBtn" disabled type="submit">Submit Request</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+
+        <!-- Modal AddAttributes -->
+        <div class="modal fade overflow-hidden" id="AddAttributes" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="AddAttributesLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid vh-100" page-name="addItem">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <nav class="col-12 navbar d-block py-0 bg-white shadow-sm">
+                                    <div class="row navInner mx-0 h-100 align-items-center">
+                                        <a href="javascript:;" class="col-auto backArrow" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="assets/img/icons/backArrow.svg" alt="backArrow">
+                                        </a>
+                                        <div class="col navTitle ps-0 text-dark">Add/Remove Features</div>
+                                    </div>
+                                </nav>
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <form class="row needs-validation-selectCategory h-100 flex-column flex-nowrap" novalidate autocomplete="off">
+                                                <div class="col-12 align-self-center flex-fill overflow-auto py-3">
+                                                    <div class="row gy-3">
+                                                        <div class="col-12 customInput position-relative">
+                                                            <input class="form-control shadow-none w-100 rounded" type="search" id="search" placeholder="Search" autocomplete="on">
+                                                            <label for="search" class="position-absolute d-grid align-items-center"><img src="assets/img/icons/search-blue.svg" alt="search-blue"></label>
+                                                        </div>
+                                                        <div class="col-12 d-flex flex-column gap-2">
+                                                            <div class="row checkes bg-white mx-0 align-items-center">
+                                                                <div class="col">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="Battery">
+                                                                        <label class="form-check-label w-100 user-select-none text-dark" for="Battery">Battery</label>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <a href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeleteConfirm" class="col-auto delteBtn">Delete</a> -->
+                                                            </div>
+                                                            <div class="row checkes bg-white mx-0 align-items-center">
+                                                                <div class="col">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="Material">
+                                                                        <label class="form-check-label w-100 user-select-none text-dark" for="Material">Material</label>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <a href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeleteConfirm" class="col-auto delteBtn">Delete</a> -->
+                                                            </div>
+                                                            <div class="row checkes bg-white mx-0 align-items-center">
+                                                                <div class="col">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="WifiConnectivity">
+                                                                        <label class="form-check-label w-100 user-select-none text-dark" for="WifiConnectivity">Wifi Connectivity</label>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <a href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeleteConfirm" class="col-auto delteBtn">Delete</a> -->
+                                                            </div>
+                                                            <div class="row checkes bg-white mx-0 align-items-center">
+                                                                <div class="col">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="Wired">
+                                                                        <label class="form-check-label w-100 user-select-none text-dark" for="Wired">Wired</label>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <a href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeleteConfirm" class="col-auto delteBtn">Delete</a> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 py-3 bg-white">
+                                                    <div class="row mx-0">
+                                                        <div class="col">
+                                                            <button class="btn btn-primary w-100 btnStyle2Second user-select-none shadow-none rounded-pill" type="button" data-bs-dismiss="modal">Cancel</button>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" disabled id="addVariantBtn" type="submit">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Delte Confirmation Popup -->
+            <div class="offcanvas offcanvas-bottom ttOffcanvas border-0" tabindex="-1" id="offcanvasDeleteConfirm" aria-labelledby="offcanvasDeleteConfirmLabel">
+                <div class="offcanvas-header bg-theme1">
+                    <h5 class="offcanvas-title text-white" id="offcanvasDeleteConfirmLabel">Delete Speakers</h5>
+                    <div class="closeBtn d-grid" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <img src="assets/img/icons/closeWhite.svg" alt="closeWhite">
+                    </div>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="innerText p-3 bg-white deleteTextWarning">Note: All items in the category will be deleted!</div>
+                </div>
+                <div class="row offcanvas-footer gap-3 justify-content-center bg-white align-items-center shadow flex-nowrap mx-0 w-100 px-3">
+                    <div class="col px-0">
+                        <a class="btn w-100 deleteBtn" href="javascript:;">Delete</a>
+                    </div>
+                    <div class="col px-0">
+                        <a class="btn w-100 cancelBtn" href="javascript:;" data-bs-dismiss="offcanvas">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal searchCategory -->
+        <div class="modal fade" id="searchCategory" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="searchCategoryLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid vh-100" page-name="addItem">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <nav class="col-12 navbar d-block py-0 bg-white shadow-sm">
+                                    <div class="row navInner mx-0 h-100 align-items-center">
+                                        <a href="javascript:;" class="col-auto backArrow" data-bs-toggle="modal" data-bs-target="#selectCategory" aria-label="Close">
+                                            <img src="assets/img/icons/backArrow.svg" alt="backArrow">
+                                        </a>
+                                        <div class="col navTitle ps-0 text-dark">Search Category</div>
+                                    </div>
+                                </nav>
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner d-flex flex-column gap-2 py-3">
+                                            <div class="row pb-3">
+                                                <div class="col-12 customInput position-relative">
+                                                    <input class="form-control shadow-none w-100" type="search" id="search" placeholder="Search" autocomplete="off">
+                                                    <label for="search" class="position-absolute d-grid align-items-center"><img src="assets/img/icons/search-blue.svg" alt="search-blue"></label>
+                                                </div>
+                                            </div>
+                                            <a href="javascript:;" class="row text-dark categoryResult bg-white align-items-center mx-0">
+                                                <div class="col-auto l1 pe-2">Speaker</div>
+                                                <div class="col-auto lArrow d-grid"><img src="assets/img/icons/arrowRightBlue.svg" alt="arrowRightBlue"></div>
+                                                <div class="col-auto l2 ps-2 mb-n1">Bluetooth Speakers</div>
+                                            </a>
+                                            <a href="javascript:;" class="row text-dark categoryResult bg-white align-items-center mx-0">
+                                                <div class="col-auto l1 pe-2">Earphones</div>
+                                                <div class="col-auto lArrow d-grid"><img src="assets/img/icons/arrowRightBlue.svg" alt="arrowRightBlue"></div>
+                                                <div class="col-auto l2 ps-2 mb-n1">Bluetooth Earphones</div>
+                                            </a>
+                                            <a href="javascript:;" class="row text-dark categoryResult bg-white align-items-center mx-0">
+                                                <div class="col-auto l1 pe-2">TVs</div>
+                                                <div class="col-auto lArrow d-grid"><img src="assets/img/icons/arrowRightBlue.svg" alt="arrowRightBlue"></div>
+                                                <div class="col-auto l2 ps-2 mb-n1">Bluetooth Smart TV</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal AddVariants -->
+        <div class="modal fade overflow-hidden" id="AddVariants" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="AddVariantsLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid vh-100" page-name="addItem">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <nav class="col-12 navbar d-block py-0 bg-white shadow-sm">
+                                    <div class="row navInner mx-0 h-100 align-items-center">
+                                        <a href="javascript:;" class="col-auto backArrow" data-bs-dismiss="modal">
+                                            <img src="assets/img/icons/backArrow.svg" alt="backArrow">
+                                        </a>
+                                        <div class="col navTitle ps-0 text-theme1">Add Variants</div>
+                                    </div>
+                                </nav>
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <form class="row needs-validation-addVariant h-100 flex-column pt-4 flex-nowrap overflow-hidden" novalidate autocomplete="off">
+                                                <div class="col-12 align-self-center flex-fill overflow-auto">
+                                                    <div class="row">
+                                                        <div class="col-12 input-group has-validation">
+                                                            <div class="row w-100 mx-0 gy-2 align-items-start">
+                                                                <div class="col-12">
+                                                                    <div class="row mx-0 customInput position-relative">
+                                                                        <input type="file" id="uploadImg2" hidden class="form-control" required accept="image/*" multiple>
+                                                                        <div class="position-absolute questionMarkForUpload" data-bs-title="Upload Images" data-bs-content="These photos will be visible to your customers on your website along with the product details in the same ordering as you list here." data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip2"><img src="assets/img/icons/questionMark.svg" alt="questionMark"></div>
+                                                                        <label for="uploadImg2" class="col-12 uploadImg bg-white form-control d-flex align-items-center justify-content-center gap-2">
+                                                                            <span><img src="assets/img/icons/plus.svg" alt="plus"></span>
+                                                                            <span>Upload Images</span>
+                                                                            <img class="w-100 h-100 d-none rounded" id="uploadImg-preview">
+                                                                            <button type="button" class="removeImg d-none bg-white border-0 position-absolute"><img src="assets/img/icons/close.png" alt="close"></button>
+                                                                        </label>
+                                                                        <div class="invalid-feedback user-select-none">Please upload product image.</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row useSameImages">
+                                                                        <div class="col texts">Use same images for this variant?</div>
+                                                                        <div class="col-auto">
+                                                                            <div class="form-check">
+                                                                                <label class="form-check-label" for="useSameImages">Yes</label>
+                                                                                <input class="form-check-input shadow-none" type="checkbox" value="" id="useSameImages">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 customInput">
+                                                                    <input class="form-control shadow-none w-100" type="tel" id="MRP" pattern="[0-9]{1,7}" minlength="1" maxllength="9999999" onkeypress="return isNumberKey(event)" placeholder="₹ MRP" required autocomplete="off">
+                                                                    <div class="invalid-feedback user-select-none">Please enter MRP.</div>
+                                                                </div>
+                                                                <div class="col-6 customInput discountedInput position-relative">
+                                                                    <input class="form-control shadow-none w-100" type="tel" id="discount" pattern="[0-9]{1,7}" minlength="1" maxllength="9999999" onkeypress="return isNumberKey(event)" placeholder="₹ Discounted Price" autocomplete="off">
+                                                                    <div class="position-absolute questionMark d-grid" data-bs-title="Discounted Price" data-bs-content="These photos will be visible to your customers on your website along with the product details in the same ordering as you list here." data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip2"><img src="assets/img/icons/questionMark.svg" alt="questionMark"></div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row dividerBar mx-1 py-1">
+                                                                        <div class="col-12"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 customInput position-relative">
+                                                                    <input class="form-control shadow-none colorInput1" type="color" id="itemColor" placeholder="Colour" value="#00FFFF" autocomplete="off">
+                                                                    <input class="form-control shadow-none w-100" type="text" id="itemColor" placeholder="Colour" autocomplete="off" readonly>
+                                                                    <div class="invalid-feedback user-select-none">Please enter product colour.</div>
+                                                                </div>
+                                                                <div class="col-6 customInput">
+                                                                    <input class="form-control shadow-none w-100" type="text" id="itemSize" placeholder="Size" autocomplete="off" required>
+                                                                    <div class="invalid-feedback user-select-none">Please enter product size.</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 py-3 bg-white">
+                                                    <div class="row mx-0">
+                                                        <div class="col">
+                                                            <button class="btn btn-primary w-100 btnStyle2Second user-select-none shadow-none rounded-pill" type="button" data-bs-dismiss="modal">Cancel</button>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" disabled id="addVariantBtn" type="submit">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Dynamic Tooltip Popup -->
+                            <div class="offcanvas offcanvas-bottom ttOffcanvas border-0" tabindex="-1" id="offcanvasTooltip2" aria-labelledby="offcanvasTooltipLabel">
+                                <div class="offcanvas-header bg-theme1">
+                                    <h5 class="offcanvas-title text-white" id="offcanvasTooltipLabel"></h5>
+                                    <div class="closeBtn d-grid" data-bs-dismiss="offcanvas" aria-label="Close">
+                                        <img src="assets/img/icons/closeWhite.svg" alt="closeWhite">
+                                    </div>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="innerText p-3 bg-white"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

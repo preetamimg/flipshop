@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipshop | FlipKart</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#2873F0" />
+</head>
+<body>
+    
+
+    <div class="container-fluid vh-100" page-name="manage">
+        <div class="row h-100 flex-column flex-nowrap">
+            <nav class="col-12 navbar d-block py-0 bg-theme1 shadow-sm pt-1 h-auto">
+                <div class="row navInner mx-0 h-100 align-items-center pt-2">
+                    <div class="col-12">
+                        <div class="row align-items-end flex-nowrap">
+                            <div class="col flipFlipkartWhite">
+                                <img src="assets/img/logo/flipFlipkartWhite.png" alt="flipFlipkartWhite">
+                            </div>
+                            <div class="col-auto">
+                                <a href="javascript:;" class="shareLinkBtn"><span><img src="assets/img/icons/shareLinkBlue.svg" alt="shareLinkBlue"></span> <span>Share Link</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row flex-nowrap">
+                            <div class="col shopNameAndAcceptOrders">
+                                <div class="row">
+                                    <div class="col-auto shopName text-white pt-1">Radha Electronics</div>
+                                </div>
+                                <div class="row mt-n1 pb-1">
+                                    <div class="col-auto acceptOrdersBox">
+                                        <!-- We can try class: opended or closed -->
+                                        <a href="javascript:;" class="acceptOrderBtn text-white opened"><span>Accepting Orders</span><span class="col-auto ps-3"><img src="assets/img/icons/rightArrow2.svg" alt="rightArrow2"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto pt-2">
+                                <a href="javascript:;" class="openWebsiteBtn"><span><img src="assets/img/icons/openEyeBlue.svg" alt="openEyeBlue"></span> <span>Open Website</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-12 body flex-fill">
+                <div class="row scrollPart h-100 justify-content-center">
+                    <div class="col-12 h-100 scrollInner">
+                        <div class="row mx-0 py-3 gap-3">
+                            <div class="col-12 storeInfoCard bg-white p-2">
+                                <div class="row align-items-center">
+                                    <div class="col storeLabel">Store</div>
+                                    <div class="col-auto">
+                                        <input type="checkbox" id="acceptingOrders" hidden>
+                                        <label for="acceptingOrders" class="btn acceptingOrderBtn">Accepting Orders</label>
+                                    </div>
+                                </div>
+                                <div class="row mx-0 py-1">
+                                    <div class="col customHr my-1"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 pb-2">
+                                        <div class="row mb-2">
+                                            <div class="col-4 acceptOrderList">Delivery Fee</div>
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col-12 inCity pb-1">
+                                                        <div class="row">
+                                                            <div class="col cityTitle">Within City</div>
+                                                            <div class="col-auto ">
+                                                                <a href="javascript:;" data-bs-target="#deliveryWithinCityModal" data-bs-toggle="modal" class="editOrders gap-1">
+                                                                    <span class="mt-n1 d-flex align-items-center"><img src="assets/img/icons/edit.svg" alt="edit"></span>
+                                                                    <span>Edit</span>
+                                                                </a> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <a href="javascript:;" class="deliverType">Free Delivery on all orders</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 inCity">
+                                                        <div class="row">
+                                                            <div class="col cityTitle">Outside City</div>
+                                                            <div class="col-auto ">
+                                                                <a href="javascript:;" data-bs-target="#deliveryOutsideCityModal" data-bs-toggle="modal" class="editOrders gap-1">
+                                                                    <span class="mt-n1 d-flex align-items-center"><img src="assets/img/icons/edit.svg" alt="edit"></span>
+                                                                    <span>Edit</span>
+                                                                </a> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <a href="javascript:;" class="deliverType">Free Delivery above a fixed amount</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col cityTitle">Minimum amout</div>
+                                                            <div class="col cityTitle">Rs. 8500</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col cityTitle">Delivery Charge</div>
+                                                            <div class="col cityTitle">Rs. 200</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 pb-2">
+                                        <div class="row mb-2">
+                                            <div class="col-4 acceptOrderList">UPI ID</div>
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col-12 inCity pb-2">
+                                                        <div class="row">
+                                                            <div class="col cityTitle">9868238428@paytm</div>
+                                                            <div class="col-auto ">
+                                                                <a href="javascript:;" data-bs-target="#upiIdModal" data-bs-toggle="modal" class="editOrders gap-1">
+                                                                    <span class="mt-n1 d-flex align-items-center"><img src="assets/img/icons/edit.svg" alt="edit"></span>
+                                                                    <span>Edit</span>
+                                                                </a> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col acceptOrderList">Dispatch Time</div>
+                                            <div class="col-auto">
+                                                <a href="javascript:;" data-bs-target="#disPtachModal" data-bs-toggle="modal" class="editOrders gap-1">
+                                                    <span class="mt-n1 d-flex align-items-center"><img src="assets/img/icons/edit.svg" alt="edit"></span>
+                                                    <span>Edit</span>
+                                                </a> 
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 salesOverview bg-white py-2 px-0">
+                                <div class="row flex-nowrap align-items-center mx-n1 pb-2">
+                                    <div class="col salesLabel">Sales Overview</div>
+                                    <div class="col-auto pe-0">
+                                        <a href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#filterByDateInManagePopup" class="btn weekBtn"><span><img src="assets/img/icons/calendar.svg" alt="calendar"></span> <span>Last Week</span> <span><img src="assets/img/icons/arrowDownBlue.svg" alt="arrowDownBlue"></span></a>
+                                    </div>
+                                </div>
+                                <div class="row flex-nowrap align-items-center mx-0">
+                                    <div class="col-6">
+                                        <div class="row smallCard mx-n1 p-2">
+                                            <div class="col-12 ">
+                                                <div class="row align-items-center">
+                                                    <div class="col saleCustomLabel ps-1 pe-0">
+                                                        Total Sales
+                                                    </div>
+                                                    <div class="col-auto ps-0 pe-0 d-grid" data-bs-title="Total Sales" data-bs-content="You can add more attributes here, to give better understanding about of product to your customers" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip"><img src="assets/img/icons/questionMark.svg" alt="questionMark"></div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-12 saleCustomValue px-1">₹ 2456.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row smallCard mx-n1 p-2">
+                                            <div class="col-12 ">
+                                                <div class="row align-items-center">
+                                                    <div class="col saleCustomLabel ps-1 pe-0">
+                                                        Average order value
+                                                    </div>
+                                                    <div class="col-auto ps-0 pe-0 d-grid" data-bs-title="Average Order Value" data-bs-content="You can add more attributes here, to give better understanding about of product to your customers" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip"><img src="assets/img/icons/questionMark.svg" alt="questionMark"></div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-12 saleCustomValue px-1">₹ 317.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 profile bg-white p-2">
+                                <div class="row flex-nowrap align-items-center mx-n1 pb-2">
+                                    <div class="col profileLabel px-1">Profile</div>
+                                    <div class="col-auto">
+                                        <a href="javascript:;" data-bs-target="#profileModal" data-bs-toggle="modal" class="editOrders gap-1">
+                                            <span class="mt-n1 d-flex align-items-center"><img src="assets/img/icons/edit.svg" alt="edit"></span>
+                                            <span>Edit</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row items gap-3 mx-0 pb-3">
+                                    <div class="col-12 item">
+                                        <div class="row flex-nowrap itemInner align-items-center">
+                                            <div class="col-auto itemImg px-0">
+                                                <img src="assets/img/others/profileitem.svg" alt="speakerBlue">
+                                            </div>
+                                            <div class="col profileItemDetails">
+                                                <div class="profileItemName">
+                                                    Radha Electronics 
+                                                    <ul class="itemList m-0">
+                                                        <li class="itemListName">Mobile & Electronics</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="profileEmail">radhaelectronics37@gmail.com</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <div class="storeDescription">
+                                            Store Description
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="storepara">Radha electronics is a lifestyle electronics & audio accessories store, known to offer budget gadgets to meet the growing needs of new-age consumers.</p>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <div class="storeDescription">
+                                            Address
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="storepara">Radha electronics is a lifestyle electronics & audio accessories store, known to offer budget gadgets to meet the growing needs of new-age consumers.</p>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <div class="storeDescription">
+                                        Website URL
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="storepara">
+                                                    Lorem, ipsum dolor<a href="javascript:;" class="websiteUrl">.flipshop.com</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 verification bg-white p-3">
+                                <div class="row flex-nowrap align-items-center mx-n1 pb-2">
+                                    <div class="col px-1 verificationLabel">Verification</div>
+                                    
+                                </div>
+                                <div class="row items gap-1">
+                                    <div class="col-12 item">
+                                        <div class="row flex-nowrap itemInner align-items-center">
+                                            <div class="col adhaarHeading">
+                                                Adhaar
+                                            </div>
+                                            <div class="col-auto ">
+                                                <a href="adhaar-verify.html" class="verify">
+                                                    Verify
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 item">
+                                        <div class="row flex-nowrap itemInner align-items-center">
+                                            <div class="col adhaarHeading">
+                                                PAN
+                                            </div>
+                                            <div class="col-auto ">
+                                                <a href="pan-verify.html" class="verify">
+                                                    Verify
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 item">
+                                        <div class="row flex-nowrap itemInner align-items-center">
+                                            <div class="col adhaarHeading">
+                                                GST
+                                            </div>
+                                            <div class="col-auto ">
+                                                <a href="gst-verify.html" class="verify">
+                                                    Verify
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-12 policy bg-white p-3 d-none">
+                                <div class="row flex-nowrap align-items-center mx-n1 pb-2">
+                                    <div class="col px-1 policyLabel">Return policy</div>
+                                    <div class="col-auto px-1">
+                                        <a href="javascript:;" class="editOrders gap-1">
+                                            <span class="mt-n1 d-flex align-items-center"><img src="assets/img/icons/edit.svg" alt="edit"></span>
+                                            <span>Edit</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row items gap-1">
+                                    <div class="col-12  item ">
+                                        <div class="row flex-nowrap itemInner align-items-center">
+                                            <div class="col adhaarHeading">
+                                                Accept returns upto
+                                            </div>
+                                            <div class="col-auto ">
+                                                <div class="verify">
+                                                    4 Days
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 item">
+                                        <div class="row flex-nowrap itemInner align-items-center">
+                                            <div class="col adhaarHeading">
+                                                Accept returns without box
+                                            </div>
+                                            <div class="col-auto ">
+                                                <div class="verify">
+                                                    Yes
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 item">
+                                        <div class="row flex-nowrap itemInner align-items-center">
+                                            <div class="col adhaarHeading">
+                                                Minimum returns fee
+                                            </div>
+                                            <div class="col-auto ">
+                                                <div class="verify">
+                                                    ₹ 20
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 item">
+                                        <div class="row flex-nowrap itemInner align-items-center">
+                                            <div class="col adhaarHeading">
+                                                Change exchange fee
+                                            </div>
+                                            <div class="col-auto ">
+                                                <div class="verify">
+                                                    ₹ 150
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-12 storePolicy bg-white p-3 d-none">
+                                <div class="row flex-nowrap align-items-center mx-n1 pb-2">
+                                    <div class="col px-1 storePolicyLabel">Other Store Policy</div>
+                                    
+                                </div>
+                                <div class="row items gap-1">
+                                    <div class="col-12 item">
+                                        <div class="row flex-nowrap itemInner align-items-center">
+                                            <div class="col adhaarHeading">
+                                                Website privacy Policy
+                                            </div>
+                                            <div class="col-auto pe-0">
+                                                <a href="javascript:;" class="viewOrders gap-1">
+                                                    <span class="mt-n1 d-flex align-items-center"><img src="assets/img/icons/openEyeBlue.svg" alt="openEyeBlue"></span>
+                                                    <span>View</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-auto ps-1">
+                                                <a href="javascript:;" class="editOrders gap-1">
+                                                    <span class="mt-n1 d-flex align-items-center"><img src="assets/img/icons/edit.svg" alt="edit"></span>
+                                                    <span>Edit</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 item">
+                                        <div class="row flex-nowrap itemInner align-items-center">
+                                            <div class="col adhaarHeading">
+                                                Website Terms of Use
+                                            </div>
+                                            <div class="col-auto pe-0">
+                                                <a href="javascript:;" class="viewOrders gap-1">
+                                                    <span class="mt-n1 d-flex align-items-center"><img src="assets/img/icons/openEyeBlue.svg" alt="openEyeBlue"></span>
+                                                    <span>View</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-auto ps-1">
+                                                <a href="javascript:;" class="editOrders gap-1">
+                                                    <span class="mt-n1 d-flex align-items-center"><img src="assets/img/icons/edit.svg" alt="edit"></span>
+                                                    <span>Edit</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 item">
+                                        <div class="row flex-nowrap itemInner align-items-center">
+                                            <div class="col adhaarHeading">
+                                                Terms & Condition
+                                            </div>
+                                            <div class="col-auto pe-0">
+                                                <a href="javascript:;" class="viewOrders gap-1">
+                                                    <span class="mt-n1 d-flex align-items-center"><img src="assets/img/icons/openEyeBlue.svg" alt="openEyeBlue"></span>
+                                                    <span>View</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-auto ps-1">
+                                                <a href="javascript:;" class="editOrders gap-1">
+                                                    <span class="mt-n1 d-flex align-items-center"><img src="assets/img/icons/edit.svg" alt="edit"></span>
+                                                    <span>Edit</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col-12 getYourOwnDomain overflow-hidden position-relative bg-white py-3 px-3">
+                                <div class="row lockLabel">
+                                    <div class="col-auto inner">
+                                        <img src="assets/img/icons/lockLabel.svg" alt="lockLabel">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-dark getOwnDomainTitle">Get your own domain</div>
+                                    <div class="col-12 text-dark getOwnDomainDesc">Customers can visit the following link and place orders.</div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-12">
+                                        <a href="javascript:;" class="btn getOwnDomainBtn"><span>Get your own custom domain</span> <span><img src="assets/img/icons/arrowRightBlue.svg" alt="arrowRightBlue"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer col-12 shadow">
+                <div class="row footerInner bg-white shadow align-items-center">
+                    <a href="orders.html" class="col footerItem">
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemIcon"><img src="assets/img/icons/orders.svg" alt="orders"></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemText">Orders</div>
+                        </div>
+                    </a>
+                    <a href="products.html" class="col footerItem">
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemIcon"><img src="assets/img/icons/products.svg" alt="products"></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemText">Products</div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="col footerItem active">
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemIcon"><img src="assets/img/icons/manage.svg" alt="manage"></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemText">Manage</div>
+                        </div>
+                    </a>
+                    <a href="setting.html" class="col footerItem">
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemIcon"><img src="assets/img/icons/settings.svg" alt="settings"></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemText">Settings</div>
+                        </div>
+                    </a>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- delivery Within City Modal -->
+        <div class="modal fade overflow-hidden" id="deliveryWithinCityModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="AddAttributesLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid vh-100" page-name="addItem">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <nav class="col-12 navbar d-block py-0 bg-white shadow-sm">
+                                    <div class="row navInner mx-0 h-100 align-items-center">
+                                        <a href="javascript:;" class="col-auto backArrow" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="assets/img/icons/backArrow.svg" alt="backArrow">
+                                        </a>
+                                        <div class="col navTitle ps-0 text-dark">Delivery Fee<div>
+                                    </div>
+                                </nav>
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <form class="row needs-validation-deliveryWithinCityModal h-100 flex-column flex-nowrap" novalidate autocomplete="off">
+                                                <div class="col-12 align-self-center flex-fill overflow-auto py-3">
+                                                    <div class="row gy-3">
+                                                        <div class="col-12">
+                                                            <div class="deliveryHeading">
+                                                                Within City
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 d-flex flex-column">
+                                                            <div class="row radio gap-2 py-3 bg-white mx-0 align-items-center">
+                                                                <div class="col-12">
+                                                                    <label for="lifeStyle" class="col ps-0 text-dark mb-0">Choose a delivery option.</label>
+                                                                </div>
+                                                                <div class="col-12 ">
+                                                                        <div class="row px-3 position-relative">
+                                                                            <input type="radio" name="natureType" id="lifeStyle1" class="" hidden required>
+                                                                            <label for="lifeStyle1" class="col-12 position-relative align-items-center d-flex">Free Delivery on all orders</label>
+                                                                        </div>
+                                                                        <div class="row gap-2 px-3 position-relative">
+                                                                            <input type="radio" name="natureType" id="lifeStyle2" class="fixedDeliveryCharge" hidden required >
+                                                                            <label for="lifeStyle2" class="col-12 position-relative align-items-center d-flex">Fixed Charge for all orders</label>
+                                                                            <!------------Collapse---------->
+                                                                            <div class="collapse fixedcharge" id="fixedCharge">
+                                                                                <div class="row">
+                                                                                    <div class="col-12">
+                                                                                        <label for="">Fixed Delivery Charge across Delhi</label>
+                                                                                    </div>
+                                                                                    <div class="col-auto ms-auto text-end position-relative">
+                                                                                        <input type="tel" id="fixedDelivery" minlength="0" maxlength="2" onkeypress="return isNumberKey(event)" class="fixedchargeInput ps-4" placeholder="">
+                                                                                        <div class="labelType">₹</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 py-3 bg-white">
+                                                    <div class="row mx-0">
+                                                        <div class="col">
+                                                            <button class="btn btn-primary w-100 btnStyle2Second user-select-none shadow-none rounded-pill" type="button" data-bs-dismiss="modal">Cancel</button>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" disabled id="deliveryWithinCityModalBtn" type="submit">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- delivery Outside City Modal -->
+        <div class="modal fade overflow-hidden" id="deliveryOutsideCityModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="AddAttributesLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid vh-100" page-name="addItem">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <nav class="col-12 navbar d-block py-0 bg-white shadow-sm">
+                                    <div class="row navInner mx-0 h-100 align-items-center">
+                                        <a href="javascript:;" class="col-auto backArrow" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="assets/img/icons/backArrow.svg" alt="backArrow">
+                                        </a>
+                                        <div class="col navTitle ps-0 text-dark">Delivery Fee<div>
+                                    </div>
+                                </nav>
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <form class="row needs-validation-deliveryOutsideCityModal h-100 flex-column flex-nowrap" novalidate autocomplete="off">
+                                                <div class="col-12 align-self-center flex-fill overflow-auto py-3">
+                                                    <div class="row gy-3">
+                                                        <div class="col-12">
+                                                            <div class="deliveryHeading">
+                                                                Within City
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 d-flex flex-column">
+                                                            <div class="row radio gap-2 py-3 bg-white mx-0 align-items-center">
+                                                                <div class="col-12">
+                                                                    <label for="lifeStyle" class="col ps-0 text-dark mb-0">Choose a delivery option.</label>
+                                                                </div>
+                                                                <div class="col-12 ">
+                                                                        <div class="row px-3 position-relative">
+                                                                            <input type="radio" name="natureType2" id="lifeStyle31" class="" hidden required>
+                                                                            <label for="lifeStyle31" class="col-12 position-relative align-items-center d-flex">Free Delivery on all orders</label>
+                                                                        </div>
+                                                                        <div class="row gap-2 px-3 position-relative">
+                                                                            <input type="radio" name="natureType2" id="lifeStyle32" class="fixedDeliveryCharge" hidden required >
+                                                                            <label for="lifeStyle32" class="col-12 position-relative align-items-center d-flex">Fixed Charge for all orders</label>
+                                                                            <!------------Collapse---------->
+                                                                            <div class="collapse fixedcharge" id="fixedCharge">
+                                                                                <div class="row">
+                                                                                    <div class="col-12">
+                                                                                        <label for="">Fixed Delivery Charge across Delhi</label>
+                                                                                    </div>
+                                                                                    <div class="col-auto ms-auto text-end position-relative">
+                                                                                        <input type="tel" id="" minlength="0" maxlength="2" onkeypress="return isNumberKey(event)" class="fixedchargeInput ps-4" placeholder="">
+                                                                                        <div class="labelType">₹</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 py-3 bg-white">
+                                                    <div class="row mx-0">
+                                                        <div class="col">
+                                                            <button class="btn btn-primary w-100 btnStyle2Second user-select-none shadow-none rounded-pill" type="button" data-bs-dismiss="modal">Cancel</button>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" disabled id="deliveryOutsideCityModalBtn" type="submit">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal upiDetails -->
+        <div class="modal fade overflow-hidden" id="upiIdModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="upiIdModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid vh-100" page-name="manage">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <nav class="col-12 navbar d-block py-0 bg-white shadow-sm">
+                                    <div class="row navInner mx-0 h-100 align-items-center">
+                                        <a href="javascript:;" class="col-auto backArrow" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="assets/img/icons/backArrow.svg" alt="backArrow">
+                                        </a>
+                                        <div class="col navTitle ps-0 text-dark">Delivery Fee<div>
+                                    </div>
+                                </nav>
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <form class="row needs-validation-upiIdModal h-100 flex-column flex-nowrap" novalidate autocomplete="off">
+                                                <div class="col-12 align-self-center flex-fill overflow-auto py-3">
+                                                    <div class="row gy-3">
+                                                        <div class="col-12">
+                                                            <div class="deliveryHeading">
+                                                                Bank Account Details
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 d-flex flex-column">
+                                                            <div class="row radio gap-2 py-2 bg-white mx-0 align-items-center">
+                                                                <div class="col-12 ">
+                                                                    <div class="row flex-nowrap align-items-center">
+                                                                        <div class="col-6">
+                                                                            <div class="upiInput">Account holder name</div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <input type="text" required class="accountholderinput w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 ">
+                                                                    <div class="row flex-nowrap align-items-center">
+                                                                        <div class="col-6">
+                                                                            <div class="upiInput">UPI ID</div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                            <input type="text" required class="accountholderinput w-100">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 py-3 bg-white">
+                                                    <div class="row mx-0">
+                                                        <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" data-bs-dismiss="modal" aria-label="Close" id="upiIdModalBtn" disabled type="submit">Verify</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal DisPatch -->
+        <div class="modal fade overflow-hidden disPtach" id="disPtachModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="upiDetailsLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid vh-100" page-name="manage">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <nav class="col-12 navbar d-block py-0 bg-white shadow-sm">
+                                    <div class="row navInner mx-0 h-100 align-items-center">
+                                        <a href="javascript:;" class="col-auto backArrow" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="assets/img/icons/backArrow.svg" alt="backArrow">
+                                        </a>
+                                        <div class="col navTitle ps-0 text-dark">Dispatch Time<div>
+                                    </div>
+                                </nav>
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <form class="row needs-validation-disPtachModal h-100 flex-column flex-nowrap" novalidate autocomplete="off">
+                                                <div class="col-12 align-self-center flex-fill overflow-auto py-3">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="deliveryHeading">
+                                                                Dispatch Time
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 d-flex flex-column">
+                                                            <div class="row py-3 align-items-center">
+                                                                <div class="col-12">
+                                                                    <input type="tel" minlength="0" maxlength="2" onkeypress="return isNumberKey(event)" class="disptachInput w-100" required placeholder="Days">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 py-3 bg-white">
+                                                    <div class="row mx-0">
+                                                        <div class="col">
+                                                            <button class="btn btn-primary w-100 btnStyle2Second user-select-none shadow-none rounded-pill" type="button" data-bs-dismiss="modal">Cancel</button>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" disabled id="disPtachModalBtn" type="submit">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Filter By Date Popup -->
+        <div class="offcanvas offcanvas-bottom filterByDateInManagePopup border-0 h-auto" data-bs-backdrop="static" tabindex="-1" id="filterByDateInManagePopup" aria-labelledby="filterByDateInManagePopupLabel">
+            <div class="offcanvas-header bg-theme1">
+                <h5 class="offcanvas-title text-white" id="filterByDateInManagePopupLabel">Filter by date</h5>
+                <div class="closeBtn d-grid" id="closeCustom" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="assets/img/icons/closeWhite.svg" alt="closeWhite">
+                </div>
+            </div>
+            <div class="row">
+                <form class="col-12 needs-validation-filterByDate" novalidate autocomplete="off">
+                    <div class="offcanvas-body">
+                        <div class="row items gap-2 mx-0">
+                            <div class="col-12 item">
+                                <input type="radio" name="filterByDate" id="yesterday" hidden required autocomplete="off">
+                                <label for="yesterday" class="row itemInner">
+                                    <div class="col-auto px-0 radioIcon ms-3"></div>
+                                    <div class="col itemContent">Yesterday</div>
+                                </label>
+                            </div>
+                            <div class="col-12 item">
+                                <input type="radio" name="filterByDate" id="LastWeek" hidden required autocomplete="off">
+                                <label for="LastWeek" class="row itemInner">
+                                    <div class="col-auto px-0 radioIcon ms-3"></div>
+                                    <div class="col itemContent">Last Week</div>
+                                </label>
+                            </div>
+                            <div class="col-12 item">
+                                <input type="radio" name="filterByDate" id="LastMonth" hidden required autocomplete="off">
+                                <label for="LastMonth" class="row itemInner">
+                                    <div class="col-auto px-0 radioIcon ms-3"></div>
+                                    <div class="col itemContent">Last Month</div>
+                                </label>
+                            </div>
+                            <div class="col-12 item">
+                                <input type="radio" name="filterByDate" id="AddCustomRange" hidden required autocomplete="off">
+                                <label for="AddCustomRange" class="row itemInner AddCustomRangeBtnPopup" data-bs-toggle="offcanvas" data-bs-target="#AddCustomRangeManagePopup">
+                                    <div class="col-auto px-0 radioIcon ms-3"></div>
+                                    <div class="col-auto itemContent">Add Custom Range</div>
+                                    <div class="col-auto ps-0"><img src="assets/img/icons/arrowRightBlue.svg" alt="arrowRightBlue"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 py-3 bg-white footer">
+                        <div class="row mx-2">
+                            <div class="col">
+                                <button type="submit" class="btn w-100 btnStyle2 user-select-none shadow-none rounded-pill px-0 filterByDateInManagePopupBtn" disabled>Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Add Custom Range Popup -->
+        <div class="offcanvas offcanvas-bottom AddCustomRangeManagePopup border-0 h-auto" data-bs-backdrop="static" tabindex="-1" id="AddCustomRangeManagePopup" aria-labelledby="AddCustomRangeManagePopupLabel">
+            <div class="offcanvas-header bg-theme1">
+                <h5 class="offcanvas-title text-white" id="AddCustomRangeManagePopupLabel">Add Custom Range</h5>
+                <div class="closeBtn d-grid" id="addCustomRangeManagePopupClose" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="assets/img/icons/closeWhite.svg" alt="closeWhite">
+                </div>
+            </div>
+            <div class="row">
+                <form class="col-12 needs-validation-AddCustomRangeManagePopup" novalidate autocomplete="off">
+                    <div class="offcanvas-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row mx-0 gap-3">
+                                    <div class="col customInput position-relative px-0">
+                                        <input type="text" class="form-control shadow-none" placeholder="From date" required="">
+                                    </div>
+                                    <div class="col customInput position-relative px-0">
+                                        <input type="text" class="form-control shadow-none" placeholder="To date" required="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 py-3 bg-white footer">
+                        <div class="row mx-2">
+                            <div class="col">
+                                <button type="submit" class="btn w-100 btnStyle2 user-select-none shadow-none rounded-pill px-0 AddCustomRangeManagePopupBtn" disabled>Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        
+        <!-- Dynamic Tooltip Popup -->
+        <div class="offcanvas offcanvas-bottom ttOffcanvas border-0" tabindex="-1" id="offcanvasTooltip" aria-labelledby="offcanvasTooltipLabel">
+            <div class="offcanvas-header bg-theme1">
+                <h5 class="offcanvas-title text-white" id="offcanvasTooltipLabel"></h5>
+                <div class="closeBtn d-grid" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="assets/img/icons/closeWhite.svg" alt="closeWhite">
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="innerText p-3 bg-white"></div>
+            </div>
+        </div>
+
+        <!-- Modal Profile -->
+        <div class="modal fade overflow-hidden" id="profileModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="profileModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid vh-100" page-name="manage">
+                            <div class="row h-100 flex-column flex-nowrap">
+                                <nav class="col-12 navbar d-block py-0 bg-white shadow-sm">
+                                    <div class="row navInner mx-0 h-100 align-items-center">
+                                        <a href="javascript:;" class="col-auto backArrow" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="assets/img/icons/backArrow.svg" alt="backArrow">
+                                        </a>
+                                        <div class="col navTitle ps-0 text-dark">Profile<div>
+                                    </div>
+                                </nav>
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <form class="row needs-validation-profileModal profilDetails h-100 flex-column flex-nowrap" novalidate autocomplete="off">
+                                                <div class="col-12 align-self-center flex-fill overflow-auto py-3">
+                                                    <div class="row gap-2 py-3 bg-white mx-0 align-items-center border border-2 rounded">
+                                                        <div class="col-12">
+                                                            <div class="row mx-0 customInput position-relative">
+                                                                <input type="file" id="uploadImg" hidden class="form-control" required accept="image/*" multiple onchange="showPreview(event);">
+                                                                <div class="position-absolute questionMarkForUpload" data-bs-title="Upload Images" data-bs-content="These photos will be visible to your customers on your website along with the product details in the same ordering as you list here." data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip"><img src="assets/img/icons/questionMark.svg" alt="questionMark"></div>
+                                                                <label for="uploadImg" class="col-12 uploadImg bg-white form-control d-flex align-items-center justify-content-center gap-2">
+                                                                    <span><img src="assets/img/icons/plus.svg" alt="plus"></span>
+                                                                    <span>Upload Images</span>
+                                                                    <img class="w-100 h-100 d-none rounded" id="uploadImg-preview">
+                                                                    <button type="button" class="removeImg d-none bg-white border-0 position-absolute"><img src="assets/img/icons/close.png" alt="close"></button>
+                                                                </label>
+                                                                <div class="invalid-feedback user-select-none">Please upload product image.</div>
+            
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="row radio border-0 gap-2">
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-center ">
+                                                                        <div class="col-4">
+                                                                            <label for="profileStoreName" class="profileStoreHeading">
+                                                                                Store Name 
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="col-8">
+                                                                            <input type="text"  id="profileStoreName" class="profileStoreInput shadow-none w-100" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-center ">
+                                                                        <div class="col-4">
+                                                                            <label for="profileStoreCategory" class="profileStoreHeading">
+                                                                                Store Category 
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="col-8">
+                                                                            <input type="text" id="profileStoreCategory"  class="profileStoreInput shadow-none w-100" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row align-items-center ">
+                                                                        <div class="col-4">
+                                                                            <label for="profileWorkEmail" class="profileStoreHeading">
+                                                                                Work Email
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="col-8">
+                                                                            <input type="email" id="profileWorkEmail" class="profileStoreInput shadow-none w-100" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row gap-2">
+                                                                        <div class="col-12">
+                                                                            <label class="profileStoreHeading" for="profileStoreDescription">
+                                                                                Store Description
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="col-12 ">
+                                                                            <textarea class="profileStoreInput w-100 shadow-none" rows="3" type="text" id="profileStoreDescription" required></textarea>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+        
+                                                                <div class="col-12 position-relative">
+                                                                    <div class="profilestoreborder"></div>
+                                                                </div>
+        
+                                                                <div class="col-12">
+                                                                    <div class="row gap-2">
+                                                                        <div class="col-12">
+                                                                            <label for="profileCompleteAddress" class="profileStoreHeading">
+                                                                                Complete Address
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="col-12 ">
+                                                                                <textarea class="profileStoreInput w-100 shadow-none" rows="2"  type="text" id="profileCompleteAddress" required></textarea>
+                                                                                    
+                                                                        </div>
+                                                                        <div class="col-12 ">
+                                                                            <div class="row gap-2 ">
+                                                                                <div class="col-12">
+                                                                                    <div class="row align-items-center ">
+                                                                                        <div class="col-4">
+                                                                                            <label for="profileModalCity" class="profileStoreHeading">
+                                                                                                City
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div class="col-8">
+                                                                                            <select type="text" id="profileModalCity" class="profileStoreSelect shadow-none w-100" required>
+                                                                                                <option value="" selected disabled>Select</option>
+                                                                                                <option value="jodhpur">Jodhpur</option>
+                                                                                                <option value="ajmer">Ajmer</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12">
+                                                                                    <div class="row align-items-center ">
+                                                                                        <div class="col-4">
+                                                                                            <label for="profileModalState" class="profileStoreHeading">
+                                                                                                State
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div class="col-8">
+                                                                                            <select type="text" id="profileModalState" class="profileStoreSelect shadow-none w-100" required>
+                                                                                                <option value="" selected disabled>Select</option>
+                                                                                                <option value="rajashthan">Rajashthan</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                                <div class="col-12">
+                                                                                    <div class="row align-items-center">
+                                                                                        <div class="col-4">
+                                                                                            <label for="profileModalPincode" class="profileStoreHeading">
+                                                                                                Pincode
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <div class="col-8">
+                                                                                            <input type="tel" pattern="[0-9]{1,6}" minlength="6" maxlength="6" onkeypress="return isNumberKey(event)" id="profileModalPincode" class="profileStoreInput shadow-none w-100" required>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                            
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 py-3 bg-white">
+                                                    <div class="row mx-0">
+                                                        <div class="col">
+                                                            <button class="btn btn-primary w-100 btnStyle2Second user-select-none shadow-none rounded-pill" type="button" data-bs-dismiss="modal">Cancel</button>
+                                                        </div>
+                                                        <div class="col">
+                                                            <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" disabled id="profileModalBtn" type="submit">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

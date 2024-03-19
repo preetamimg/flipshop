@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipshop | FlipKart</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#2873F0" />
+</head>
+<body>
+
+    <div class="container-fluid" page-name="editprofile">
+        <div class="row innerDialog">
+            <div class="col-12 innerContent">
+                <div class="row header mx-0">
+                    <nav class="navbar col-12 bg-theme1 px-1">
+                        <div class="row navInner h-100 align-items-center mx-0">
+                            <div class="col-auto">
+                                <a href="account.html" class="btn backArrowWhite p-0 d-grid">
+                                    <img src="assets/img/icons/backArrowWhite.svg" alt="backArrowWhite">
+                                </a>
+                            </div>
+                            <div class="col-auto logo ps-0">
+                                <p class="header-heading text-white mb-0">Edit Profile</p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="row body mx-0">
+                    <div class="col-12 h-100">
+                        <form class="row needs-validation-editprofile h-100 flex-column pt-4 flex-nowrap overflow-hidden" novalidate="" autocomplete="off">
+                            <div class="col-12 flex-fill overflow-hidden-auto">
+                                <div class="row gap-3 mx-n1">
+                                    <div class="col-12">
+                                        <div class="accountHeading">
+                                            Personal Detail!
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 pb-1">
+                                                <label for="firstName">First Name</label>
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control shadow-none py-3" minlength="3" maxlength="40" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 pb-1">
+                                                <label for="firstName">Last Name</label>
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control shadow-none py-3" minlength="3" maxlength="40" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 pb-1">
+                                                <label for="firstName">Email</label>
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="email" class="form-control shadow-none py-3" minlength="10" maxlength="80" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 pb-1">
+                                                <label for="firstName">Mobile</label>
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="tel" class="form-control shadow-none py-3 bg-light" readonly pattern="[5-9]{1}[0-9]{9}" value="7042192283" minlength="10" maxlength="10" onkeypress="return isNumberKey(event)" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center mt-3 px-0 submitBtnBox">
+                                <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-0" id="editprofileBtn" disabled type="submit">Save</button>
+                            </div>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

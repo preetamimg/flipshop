@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipshop | FlipKart</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- <script src="assets/libs/jquery/jquery-3.6.1.min.js"></script> -->
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#2873F0" />
+</head>
+<body>
+    <div class="container-fluid vh-100" page-name="addItemOption">
+        <div class="row h-100 flex-column flex-nowrap">
+            <nav class="col-12 navbar d-block py-0 bg-theme1">
+                <div class="row navInner mx-0 h-100 align-items-center">
+                    <a href="javascript:;"onClick="history.go(-1); return false;" class="col-auto backArrow2">
+                        <img src="assets/img/icons/backArrow2.svg" alt="backArrow2">
+                    </a>
+                    <div class="col navTitle ps-0 text-white">Vishal Mega Mart</div>
+                </div>
+            </nav>
+            <div class="col-12 body flex-fill">
+                <div class="row scrollPart h-100 justify-content-center align-items-center">
+                    <div class="col-12 h-100 scrollInner">
+                        <form class="row g-3 needs-validation-addItemOption h-100 py-4" novalidate autocomplete="off">
+                            <div class="col-12 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 chooseNature text-dark text-center pb-3">Choose how you want to add items:</div>
+                                    <div class="col-12">
+                                        <div class="row gap-2">
+                                            <div class="col-12 natureTypeSelect">
+                                                <div class="row natureInner align-items-center mx-1 position-relative">
+                                                    <a href="javascript:;" class="col text-dark mb-0 h-100 d-inline-flex align-items-center">Bulk Add (Upload Excel Sheet)</a>
+                                                    <div class="col-auto px-0" data-bs-title="Bulk Add" data-bs-content="These photos will be visible to your customers on your website along with the product details in the same ordering as you list here." data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip"><img src="assets/img/icons/questionMark.svg" alt="questionMark"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 py-3">
+                                                <div class="row dividerOr justify-content-center">
+                                                    <span class="col-auto">Or</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 text-center">
+                                                <div class="row addItemProduct">
+                                                    <div class="col-12">
+                                                        Want to Bulk Add Products?
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="addItemUpload">
+                                                            Upload the
+                                                        <label for="excelSheet"> Excel Sheet</label>
+                                                        <input type="file" id="excelSheet" class="d-none">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-12 natureTypeSelect">
+                                                <div class="row natureInner align-items-center mx-1 position-relative">
+                                                    <a href="add-item.html" class="col text-dark mb-0 h-100 d-inline-flex align-items-center">Single Product</a>
+                                                    <div class="col-auto px-0" data-bs-title="Single Product" data-bs-content="These photos will be visible to your customers on your website along with the product details in the same ordering as you list here." data-bs-toggle="offcanvas" data-bs-target="#offcanvasTooltip"><img src="assets/img/icons/questionMark.svg" alt="questionMark"></div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dynamic Tooltip Popup -->
+        <div class="offcanvas offcanvas-bottom ttOffcanvas border-0" tabindex="-1" id="offcanvasTooltip" aria-labelledby="offcanvasTooltipLabel">
+            <div class="offcanvas-header bg-theme1">
+                <h5 class="offcanvas-title text-white" id="offcanvasTooltipLabel"></h5>
+                <div class="closeBtn d-grid" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="assets/img/icons/closeWhite.svg" alt="closeWhite">
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="innerText p-3 bg-white"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

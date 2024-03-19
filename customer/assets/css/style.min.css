@@ -1,0 +1,3400 @@
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BlackItalic.eot");
+  src: url("../fonts/CircularStd-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BlackItalic.woff2") format("woff2"), url("../fonts/CircularStd-BlackItalic.woff") format("woff"), url("../fonts/CircularStd-BlackItalic.ttf") format("truetype"), url("../fonts/CircularStd-BlackItalic.svg#CircularStd-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BlackItalic_1.eot");
+  src: url("../fonts/CircularStd-BlackItalic_1.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BlackItalic_1.woff2") format("woff2"), url("../fonts/CircularStd-BlackItalic_1.woff") format("woff"), url("../fonts/CircularStd-BlackItalic_1.ttf") format("truetype"), url("../fonts/CircularStd-BlackItalic_1.svg#CircularStd-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Bold.eot");
+  src: url("../fonts/CircularStd-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Bold.woff2") format("woff2"), url("../fonts/CircularStd-Bold.woff") format("woff"), url("../fonts/CircularStd-Bold.ttf") format("truetype"), url("../fonts/CircularStd-Bold.svg#CircularStd-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BlackItalic_2.eot");
+  src: url("../fonts/CircularStd-BlackItalic_2.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BlackItalic_2.woff2") format("woff2"), url("../fonts/CircularStd-BlackItalic_2.woff") format("woff"), url("../fonts/CircularStd-BlackItalic_2.ttf") format("truetype"), url("../fonts/CircularStd-BlackItalic_2.svg#CircularStd-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BlackItalic_3.eot");
+  src: url("../fonts/CircularStd-BlackItalic_3.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BlackItalic_3.woff2") format("woff2"), url("../fonts/CircularStd-BlackItalic_3.woff") format("woff"), url("../fonts/CircularStd-BlackItalic_3.ttf") format("truetype"), url("../fonts/CircularStd-BlackItalic_3.svg#CircularStd-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Black.eot");
+  src: url("../fonts/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Black.woff2") format("woff2"), url("../fonts/CircularStd-Black.woff") format("woff"), url("../fonts/CircularStd-Black.ttf") format("truetype"), url("../fonts/CircularStd-Black.svg#CircularStd-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BlackItalic_4.eot");
+  src: url("../fonts/CircularStd-BlackItalic_4.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BlackItalic_4.woff2") format("woff2"), url("../fonts/CircularStd-BlackItalic_4.woff") format("woff"), url("../fonts/CircularStd-BlackItalic_4.ttf") format("truetype"), url("../fonts/CircularStd-BlackItalic_4.svg#CircularStd-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Bold_1.eot");
+  src: url("../fonts/CircularStd-Bold_1.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Bold_1.woff2") format("woff2"), url("../fonts/CircularStd-Bold_1.woff") format("woff"), url("../fonts/CircularStd-Bold_1.ttf") format("truetype"), url("../fonts/CircularStd-Bold_1.svg#CircularStd-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Black_1.eot");
+  src: url("../fonts/CircularStd-Black_1.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Black_1.woff2") format("woff2"), url("../fonts/CircularStd-Black_1.woff") format("woff"), url("../fonts/CircularStd-Black_1.ttf") format("truetype"), url("../fonts/CircularStd-Black_1.svg#CircularStd-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Bold_2.eot");
+  src: url("../fonts/CircularStd-Bold_2.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Bold_2.woff2") format("woff2"), url("../fonts/CircularStd-Bold_2.woff") format("woff"), url("../fonts/CircularStd-Bold_2.ttf") format("truetype"), url("../fonts/CircularStd-Bold_2.svg#CircularStd-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BoldItalic.eot");
+  src: url("../fonts/CircularStd-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BoldItalic.woff2") format("woff2"), url("../fonts/CircularStd-BoldItalic.woff") format("woff"), url("../fonts/CircularStd-BoldItalic.ttf") format("truetype"), url("../fonts/CircularStd-BoldItalic.svg#CircularStd-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BoldItalic_1.eot");
+  src: url("../fonts/CircularStd-BoldItalic_1.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BoldItalic_1.woff2") format("woff2"), url("../fonts/CircularStd-BoldItalic_1.woff") format("woff"), url("../fonts/CircularStd-BoldItalic_1.ttf") format("truetype"), url("../fonts/CircularStd-BoldItalic_1.svg#CircularStd-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Book.eot");
+  src: url("../fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Book.woff2") format("woff2"), url("../fonts/CircularStd-Book.woff") format("woff"), url("../fonts/CircularStd-Book.ttf") format("truetype"), url("../fonts/CircularStd-Book.svg#CircularStd-Book") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Bold_3.eot");
+  src: url("../fonts/CircularStd-Bold_3.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Bold_3.woff2") format("woff2"), url("../fonts/CircularStd-Bold_3.woff") format("woff"), url("../fonts/CircularStd-Bold_3.ttf") format("truetype"), url("../fonts/CircularStd-Bold_3.svg#CircularStd-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BoldItalic_2.eot");
+  src: url("../fonts/CircularStd-BoldItalic_2.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BoldItalic_2.woff2") format("woff2"), url("../fonts/CircularStd-BoldItalic_2.woff") format("woff"), url("../fonts/CircularStd-BoldItalic_2.ttf") format("truetype"), url("../fonts/CircularStd-BoldItalic_2.svg#CircularStd-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BoldItalic_3.eot");
+  src: url("../fonts/CircularStd-BoldItalic_3.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BoldItalic_3.woff2") format("woff2"), url("../fonts/CircularStd-BoldItalic_3.woff") format("woff"), url("../fonts/CircularStd-BoldItalic_3.ttf") format("truetype"), url("../fonts/CircularStd-BoldItalic_3.svg#CircularStd-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Bold_4.eot");
+  src: url("../fonts/CircularStd-Bold_4.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Bold_4.woff2") format("woff2"), url("../fonts/CircularStd-Bold_4.woff") format("woff"), url("../fonts/CircularStd-Bold_4.ttf") format("truetype"), url("../fonts/CircularStd-Bold_4.svg#CircularStd-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BoldItalic_4.eot");
+  src: url("../fonts/CircularStd-BoldItalic_4.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BoldItalic_4.woff2") format("woff2"), url("../fonts/CircularStd-BoldItalic_4.woff") format("woff"), url("../fonts/CircularStd-BoldItalic_4.ttf") format("truetype"), url("../fonts/CircularStd-BoldItalic_4.svg#CircularStd-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Book_1.eot");
+  src: url("../fonts/CircularStd-Book_1.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Book_1.woff2") format("woff2"), url("../fonts/CircularStd-Book_1.woff") format("woff"), url("../fonts/CircularStd-Book_1.ttf") format("truetype"), url("../fonts/CircularStd-Book_1.svg#CircularStd-Book") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Book_2.eot");
+  src: url("../fonts/CircularStd-Book_2.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Book_2.woff2") format("woff2"), url("../fonts/CircularStd-Book_2.woff") format("woff"), url("../fonts/CircularStd-Book_2.ttf") format("truetype"), url("../fonts/CircularStd-Book_2.svg#CircularStd-Book") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Medium.eot");
+  src: url("../fonts/CircularStd-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Medium.woff2") format("woff2"), url("../fonts/CircularStd-Medium.woff") format("woff"), url("../fonts/CircularStd-Medium.ttf") format("truetype"), url("../fonts/CircularStd-Medium.svg#CircularStd-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Medium_1.eot");
+  src: url("../fonts/CircularStd-Medium_1.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Medium_1.woff2") format("woff2"), url("../fonts/CircularStd-Medium_1.woff") format("woff"), url("../fonts/CircularStd-Medium_1.ttf") format("truetype"), url("../fonts/CircularStd-Medium_1.svg#CircularStd-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Medium_2.eot");
+  src: url("../fonts/CircularStd-Medium_2.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Medium_2.woff2") format("woff2"), url("../fonts/CircularStd-Medium_2.woff") format("woff"), url("../fonts/CircularStd-Medium_2.ttf") format("truetype"), url("../fonts/CircularStd-Medium_2.svg#CircularStd-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BookItalic.eot");
+  src: url("../fonts/CircularStd-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BookItalic.woff2") format("woff2"), url("../fonts/CircularStd-BookItalic.woff") format("woff"), url("../fonts/CircularStd-BookItalic.ttf") format("truetype"), url("../fonts/CircularStd-BookItalic.svg#CircularStd-BookItalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BookItalic_1.eot");
+  src: url("../fonts/CircularStd-BookItalic_1.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BookItalic_1.woff2") format("woff2"), url("../fonts/CircularStd-BookItalic_1.woff") format("woff"), url("../fonts/CircularStd-BookItalic_1.ttf") format("truetype"), url("../fonts/CircularStd-BookItalic_1.svg#CircularStd-BookItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BookItalic_2.eot");
+  src: url("../fonts/CircularStd-BookItalic_2.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BookItalic_2.woff2") format("woff2"), url("../fonts/CircularStd-BookItalic_2.woff") format("woff"), url("../fonts/CircularStd-BookItalic_2.ttf") format("truetype"), url("../fonts/CircularStd-BookItalic_2.svg#CircularStd-BookItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BookItalic_3.eot");
+  src: url("../fonts/CircularStd-BookItalic_3.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BookItalic_3.woff2") format("woff2"), url("../fonts/CircularStd-BookItalic_3.woff") format("woff"), url("../fonts/CircularStd-BookItalic_3.ttf") format("truetype"), url("../fonts/CircularStd-BookItalic_3.svg#CircularStd-BookItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Medium_3.eot");
+  src: url("../fonts/CircularStd-Medium_3.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Medium_3.woff2") format("woff2"), url("../fonts/CircularStd-Medium_3.woff") format("woff"), url("../fonts/CircularStd-Medium_3.ttf") format("truetype"), url("../fonts/CircularStd-Medium_3.svg#CircularStd-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-Book_3.eot");
+  src: url("../fonts/CircularStd-Book_3.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Book_3.woff2") format("woff2"), url("../fonts/CircularStd-Book_3.woff") format("woff"), url("../fonts/CircularStd-Book_3.ttf") format("truetype"), url("../fonts/CircularStd-Book_3.svg#CircularStd-Book") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("../fonts/CircularStd-BookItalic_4.eot");
+  src: url("../fonts/CircularStd-BookItalic_4.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-BookItalic_4.woff2") format("woff2"), url("../fonts/CircularStd-BookItalic_4.woff") format("woff"), url("../fonts/CircularStd-BookItalic_4.ttf") format("truetype"), url("../fonts/CircularStd-BookItalic_4.svg#CircularStd-BookItalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+body .btnStyle1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 12px 32px;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: #cfe0fc !important;
+  border-color: #cfe0fc !important;
+  color: #000 !important;
+  font-weight: 700;
+  font-size: 16px;
+}
+body .btnStyle1:active {
+  background-color: #cfe0fc !important;
+  border-color: #cfe0fc !important;
+  color: #000 !important;
+}
+body .btnStyle1:hover {
+  background-color: #5892f3 !important;
+  border-color: #5892f3 !important;
+  color: #fff !important;
+}
+body .btnStyle1:disabled, body .btnStyle1.disabled, body .btnStyle1[disabled] {
+  opacity: 1;
+  background-color: #cccccc !important;
+  border-color: #cccccc !important;
+  color: #000 !important;
+}
+body .btnStyle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: #2873f0 !important;
+  border-color: #2873f0 !important;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 16px;
+  height: 44px;
+}
+body .btnStyle2:active {
+  background-color: #2873f0 !important;
+  border-color: #2873f0 !important;
+  color: #fff !important;
+}
+body .btnStyle2:hover {
+  background-color: #5892f3 !important;
+  border-color: #5892f3 !important;
+  color: #fff !important;
+}
+body .btnStyle2:disabled, body .btnStyle2.disabled, body .btnStyle2[disabled] {
+  opacity: 1;
+  background-color: #cccccc !important;
+  border-color: #cccccc !important;
+  color: #fff !important;
+}
+body .btnStyle2Second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 32px;
+  gap: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  height: 44px;
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  color: #fff !important;
+}
+body .btnStyle2Second:active {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  color: #fff !important;
+}
+body .btnStyle2Second:hover {
+  background-color: #868e96 !important;
+  border-color: #868e96 !important;
+  color: #fff !important;
+}
+body .btnStyle2Second:disabled, body .btnStyle2Second.disabled, body .btnStyle2Second[disabled] {
+  opacity: 1;
+  background-color: #cccccc !important;
+  border-color: #cccccc !important;
+  color: #fff !important;
+}
+body .btnStyle2Second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 32px;
+  gap: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  height: 44px;
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  color: #fff !important;
+}
+body .btnStyle2Second:active {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  color: #fff !important;
+}
+body .btnStyle2Second:hover {
+  background-color: #868e96 !important;
+  border-color: #868e96 !important;
+  color: #fff !important;
+}
+body .btnStyle2Second:disabled, body .btnStyle2Second.disabled, body .btnStyle2Second[disabled] {
+  background-color: #cccccc !important;
+  border-color: #cccccc !important;
+  color: #fff !important;
+}
+body .btnStyle2SecondOutline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 32px;
+  gap: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  height: 44px;
+  border-width: 2px;
+  background-color: transparent !important;
+  border-color: #6c757d !important;
+  color: #6c757d !important;
+}
+body .btnStyle2SecondOutline:active {
+  background-color: transparent !important;
+  border-color: #6c757d !important;
+  color: #6c757d !important;
+}
+body .btnStyle2SecondOutline:hover {
+  background-color: transparent !important;
+  border-color: #868e96 !important;
+  color: #868e96 !important;
+}
+body .btnStyle2SecondOutline:disabled, body .btnStyle2SecondOutline.disabled, body .btnStyle2SecondOutline[disabled] {
+  background-color: transparent !important;
+  border-color: #cccccc !important;
+  color: #cccccc !important;
+}
+
+@media only screen and (max-device-width: 600px) {
+  body .btnStyle1:hover {
+    background-color: #cfe0fc !important;
+    border-color: #cfe0fc !important;
+    color: #000 !important;
+  }
+  body .btnStyle1:active {
+    background-color: #5892f3 !important;
+    border-color: #5892f3 !important;
+    color: #fff !important;
+  }
+  body .btnStyle2:hover {
+    background-color: #2873f0 !important;
+    border-color: #2873f0 !important;
+    color: #fff !important;
+  }
+  body .btnStyle2:active {
+    background-color: #9fc1f8 !important;
+    border-color: #9fc1f8 !important;
+    color: #fff !important;
+  }
+  body .btnStyle2Second:hover {
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+    color: #fff !important;
+  }
+  body .btnStyle2Second:active {
+    background-color: #afb5ba !important;
+    border-color: #afb5ba !important;
+    color: #fff !important;
+  }
+  body .btnStyle2SecondOutline:hover {
+    background-color: transparent !important;
+    border-color: #6c757d !important;
+    color: #6c757d !important;
+  }
+  body .btnStyle2SecondOutline:active {
+    background-color: transparent !important;
+    border-color: #afb5ba !important;
+    color: #afb5ba !important;
+  }
+}
+nav.navbar {
+  height: 52px;
+}
+nav.navbar .navInner {
+  width: 100%;
+}
+nav.navbar .navInner .logo img {
+  width: 46px;
+  height: 24.19px;
+}
+nav.navbar .navInner .title {
+  color: #fff;
+  font-weight: bold;
+}
+nav.navbar .navInner .searchBtn img {
+  width: 16px;
+  height: 16px;
+}
+nav.navbar .navInner .backArrowWhite img {
+  width: 19px;
+  height: 13.82px;
+}
+nav.navbar .navInner .bagWhiteBtn img {
+  width: 12px;
+  height: 17.74px;
+  filter: grayscale(1) brightness(15);
+}
+
+.footer .footerInner {
+  height: 68px;
+  background-color: #f0f5fe;
+}
+.footer .footerInner .footerItem .footerItemIcon {
+  position: relative;
+}
+.footer .footerInner .footerItem .footerItemIcon img {
+  width: 18px;
+  height: 18px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  filter: grayscale(1) brightness(0.5);
+}
+.footer .footerInner .footerItem .footerItemIcon .badgeCount {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  background-color: #edb100;
+  border-radius: 50%;
+  position: absolute;
+  inset: 0px 2px auto auto;
+}
+.footer .footerInner .footerItem .footerItemText {
+  font-weight: 400;
+  font-size: 12px;
+  color: #2873F0;
+  filter: grayscale(1);
+}
+.footer .footerInner .footerItem.active .footerItemIcon img {
+  filter: grayscale(0);
+}
+.footer .footerInner .footerItem.active .footerItemText {
+  filter: grayscale(0);
+}
+.footer .footerInnerBtns {
+  height: 48px;
+}
+.footer .footerInnerBtns .addToBagBtn {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+.footer .footerInnerBtns .addToBagBtn:hover {
+  background-color: #f8f9fa;
+}
+.footer .footerInnerBtns .BuyNowBtn {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  background-color: #2873F0;
+}
+.footer .footerInnerBtns .BuyNowBtn:hover {
+  background-color: #0f5ad6;
+}
+
+main.main {
+  min-height: 100vh;
+}
+main.main .bodyPart .scrollPart {
+  overflow: hidden auto;
+  height: 100%;
+}
+
+[page-name] {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  inset: 0px;
+  padding: 0;
+  z-index: 1051;
+}
+[page-name] .innerDialog {
+  position: relative;
+  width: 100vw;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+}
+[page-name] .innerDialog .innerContent {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+[page-name] .innerDialog .innerContent .body {
+  position: relative;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+[page-name] .modal {
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+[page-name] ~ .modal-backdrop {
+  background-color: transparent;
+}
+
+.overflow-hidden-auto {
+  overflow: hidden auto;
+}
+
+.overflow-auto-hidden {
+  overflow: auto hidden;
+}
+
+.splashScreen .splashInner img {
+  width: 50px;
+}
+
+[page-name=home] .innerDialog .innerContent .firstFace {
+  height: 108px;
+  background-image: var(--bg);
+}
+[page-name=home] .innerDialog .innerContent .firstFace::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+[page-name=home] .innerDialog .innerContent .firstFace .shopName {
+  font-weight: 900;
+  font-size: 21px;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+[page-name=home] .innerDialog .innerContent .firstFace .callBtn img {
+  width: 16px;
+  height: 16px;
+}
+[page-name=home] .innerDialog .innerContent .firstFace .heartBtn {
+  display: block;
+}
+[page-name=home] .innerDialog .innerContent .firstFace .heartBtn img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(100);
+}
+[page-name=home] .innerDialog .innerContent .firstFace .heartBtn.active img {
+  filter: brightness(1);
+  -webkit-animation: jellyEffect;
+          animation: jellyEffect;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes jellyEffect {
+  from, to {
+    opacity: 1;
+  }
+  25% {
+    transform: scale(0.9, 1.5);
+  }
+  50% {
+    transform: scale(1.5, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.5);
+  }
+}
+@keyframes jellyEffect {
+  from, to {
+    opacity: 1;
+  }
+  25% {
+    transform: scale(0.9, 1.5);
+  }
+  50% {
+    transform: scale(1.5, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.5);
+  }
+}
+[page-name=home] .innerDialog .innerContent .firstFace .shareBtn img {
+  width: 16px;
+  height: 16px;
+}
+[page-name=home] .innerDialog .innerContent .firstFace .shopCategory {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+[page-name=home] .innerDialog .innerContent .firstFace .divider {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+[page-name=home] .innerDialog .innerContent .firstFace .heartRed img {
+  width: 14px;
+  height: 12px;
+}
+[page-name=home] .innerDialog .innerContent .firstFace .totleLikes {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+[page-name=home] .innerDialog .innerContent .oneDayDelivery {
+  height: 38px;
+  font-weight: 300;
+  font-size: 12px;
+  color: #000;
+  background-color: #f0f5fe;
+}
+[page-name=home] .innerDialog .innerContent .notAcceptingOrder {
+  height: 38px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  background-color: #edb100;
+}
+[page-name=home] .innerDialog .innerContent .topCategory .topCategoryTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+[page-name=home] .innerDialog .innerContent .topCategory .topCatItems::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+[page-name=home] .innerDialog .innerContent .topCategory .topCatItems .topCatItem {
+  width: 94px;
+  height: 92px;
+  border: 1px solid #f0f5fe;
+  border-radius: 10px;
+}
+[page-name=home] .innerDialog .innerContent .topCategory .topCatItems .topCatItem .topCatImg img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+[page-name=home] .innerDialog .innerContent .topCategory .topCatItems .topCatItem .topCatName {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=home] .innerDialog .innerContent .topCategory .topCatItems .topCatItem.active {
+  background-color: #f0f5fe;
+}
+[page-name=home] .innerDialog .innerContent .topSubCategory .topSubCatInner {
+  border-color: #e9ecef !important;
+}
+[page-name=home] .innerDialog .innerContent .topSubCategory .topCategoryTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+[page-name=home] .innerDialog .innerContent .topSubCategory .topCatItems::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+[page-name=home] .innerDialog .innerContent .topSubCategory .topCatItems .topCatItem {
+  width: 65px;
+  height: 65px;
+  border: 1px solid #f0f5fe;
+  border-radius: 10px;
+}
+[page-name=home] .innerDialog .innerContent .topSubCategory .topCatItems .topCatItem .topCatImg img {
+  width: 28px;
+  height: 28px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+[page-name=home] .innerDialog .innerContent .topSubCategory .topCatItems .topCatItem .topCatName {
+  font-weight: 500;
+  font-size: 12px;
+  color: #000;
+}
+[page-name=home] .innerDialog .innerContent .topSubCategory .topCatItems .topCatItem.active {
+  border-width: 2px;
+  border-color: #2873F0;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .topCategoryTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .outStockLabel {
+  font-weight: 500;
+  font-size: 14px;
+  color: #dc3545;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellImg {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  background: #f8f9fa;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellTitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellDes span {
+  font-size: 12px;
+  font-weight: 500;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellDes span:first-child {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellDes span:nth-child(2) {
+  color: #6c757d;
+  text-decoration: line-through;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellDes span:last-child {
+  color: #198754;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellGSTInfo {
+  font-weight: 400;
+  font-size: 12px;
+  color: #6c757d;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellOpt {
+  color: #edb100;
+  font-size: 12px;
+  font-weight: 500;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .shopBtn {
+  border: 1px solid #e9ecef;
+  width: 39px;
+  height: 33px;
+  display: grid;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .shopBtn img:first-child {
+  width: 14.89px;
+  height: 18.8px;
+  filter: grayscale(1);
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .shopBtn img:last-child {
+  width: 14.89px;
+  height: 18.8px;
+  display: none;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .shopBtn.active {
+  border: 2px solid #2873F0;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .shopBtn.active img:first-child {
+  display: none;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .shopBtn.active img:last-child {
+  display: block;
+  -webkit-animation: jellyEffect;
+          animation: jellyEffect;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes jellyEffect {
+  from, to {
+    opacity: 1;
+  }
+  25% {
+    transform: scale(0.9, 1.5);
+  }
+  50% {
+    transform: scale(1.5, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.5);
+  }
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellSpecs {
+  border-bottom: 1px solid #e9ecef;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellSpecs .bestSellSpec {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 4px 8px;
+  display: block;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellSpecs:not(.active) .bestSellSpec:nth-child(6), [page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellSpecs:not(.active) .bestSellSpec:nth-child(6) ~ .bestSellSpec {
+  display: none;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellSpecMore {
+  color: #2873F0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellSpecMore span:last-child {
+  display: none;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellSpecMore.active span:first-child {
+  display: none;
+}
+[page-name=home] .innerDialog .innerContent .bestSelling .bestSellCard .bestSellSpecMore.active span:last-child {
+  display: block;
+}
+[page-name=home] .modal .modal-dialog .modal-content .modal-header .backWhiteBtn {
+  border: none;
+}
+[page-name=home] .modal .modal-dialog .modal-content .modal-header .backWhiteBtn img {
+  width: 19px;
+  height: 13.82px;
+}
+[page-name=home] .modal .modal-dialog .modal-content .modal-header .searchInput input {
+  font-weight: 500;
+  font-size: 14px;
+}
+[page-name=home] .modal .modal-dialog .modal-content .modal-header .searchInput input::-moz-placeholder {
+  color: #adb5bd;
+}
+[page-name=home] .modal .modal-dialog .modal-content .modal-header .searchInput input:-ms-input-placeholder {
+  color: #adb5bd;
+}
+[page-name=home] .modal .modal-dialog .modal-content .modal-header .searchInput input::placeholder {
+  color: #adb5bd;
+}
+[page-name=home] .modal .modal-dialog .modal-content .modal-header .searchWhiteBtn {
+  border: none;
+}
+[page-name=home] .modal .modal-dialog .modal-content .modal-header .searchWhiteBtn img {
+  width: 16px;
+  height: 16px;
+}
+[page-name=home] .modal .modal-dialog .modal-content .modal-body .items .item .itemInner .productIcon {
+  width: 35px;
+  height: 35px;
+}
+[page-name=home] .modal .modal-dialog .modal-content .modal-body .items .item .itemInner .productIcon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+[page-name=home] .modal .modal-dialog .modal-content .modal-body .items .item .itemInner .productName {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=home] .shareApp {
+  background-color: #252525;
+  height: auto;
+  border-radius: 15px 15px 0px 0px;
+}
+[page-name=home] .shareApp .offcanvas-header .offcanvas-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=home] .shareApp .offcanvas-header .closeBtn {
+  width: 16px;
+  height: 16px;
+}
+[page-name=home] .shareApp .offcanvas-body .SharingApp .CopyApp img {
+  width: 50px;
+}
+[page-name=home] .shareApp .offcanvas-body .SharingApp .ShareUrl {
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 15px;
+}
+[page-name=home] .shareApp .offcanvas-body .SharingApp .ShareUrl .shareCopyUrl {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 400;
+  border: 2px solid #545454;
+}
+[page-name=home] .shareApp .offcanvas-body .SharingApp .shareAppItems::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+[page-name=home] .shareApp .offcanvas-body .SharingApp .shareAppItems .shareAppItem {
+  width: 80px;
+}
+[page-name=home] .shareApp .offcanvas-body .SharingApp .shareAppItems .shareAppItem .ShareAppImg img {
+  width: 50px;
+}
+[page-name=home] .shareApp .offcanvas-body .SharingApp .shareAppItems .shareNotesName {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 400;
+}
+[page-name=home] .shareApp .offcanvas-body .SharingApp .shareAppItems .shareNotesName .shareAppChat {
+  color: rgba(255, 255, 255, 0.4);
+}
+[page-name=home] .offcanvas-backdrop {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s all;
+}
+[page-name=home] .offcanvas-backdrop.show {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+[page-name=product-detail] .innerDialog .innerContent .items {
+  border-bottom: 1px solid #e9ecef;
+}
+[page-name=product-detail] .innerDialog .innerContent .items .item .itemImg img {
+  max-width: 300px;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+[page-name=product-detail] .innerDialog .innerContent .items .item .shareOptions {
+  position: absolute;
+  inset: 20px 5px auto auto;
+  width: 50px;
+}
+[page-name=product-detail] .innerDialog .innerContent .items .item .shareOptions .shareWhiteBtn {
+  width: 39px;
+  height: 33px;
+  border-radius: 5px;
+  background-color: #e7effd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+[page-name=product-detail] .innerDialog .innerContent .items .item .shareOptions .shareWhiteBtn img {
+  width: 15.32px;
+  height: 18.39px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+[page-name=product-detail] .innerDialog .innerContent .items .item .shareOptions .phoneWhiteBtn {
+  width: 39px;
+  height: 33px;
+  border-radius: 5px;
+  background-color: #e7effd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+[page-name=product-detail] .innerDialog .innerContent .items .item .shareOptions .phoneWhiteBtn img {
+  width: 15.32px;
+  height: 18.39px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+[page-name=product-detail] .innerDialog .innerContent .instockText {
+  font-weight: 500;
+  font-size: 14px;
+  color: #edb100;
+}
+[page-name=product-detail] .innerDialog .innerContent .productName {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+[page-name=product-detail] .innerDialog .innerContent .discountedPricing {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=product-detail] .innerDialog .innerContent .mainPricing {
+  font-weight: 500;
+  font-size: 14px;
+  color: #adb5bd;
+}
+[page-name=product-detail] .innerDialog .innerContent .pricingPer {
+  font-weight: 700;
+  font-size: 14px;
+  color: #157147;
+}
+[page-name=product-detail] .innerDialog .innerContent .highlights {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=product-detail] .innerDialog .innerContent .viewDetailsBtn {
+  font-weight: 400;
+  font-size: 14px;
+  color: #2873F0;
+}
+[page-name=product-detail] .innerDialog .innerContent .allDetails {
+  border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+[page-name=product-detail] .innerDialog .innerContent .allDetails .item .itemInner .label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #adb5bd;
+}
+[page-name=product-detail] .innerDialog .innerContent .allDetails .item .itemInner .value {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=product-detail] .innerDialog .innerContent .otherOptionAvailable {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=product-detail] .innerDialog .innerContent .otherOptionAvailable span {
+  font-weight: 300;
+  color: #495057;
+}
+[page-name=product-detail] .innerDialog .innerContent .otherProducts::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+[page-name=product-detail] .innerDialog .innerContent .otherProducts .product {
+  border: 1px solid #f0f5fe;
+  background-color: #f0f5fe;
+  border-radius: 8px;
+  width: 130px;
+  height: 161px;
+  position: relative;
+}
+[page-name=product-detail] .innerDialog .innerContent .otherProducts .product .discountLabel {
+  background: #1d9d61;
+  border-radius: 8px 0px 0px 0px;
+  font-weight: 700;
+  font-size: 10px;
+  color: #fff;
+  display: inline-grid;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  inset: 0px auto auto 0px;
+}
+[page-name=product-detail] .innerDialog .innerContent .otherProducts .product .productImg img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+[page-name=product-detail] .innerDialog .innerContent .otherProducts .product .productDetail {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+[page-name=product-detail] .innerDialog .innerContent .otherProducts .product .pricings .discountedPrice {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=product-detail] .innerDialog .innerContent .otherProducts .product .pricings .actualPrice {
+  font-weight: 500;
+  font-size: 12px;
+  color: #6c757d;
+}
+[page-name=product-detail] .innerDialog .innerContent .additionalFeaturesItems .item .itemIcon {
+  width: 31px;
+  height: 31px;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+[page-name=product-detail] .innerDialog .innerContent .additionalFeaturesItems .item .itemIcon img {
+  width: 20.75px;
+  height: 20.75px;
+}
+[page-name=product-detail] .innerDialog .innerContent .additionalFeaturesItems .item .itemTitle {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=product-detail] .innerDialog .innerContent .additionalFeaturesItems .item .itemSubTitle {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=product-detail] .innerDialog .innerContent .productDescriptionTitle {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=product-detail] .innerDialog .innerContent .productDescriptionData {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=product-detail] .addToBagPopup {
+  background-color: #f0f5fe;
+  height: auto;
+}
+[page-name=product-detail] .addToBagPopup .offcanvas-header .offcanvas-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=product-detail] .addToBagPopup .offcanvas-header .closeBtn {
+  width: 16px;
+  height: 16px;
+}
+[page-name=product-detail] .addToBagPopup .offcanvas-body .removePopUp .innerText {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=product-detail] .addToBagPopup .offcanvas-body .removePopUp .removerWarn {
+  font-weight: 400;
+  font-size: 16px;
+}
+[page-name=product-detail] .addToBagPopup .offcanvas-body .removeOption .Confirm {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=product-detail] .addToBagPopup .offcanvas-body .removeOption .Cancel {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2873F0;
+}
+[page-name=product-detail] .offcanvas-backdrop {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s all;
+}
+[page-name=product-detail] .offcanvas-backdrop.show {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+[page-name=product-detail] .modal .modal-dialog .modal-content .modal-header .backWhiteBtn {
+  border: none;
+}
+[page-name=product-detail] .modal .modal-dialog .modal-content .modal-header .backWhiteBtn img {
+  width: 19px;
+  height: 13.82px;
+}
+[page-name=product-detail] .modal .modal-dialog .modal-content .modal-header .searchInput input {
+  font-weight: 500;
+  font-size: 14px;
+}
+[page-name=product-detail] .modal .modal-dialog .modal-content .modal-header .searchInput input::-moz-placeholder {
+  color: #adb5bd;
+}
+[page-name=product-detail] .modal .modal-dialog .modal-content .modal-header .searchInput input:-ms-input-placeholder {
+  color: #adb5bd;
+}
+[page-name=product-detail] .modal .modal-dialog .modal-content .modal-header .searchInput input::placeholder {
+  color: #adb5bd;
+}
+[page-name=product-detail] .modal .modal-dialog .modal-content .modal-header .searchWhiteBtn {
+  border: none;
+}
+[page-name=product-detail] .modal .modal-dialog .modal-content .modal-header .searchWhiteBtn img {
+  width: 16px;
+  height: 16px;
+}
+[page-name=product-detail] .modal .modal-dialog .modal-content .modal-body .items .item .itemInner .productIcon {
+  width: 35px;
+  height: 35px;
+}
+[page-name=product-detail] .modal .modal-dialog .modal-content .modal-body .items .item .itemInner .productIcon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+[page-name=product-detail] .modal .modal-dialog .modal-content .modal-body .items .item .itemInner .productName {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=product-detail] .modal.specificationOverlay .modal-dialog .modal-content .modal-body .productName {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+[page-name=product-detail] .modal.specificationOverlay .modal-dialog .modal-content .modal-body .discountedPricing {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=product-detail] .modal.specificationOverlay .modal-dialog .modal-content .modal-body .mainPricing {
+  font-weight: 500;
+  font-size: 14px;
+  color: #adb5bd;
+}
+[page-name=product-detail] .modal.specificationOverlay .modal-dialog .modal-content .modal-body .pricingPer {
+  font-weight: 700;
+  font-size: 14px;
+  color: #157147;
+}
+[page-name=product-detail] .modal.specificationOverlay .modal-dialog .modal-content .modal-body .highlights {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=product-detail] .modal.specificationOverlay .modal-dialog .modal-content .modal-body .allDetails {
+  border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+[page-name=product-detail] .modal.specificationOverlay .modal-dialog .modal-content .modal-body .allDetails .item .itemInner .label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #adb5bd;
+}
+[page-name=product-detail] .modal.specificationOverlay .modal-dialog .modal-content .modal-body .allDetails .item .itemInner .value {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+
+[page-name=login] .innerDialog .innerContent .info {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=login] .innerDialog .innerContent .info span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=login] .innerDialog .innerContent .info .btn {
+  font-weight: 400;
+  font-size: 14px;
+  color: #2873F0;
+}
+[page-name=login] .innerDialog .innerContent .loginSignupTitle {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+}
+[page-name=login] .innerDialog .innerContent .inputLabel {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=login] .innerDialog .innerContent .cuntryCode input {
+  height: 48px;
+  width: 48px;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+}
+[page-name=login] .innerDialog .innerContent .mobileInput input {
+  height: 48px;
+  font-size: 14px;
+  border-width: 2px;
+  background-image: none !important;
+  border-radius: 8px;
+}
+[page-name=login] .innerDialog .innerContent .mobileInput input.phoneNumberInput {
+  padding-left: 46px;
+}
+[page-name=login] .innerDialog .innerContent .mobileInput input.commonOtps {
+  max-width: 48px !important;
+}
+[page-name=login] .innerDialog .innerContent .mobileInput input:valid {
+  border-color: #cccccc;
+}
+[page-name=login] .innerDialog .innerContent .mobileInput input::-moz-placeholder {
+  color: #cccccc;
+}
+[page-name=login] .innerDialog .innerContent .mobileInput input:-ms-input-placeholder {
+  color: #cccccc;
+}
+[page-name=login] .innerDialog .innerContent .mobileInput input::placeholder {
+  color: #cccccc;
+}
+[page-name=login] .innerDialog .innerContent .mobileInput input:-webkit-autofill, [page-name=login] .innerDialog .innerContent .mobileInput input:-webkit-autofill:hover, [page-name=login] .innerDialog .innerContent .mobileInput input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #000;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+[page-name=login] .innerDialog .innerContent .mobileInput .resendOtpBox .otpTiming {
+  font-weight: 450;
+  font-size: 12px;
+  color: #000;
+}
+[page-name=login] .innerDialog .innerContent .mobileInput .resendOtpBox .otpResendBtn {
+  font-weight: 700;
+  font-size: 12px;
+  color: #2873F0;
+}
+[page-name=login] .innerDialog .innerContent .invalid-feedback {
+  font-weight: 450;
+  font-size: 12px;
+}
+[page-name=login] .innerDialog .innerContent .termsAndConditions .form-check-input {
+  width: 16px;
+  height: 16px;
+  background: #e7effd;
+  border: 2px solid #2873F0;
+  border-radius: 2px;
+  transition: 0.3s cubic-bezier(0.68, -0.85, 0.87, 2.49);
+}
+[page-name=login] .innerDialog .innerContent .termsAndConditions .form-check-input:checked {
+  background-image: url("../img/icons/checked.png");
+  background-size: cover;
+  border-width: 0px;
+}
+[page-name=login] .innerDialog .innerContent .termsAndConditions .form-check-label {
+  font-size: 10px;
+}
+[page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .cuntryCode {
+  position: absolute;
+  left: 4px;
+}
+[page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .cuntryCode .form-control {
+  height: 48px;
+  width: 48px;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+}
+[page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .mobileInput .form-control {
+  height: 48px;
+  font-size: 14px;
+  border-width: 2px;
+  background-image: none !important;
+  border-radius: 8px;
+  font-weight: 450;
+  font-size: 14px;
+  padding-left: 46px;
+}
+[page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .mobileInput .form-control:valid {
+  border-color: #cccccc;
+}
+[page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .mobileInput .form-control::-moz-placeholder {
+  color: #cccccc;
+}
+[page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .mobileInput .form-control:-ms-input-placeholder {
+  color: #cccccc;
+}
+[page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .mobileInput .form-control::placeholder {
+  color: #cccccc;
+}
+[page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .mobileInput .form-control:-webkit-autofill, [page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .mobileInput .form-control:-webkit-autofill:hover, [page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .mobileInput .form-control:-webkit-autofill:focus {
+  -webkit-text-fill-color: #000;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+[page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .mobileInput .resendOtpBox .otpTiming {
+  font-weight: 450;
+  font-size: 12px;
+  color: #000;
+}
+[page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .mobileInput .resendOtpBox .otpResendBtn {
+  font-weight: 700;
+  font-size: 12px;
+  color: #2873F0;
+}
+[page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .invalid-feedback {
+  font-weight: 450;
+  font-size: 12px;
+}
+[page-name=login] .modalResendOTP .modal-dialog .modal-content .modal-body .modalBody .otpWarn {
+  font-weight: 400;
+  font-size: 16px;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .addBagInner {
+  min-height: 100%;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellImg {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  background: #f8f9fa;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellTitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellDes span {
+  font-size: 12px;
+  font-weight: 500;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellDes span:first-child {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellDes span:nth-child(2) {
+  color: #6c757d;
+  text-decoration: line-through;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellDes span:last-child {
+  color: #198754;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellGSTInfo {
+  font-weight: 400;
+  font-size: 12px;
+  color: #6c757d;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellOpt {
+  color: #edb100;
+  font-size: 12px;
+  font-weight: 500;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .shopBtn {
+  border: 1px solid #e9ecef;
+  width: 39px;
+  height: 33px;
+  display: grid;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .shopBtn img:first-child {
+  width: 14.89px;
+  height: 18.8px;
+  filter: grayscale(1);
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .shopBtn img:last-child {
+  width: 14.89px;
+  height: 18.8px;
+  display: none;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .shopBtn.active {
+  border: 2px solid #2873F0;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .shopBtn.active img:first-child {
+  display: none;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .shopBtn.active img:last-child {
+  display: block;
+  -webkit-animation: jellyEffect;
+          animation: jellyEffect;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes jellyEffect {
+  from, to {
+    opacity: 1;
+  }
+  25% {
+    transform: scale(0.9, 1.5);
+  }
+  50% {
+    transform: scale(1.5, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.5);
+  }
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellSpecs {
+  border-bottom: 1px solid #e9ecef;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellSpecs.mx-15 {
+  margin: 0px -15px;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellSpecs.bag-button .btn {
+  font-size: 14px;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellSpecs.bag-button .remove-button {
+  color: #6c757d !important;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  border-right: 1px solid #e9ecef;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellSpecs .bestSellSpec {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 4px 8px;
+  display: block;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellSpecs:not(.active) .bestSellSpec:nth-child(6), [page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellSpecs:not(.active) .bestSellSpec:nth-child(6) ~ .bestSellSpec {
+  display: none;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellButton {
+  border-bottom: 1px solid #e9ecef;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellButton .btn {
+  font-size: 14px;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellButton .bagRemove {
+  color: #6c757d !important;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  border-right: 1px solid #e9ecef;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellSpecMore {
+  color: #2873F0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellSpecMore span:last-child {
+  display: none;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellSpecMore.active span:first-child {
+  display: none;
+}
+[page-name=bag] .innerDialog .innerContent .addBag .bestSellCard .bestSellSpecMore.active span:last-child {
+  display: block;
+}
+[page-name=bag] .innerDialog .innerContent .priceDetails .bagDetailsHeading {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=bag] .innerDialog .innerContent .priceDetails .priceDetailBg .bagitemPrice {
+  border-bottom: 2px solid #f8f9fa;
+}
+[page-name=bag] .innerDialog .innerContent .priceDetails .priceDetailBg .bagitemPrice .itemInner .value {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=bag] .innerDialog .innerContent .priceDetails .priceDetailBg .bagitemPrice .itemInner .discountedPricing {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=bag] .innerDialog .innerContent .priceDetails .priceDetailBg .bagitemPrice .itemInner .discountedPricingTotal {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=bag] .innerDialog .innerContent .priceDetails .priceDetailBg .bagitemPrice .itemInner .discount {
+  color: #21b26f !important;
+}
+[page-name=bag] .innerDialog .bagContinueBtn {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+[page-name=bag] .DeleteItemConfirmOffcanvas {
+  background-color: #f0f5fe;
+  height: auto;
+}
+[page-name=bag] .DeleteItemConfirmOffcanvas .offcanvas-header .offcanvas-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=bag] .DeleteItemConfirmOffcanvas .offcanvas-header .closeBtn {
+  width: 16px;
+  height: 16px;
+}
+[page-name=bag] .DeleteItemConfirmOffcanvas .offcanvas-body .removePopUp .innerText {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=bag] .DeleteItemConfirmOffcanvas .offcanvas-body .removePopUp .removerWarn {
+  font-weight: 400;
+  font-size: 16px;
+}
+[page-name=bag] .DeleteItemConfirmOffcanvas .offcanvas-body .removeOption .bagConfirm {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=bag] .DeleteItemConfirmOffcanvas .offcanvas-body .removeOption .bagCancel {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2873F0;
+}
+[page-name=bag] .offcanvas-backdrop {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s all;
+}
+[page-name=bag] .offcanvas-backdrop.show {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+[page-name=bagEmpty] .innerDialog .innerContent .bagEmpty .bagStatus {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+[page-name=bagEmpty] .innerDialog .innerContent .bagEmpty .empty-bag-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #6c757d;
+}
+[page-name=bagEmpty] .innerDialog .innerContent .bagEmpty .emptyBagButton {
+  background: #2873F0;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0px 40px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+[page-name=bagEmpty] .innerDialog .innerContent .bagEmpty .topCategory .topCategoryTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+[page-name=bagEmpty] .innerDialog .innerContent .bagEmpty .topCategory .topCatItems::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+[page-name=bagEmpty] .innerDialog .innerContent .bagEmpty .topCategory .topCatItems .topCatItem {
+  width: 94px;
+  height: 92px;
+  border: 1px solid #f0f5fe;
+  border-radius: 10px;
+}
+[page-name=bagEmpty] .innerDialog .innerContent .bagEmpty .topCategory .topCatItems .topCatItem .topCatImg img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+[page-name=bagEmpty] .innerDialog .innerContent .bagEmpty .topCategory .topCatItems .topCatItem .topCatName {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=bagEmpty] .innerDialog .innerContent .bagEmpty .topCategory .topCatItems .topCatItem.active {
+  background-color: #f0f5fe;
+}
+
+[page-name=address] .innerDialog .innerContent .addressGps .btn {
+  border: 1px solid #e7effd;
+  border-radius: 5px;
+  background-color: #e7effd;
+  height: 48px;
+  font-weight: 400;
+  font-size: 14px;
+}
+[page-name=address] .innerDialog .innerContent .selectedAddressFromMap {
+  background: #fff4d3;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=address] .innerDialog .innerContent .addressHeading {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+}
+[page-name=address] .innerDialog .innerContent .addressLabel {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=address] .innerDialog .innerContent .form-control, [page-name=address] .innerDialog .innerContent .form-select {
+  background: #fff;
+  border-radius: 5px;
+  border-width: 2px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=address] .innerDialog .innerContent .form-control:invalid, [page-name=address] .innerDialog .innerContent .form-select:invalid {
+  background-image: none;
+}
+[page-name=address] .innerDialog .innerContent .form-control:valid, [page-name=address] .innerDialog .innerContent .form-select:valid {
+  border-color: #ced4da;
+  background-image: none;
+}
+[page-name=address] .innerDialog .innerContent .form-select option:disabled {
+  color: #dee2e6;
+}
+[page-name=address] .innerDialog .innerContent .form-select option {
+  color: #000;
+}
+[page-name=address] .innerDialog .innerContent .form-select:invalid {
+  color: #adb5bd;
+}
+[page-name=personalDetail] .innerDialog .innerContent .personalDetail .personalDetailHeading {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+}
+[page-name=personalDetail] .innerDialog .innerContent .personalDetail .personalDetailLabel {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=personalDetail] .innerDialog .innerContent .personalDetail .form-control {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=personalDetail] .innerDialog .innerContent .personalDetail .form-select {
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=personalDetail] .innerDialog .innerContent .personalDetail .btnStyle2 {
+  height: 48px;
+}
+
+[page-name=summary] .innerDialog .innerContent .body .summaryInner {
+  min-height: 100%;
+}
+[page-name=summary] .innerDialog .innerContent .body .summaryBar .progressContent {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ced4da;
+}
+[page-name=summary] .innerDialog .innerContent .body .summaryBar .progressContent.active {
+  color: #2873F0;
+}
+[page-name=summary] .innerDialog .innerContent .body .summaryBar .progressContent.active.progressBar::after {
+  border-bottom: 1px dashed #2873F0;
+}
+[page-name=summary] .innerDialog .innerContent .body .summaryBar .progressContent.active ~ .progressContent {
+  color: #2873F0;
+}
+[page-name=summary] .innerDialog .innerContent .body .summaryBar .progressContent.active ~ .progressContent.progressBar::after {
+  border-bottom: 1px dashed #2873F0;
+}
+[page-name=summary] .innerDialog .innerContent .body .summaryBar .progressBar span {
+  z-index: 1;
+}
+[page-name=summary] .innerDialog .innerContent .body .summaryBar .progressBar::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  border-bottom: 1px dashed;
+  inset: 50% -50% 0px 50%;
+  z-index: 0;
+}
+[page-name=summary] .innerDialog .innerContent .body .summaryBar .progressBar:first-child::after {
+  display: none;
+}
+[page-name=summary] .innerDialog .innerContent .body .addDeilverAddress .summaryHeading {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=summary] .innerDialog .innerContent .body .addDeilverAddress .deilverAddAddress {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2873F0;
+  border: 1px solid #2873F0;
+  border-radius: 5px;
+  padding: 15px;
+}
+[page-name=summary] .innerDialog .innerContent .body .summaryAddressDetail .summaryHeading {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=summary] .innerDialog .innerContent .body .summaryAddressDetail .orderCustomeName {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=summary] .innerDialog .innerContent .body .summaryAddressDetail .orderSummaryEdit {
+  font-weight: 400;
+  font-size: 12px;
+  color: #2873F0;
+}
+[page-name=summary] .innerDialog .innerContent .body .summaryAddressDetail .addresssummary {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=summary] .innerDialog .innerContent .body .productItem .summaryHeading {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=summary] .innerDialog .innerContent .body .productItem .orderSendingTime {
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.99);
+  background: #EAF1FE;
+  border-bottom: 1px solid #FAFAFA;
+  border-radius: 5px;
+  padding: 3px 10px;
+  display: inline-block;
+}
+[page-name=summary] .innerDialog .innerContent .body .productItem .bestSellCard .bestSellImg {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  background: #f8f9fa;
+}
+[page-name=summary] .innerDialog .innerContent .body .productItem .bestSellCard .bestSellImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+[page-name=summary] .innerDialog .innerContent .body .productItem .bestSellCard .closeOrder {
+  cursor: pointer;
+}
+[page-name=summary] .innerDialog .innerContent .body .productItem .bestSellCard .bestSellTitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=summary] .innerDialog .innerContent .body .productItem .bestSellCard .bestSellDes span {
+  font-size: 12px;
+  font-weight: 500;
+}
+[page-name=summary] .innerDialog .innerContent .body .productItem .bestSellCard .bestSellDes span:first-child {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+[page-name=summary] .innerDialog .innerContent .body .productItem .bestSellCard .bestSellDes span:nth-child(2) {
+  color: #6c757d;
+  text-decoration: line-through;
+}
+[page-name=summary] .innerDialog .innerContent .body .productItem .bestSellCard .bestSellDes span:last-child {
+  color: #198754;
+}
+[page-name=summary] .innerDialog .innerContent .body .productItem .bestSellCard .bestSellGSTInfo {
+  font-weight: 400;
+  font-size: 12px;
+  color: #6c757d;
+}
+[page-name=summary] .innerDialog .innerContent .body .priceDetails .bagDetailsHeading {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=summary] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice {
+  border-bottom: 2px solid #f8f9fa;
+}
+[page-name=summary] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice .itemInner .value {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=summary] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice .itemInner .discountedPricing {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=summary] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice .itemInner .discountedPricingTotal {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=summary] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice .itemInner .discount {
+  color: #21b26f !important;
+}
+[page-name=summary] .innerDialog .innerContent .body .bagContinueBtn {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+[page-name=summary] .DeleteItemConfirmOffcanvas {
+  background-color: #f0f5fe;
+  height: auto;
+}
+[page-name=summary] .DeleteItemConfirmOffcanvas .offcanvas-header .offcanvas-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=summary] .DeleteItemConfirmOffcanvas .offcanvas-header .closeBtn {
+  width: 16px;
+  height: 16px;
+}
+[page-name=summary] .DeleteItemConfirmOffcanvas .offcanvas-body .removePopUp .innerText {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=summary] .DeleteItemConfirmOffcanvas .offcanvas-body .removePopUp .removerWarn {
+  font-weight: 400;
+  font-size: 16px;
+}
+[page-name=summary] .DeleteItemConfirmOffcanvas .offcanvas-body .removeOption .bagConfirm {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=summary] .DeleteItemConfirmOffcanvas .offcanvas-body .removeOption .bagCancel {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2873F0;
+}
+[page-name=summary] .offcanvas-backdrop {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s all;
+}
+[page-name=summary] .offcanvas-backdrop.show {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+[page-name=location] .innerDialog .innerContent .location .locationHeaing {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=location] .innerDialog .innerContent .location .addressArea {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+[page-name=payment] .innerDialog .innerContent .body .summaryBar .progressContent {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ced4da;
+}
+[page-name=payment] .innerDialog .innerContent .body .summaryBar .progressContent.active {
+  color: #2873F0;
+}
+[page-name=payment] .innerDialog .innerContent .body .summaryBar .progressContent.active.progressBar::after {
+  border-bottom: 1px dashed #2873F0;
+}
+[page-name=payment] .innerDialog .innerContent .body .summaryBar .progressContent.active ~ .progressContent {
+  color: #2873F0;
+}
+[page-name=payment] .innerDialog .innerContent .body .summaryBar .progressContent.active ~ .progressContent.progressBar::after {
+  border-bottom: 1px dashed #2873F0;
+}
+[page-name=payment] .innerDialog .innerContent .body .summaryBar .progressBar span {
+  z-index: 1;
+}
+[page-name=payment] .innerDialog .innerContent .body .summaryBar .progressBar::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  border-bottom: 1px dashed;
+  inset: 50% -50% 0px 50%;
+  z-index: 0;
+}
+[page-name=payment] .innerDialog .innerContent .body .summaryBar .progressBar:first-child::after {
+  display: none;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .paymentOptionSectionInner {
+  min-height: 100%;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .paymentHeading {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .deilverAddAddress {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2873F0;
+  border: 1px solid #2873F0;
+  border-radius: 5px;
+  padding: 15px;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .orderSendingTime {
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.99);
+  background: #EAF1FE;
+  border-bottom: 1px solid #FAFAFA;
+  border-radius: 5px;
+  padding: 3px 10px;
+  display: inline-block;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .bestSellCard .bestSellImg {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  background: #f8f9fa;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .bestSellCard .bestSellImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .bestSellCard .closeOrder {
+  cursor: pointer;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .bestSellCard .bestSellTitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .bestSellCard .bestSellDes span {
+  font-size: 12px;
+  font-weight: 500;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .bestSellCard .bestSellDes span:first-child {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .bestSellCard .bestSellDes span:nth-child(2) {
+  color: #6c757d;
+  text-decoration: line-through;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .bestSellCard .bestSellDes span:last-child {
+  color: #198754;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .bestSellCard .bestSellGSTInfo {
+  font-weight: 400;
+  font-size: 12px;
+  color: #6c757d;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .orderCustomeName {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .orderSummaryEdit {
+  font-weight: 400;
+  font-size: 12px;
+  color: #2873F0;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .addresssummary {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .paymentOption .paymentList {
+  background: #fff;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .paymentOption .paymentList input ~ label {
+  padding-left: 28px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 14px;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .paymentOption .paymentList input ~ label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #2873F0;
+  inset: 0px auto 0px 0px;
+  margin: auto;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .paymentOption .paymentList input:checked ~ label::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  inset: 0px auto 0px 3px;
+  margin: auto;
+  background-color: #2873F0;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .paymentOption .codWarning {
+  font-weight: 400;
+  font-size: 12px;
+  color: #d39e00;
+}
+[page-name=payment] .innerDialog .innerContent .body .paymentOptionSection .bagContinueBtn {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+[page-name=payment] .innerDialog .innerContent .body .priceDetails .bagDetailsHeading {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=payment] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice {
+  border-bottom: 2px solid #f8f9fa;
+}
+[page-name=payment] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice .itemInner .value {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=payment] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice .itemInner .discountedPricing {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=payment] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice .itemInner .discountedPricingTotal {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=payment] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice .itemInner .discount {
+  color: #21b26f !important;
+}
+
+[page-name=orderProcessing] .innerDialog .innerContent .body .showbox .loader {
+  position: relative;
+  margin: 0 auto;
+  width: 120px;
+}
+[page-name=orderProcessing] .innerDialog .innerContent .body .showbox .loader:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+[page-name=orderProcessing] .innerDialog .innerContent .body .showbox .loader .circular {
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+  height: 100%;
+  transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+[page-name=orderProcessing] .innerDialog .innerContent .body .showbox .loader .circular .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 1s ease-in-out infinite, color 4s ease-in-out infinite;
+          animation: dash 1s ease-in-out infinite, color 4s ease-in-out infinite;
+  stroke-linecap: round;
+}
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+@-webkit-keyframes color {
+  100%, 0% {
+    stroke: #000;
+  }
+  40% {
+    stroke: #000;
+  }
+  66% {
+    stroke: #000;
+  }
+  80%, 90% {
+    stroke: #000;
+  }
+}
+@keyframes color {
+  100%, 0% {
+    stroke: #000;
+  }
+  40% {
+    stroke: #000;
+  }
+  66% {
+    stroke: #000;
+  }
+  80%, 90% {
+    stroke: #000;
+  }
+}
+[page-name=orderProcessing] .innerDialog .innerContent .body .showbox .loader .circular .path2 {
+  stroke-dasharray: 200, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  stroke: rgba(0, 0, 0, 0.2);
+}
+[page-name=orderProcessing] .innerDialog .innerContent .body .showbox .orderProcessing {
+  font-weight: 500;
+  font-size: 26px;
+  color: #000;
+}
+[page-name=orderProcessing] .innerDialog .innerContent .body .showbox .doNotClickBack {
+  font-weight: 400;
+  font-size: 20px;
+  color: #6c757d;
+}
+
+[page-name=paymentSuccess] .innerDialog .innerContent .body .summaryBar .progressContent {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ced4da;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .summaryBar .progressContent.active {
+  color: #2873F0;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .summaryBar .progressContent.active.progressBar::after {
+  border-bottom: 1px dashed #2873F0;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .summaryBar .progressContent.active ~ .progressContent {
+  color: #2873F0;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .summaryBar .progressContent.active ~ .progressContent.progressBar::after {
+  border-bottom: 1px dashed #2873F0;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .summaryBar .progressBar span {
+  z-index: 1;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .summaryBar .progressBar::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  border-bottom: 1px dashed;
+  inset: 50% -50% 0px 50%;
+  z-index: 0;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .summaryBar .progressBar:first-child::after {
+  display: none;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .paymentSuccess .bagStatus {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .paymentSuccess .emptyBagDescription {
+  font-weight: 400;
+  font-size: 14px;
+  color: #adb5bd;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .paymentSuccess .emptyBagDescription .bagCode {
+  color: #000;
+  font-weight: 500;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .paymentSuccess .emptyBagButton {
+  font-weight: 400;
+  font-size: 16px;
+  color: #6c757d;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .paymentSuccess .continueShoppingButton {
+  background: transparent;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0px 10px;
+  height: 50px;
+  border: 1px solid #2873F0;
+  color: #2873F0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .paymentSuccess .trackOrderButton {
+  background: #2873F0;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0px 10px;
+  height: 50px;
+  border: 1px solid #2873F0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .paymentSuccess .topCategory .topCategoryTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .paymentSuccess .topCategory .topCatItems::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .paymentSuccess .topCategory .topCatItems .topCatItem {
+  width: 94px;
+  height: 92px;
+  border: 1px solid #f0f5fe;
+  border-radius: 10px;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .paymentSuccess .topCategory .topCatItems .topCatItem .topCatImg img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .paymentSuccess .topCategory .topCatItems .topCatItem .topCatName {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=paymentSuccess] .innerDialog .innerContent .body .paymentSuccess .topCategory .topCatItems .topCatItem.active {
+  background-color: #f0f5fe;
+}
+
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .estimatedDelivery {
+  background: #EAF1FE;
+  border: 1px solid #C5D7FA;
+  border-radius: 5px;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .estimatedDelivery .estimateTitle {
+  font-weight: 400;
+  font-size: 14px;
+  color: #adb5bd;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .estimatedDelivery .estimateDate {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder {
+  border-radius: 8px;
+  background-color: #fff;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackTitleID .trackTitle {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackTitleID .trackID {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item {
+  filter: grayscale(1) brightness(0);
+  opacity: 0.3;
+  position: relative;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item::before {
+  content: "";
+  position: absolute;
+  border-left: 1px dashed #198754;
+  inset: 28px auto -10px 19.2px;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item .trackStatusDot {
+  width: 15px;
+  height: 15px;
+  padding: 0px;
+  border-radius: 50px;
+  background-color: #21b26f;
+  margin-top: 3px;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item .trackStatus {
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item .trackStatusDate {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item .cancelOrder {
+  display: none;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item .cancelOrder .btn {
+  background: #f0f5fe;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000;
+  width: 111px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item .cancelWarning {
+  display: none;
+  font-weight: 400;
+  font-size: 12px;
+  color: #edb100;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item.active, [page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item.active ~ .item {
+  filter: grayscale(0) brightness(1);
+  opacity: 1;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item.active .cancelOrder {
+  display: block;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item.active .cancelWarning {
+  display: block;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item.orderRejected {
+  filter: grayscale(0);
+  opacity: 1;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item.orderRejected .trackStatusDot {
+  background-color: #dd3949;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item.orderRejected .trackStatus {
+  color: #dd3949;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrder .trackStatusCard .item:first-child::before {
+  display: none;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .needHelp .needHelpInner .btn {
+  font-weight: 400;
+  font-size: 14px;
+  color: #2873F0;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrderDetail .orderTrackSteps .orderTrackList .orderTrackListFill {
+  background-image: url("../img/icons/DoneIcon.svg");
+  background: #21b26f;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrderDetail .orderTrackSteps .orderTrackList .orderTrackLisTitle {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .trackOrderDetail .orderTrackSteps .orderTrackList .orderTrackLisDAte {
+  font-weight: 400;
+  font-size: 14px;
+  color: #adb5bd;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .orderTrackItems {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .orderSpecification .orderSpecificationList {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  padding-bottom: 10px;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .orderSpecification .orderSpecificationList:last-child {
+  padding-bottom: 0px;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .orderTrackUser .orderTrackHeading {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .orderTrackUser .orderCustomerName {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .orderTrackUser .orderTRackSummary {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .priceDetails .bagDetailsHeading {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice {
+  border-bottom: 2px solid #f8f9fa;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice .itemInner .value {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice .itemInner .discountedPricing {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice .itemInner .discountedPricingTotal {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .priceDetails .priceDetailBg .bagitemPrice .itemInner .discount {
+  color: #21b26f !important;
+}
+[page-name=orderTrackAccept] .innerDialog .innerContent .body .priceDetails .priceDetailBg .orderTrackVoice .orderTrackVoiceBtn {
+  border: 1px solid #2873F0;
+  color: #2873F0;
+  font-weight: 500;
+  font-size: 14px;
+}
+[page-name=orderTrackAccept] .orderCancelPopup {
+  background-color: #f0f5fe;
+  height: auto;
+}
+[page-name=orderTrackAccept] .orderCancelPopup .offcanvas-header .offcanvas-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=orderTrackAccept] .orderCancelPopup .offcanvas-header .closeBtn {
+  width: 16px;
+  height: 16px;
+}
+[page-name=orderTrackAccept] .orderCancelPopup .offcanvas-body .removePopUp .innerText {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=orderTrackAccept] .orderCancelPopup .offcanvas-body .removePopUp .removerWarn {
+  font-weight: 400;
+  font-size: 16px;
+}
+[page-name=orderTrackAccept] .orderCancelPopup .offcanvas-body .removeOption .bagConfirm {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=orderTrackAccept] .orderCancelPopup .offcanvas-body .removeOption .bagCancel {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2873F0;
+}
+[page-name=orderTrackAccept] .offcanvas-backdrop {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s all;
+}
+[page-name=orderTrackAccept] .offcanvas-backdrop.show {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+[page-name=orders] .innerDialog .innerContent .body .orderListId {
+  font-weight: 700;
+  font-size: 12px;
+  color: #000;
+}
+[page-name=orders] .innerDialog .innerContent .body .orderListPlaced {
+  font-weight: 500;
+  font-size: 12px;
+  color: #adb5bd;
+}
+[page-name=orders] .innerDialog .innerContent .body .orderSendingTime {
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.99);
+  background: #EAF1FE;
+  border-bottom: 1px solid #FAFAFA;
+  border-radius: 5px;
+  padding: 3px 10px;
+  display: inline-block;
+  letter-spacing: 0.05em;
+}
+[page-name=orders] .innerDialog .innerContent .body .orderListAmount {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=orders] .innerDialog .innerContent .body .orderSpecification .orderSpecificationList {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  padding-bottom: 10px;
+}
+[page-name=orders] .innerDialog .innerContent .body .orderSpecification .orderSpecificationList .moreItems {
+  font-weight: 400;
+  font-size: 12px;
+  width: 59px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+[page-name=orders] .innerDialog .innerContent .body .orderSpecification .orderSpecificationList:last-child {
+  padding-bottom: 0px;
+}
+[page-name=orders] .innerDialog .innerContent .body .trackOrderBtn {
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(40, 115, 240, 0.1);
+  border-top: 1px solid rgba(40, 115, 240, 0.1);
+  background-color: rgba(40, 115, 240, 0.05);
+}
+[page-name=orders] .innerDialog .innerContent .body .orderDelivered {
+  background-color: #21b26f;
+  font-size: 12px;
+  font-weight: 500;
+}
+[page-name=orders] .innerDialog .innerContent .body .orderRejected {
+  background-color: #dc3545;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+[page-name=account] .innerDialog .innerContent .body .accountMinHeight {
+  min-height: 100%;
+}
+[page-name=account] .innerDialog .innerContent .body .accountMinHeight .accountProfile .accountHoldername {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+[page-name=account] .innerDialog .innerContent .body .accountMinHeight .accountProfile .accountHolderEmail {
+  font-weight: 400;
+  font-size: 14px;
+}
+[page-name=account] .innerDialog .innerContent .body .accountMinHeight .accountProfile .editProfile .editProfileBtn {
+  background-color: rgba(40, 115, 240, 0.05);
+  border: 1px solid rgba(40, 115, 240, 0.1);
+  font-size: 12px;
+  font-weight: 400;
+}
+[page-name=account] .innerDialog .innerContent .body .accountMinHeight .accountList .accountListItem .accountListItemName {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+[page-name=account] .innerDialog .innerContent .body .accountMinHeight .deactivateAccountSpace {
+  margin: 70px 0px 50px 0px;
+}
+[page-name=account] .innerDialog .innerContent .body .accountMinHeight .deactivateAccountSpace .deactivateAccount {
+  font-size: 14px;
+  font-weight: 400;
+  color: #dc3545;
+}
+[page-name=account] .ttOffcanvas {
+  background-color: #f0f5fe;
+  height: auto;
+}
+[page-name=account] .ttOffcanvas .offcanvas-header .offcanvas-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=account] .ttOffcanvas .offcanvas-header .closeBtn {
+  width: 16px;
+  height: 16px;
+}
+[page-name=account] .ttOffcanvas .offcanvas-body .removePopUp .innerText {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=account] .ttOffcanvas .offcanvas-body .removePopUp .removerWarn {
+  font-weight: 400;
+  font-size: 16px;
+}
+[page-name=account] .ttOffcanvas .offcanvas-body .removeOption .Confirm {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=account] .ttOffcanvas .offcanvas-body .removeOption .Cancel {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2873F0;
+}
+[page-name=account] .offcanvas-backdrop {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s all;
+}
+[page-name=account] .offcanvas-backdrop.show {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+[page-name=accountSetting] .innerDialog .innerContent .body .accountMinHeight {
+  min-height: 100%;
+}
+[page-name=accountSetting] .innerDialog .innerContent .body .accountMinHeight .accountProfile .accountHoldername {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+[page-name=accountSetting] .innerDialog .innerContent .body .accountMinHeight .accountProfile .accountHolderEmail {
+  font-weight: 400;
+  font-size: 14px;
+}
+[page-name=accountSetting] .innerDialog .innerContent .body .accountMinHeight .accountProfile .editProfile .editProfileBtn {
+  background-color: rgba(40, 115, 240, 0.05);
+  border: 1px solid rgba(40, 115, 240, 0.1);
+  font-size: 12px;
+  font-weight: 400;
+}
+[page-name=accountSetting] .innerDialog .innerContent .body .accountMinHeight .accountList .accountListItem .accountListItemName {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+[page-name=accountSetting] .innerDialog .innerContent .body .accountMinHeight .deactivateAccountSpace {
+  margin: 70px 0px 50px 0px;
+}
+[page-name=accountSetting] .innerDialog .innerContent .body .accountMinHeight .deactivateAccountSpace .deactivateAccount {
+  font-size: 14px;
+  font-weight: 400;
+  color: #dc3545;
+}
+[page-name=accountSetting] .logoutPopup {
+  background-color: #f0f5fe;
+  height: auto;
+}
+[page-name=accountSetting] .logoutPopup .offcanvas-header .offcanvas-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=accountSetting] .logoutPopup .offcanvas-header .closeBtn {
+  width: 16px;
+  height: 16px;
+}
+[page-name=accountSetting] .logoutPopup .offcanvas-body .removePopUp .innerText {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=accountSetting] .logoutPopup .offcanvas-body .removePopUp .removerWarn {
+  font-weight: 400;
+  font-size: 16px;
+}
+[page-name=accountSetting] .logoutPopup .offcanvas-body .removeOption .Confirm {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=accountSetting] .logoutPopup .offcanvas-body .removeOption .Cancel {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2873F0;
+}
+[page-name=accountSetting] .deactivateAccountConfirmationPopup {
+  background-color: #f0f5fe;
+  height: auto;
+}
+[page-name=accountSetting] .deactivateAccountConfirmationPopup .offcanvas-header .offcanvas-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=accountSetting] .deactivateAccountConfirmationPopup .offcanvas-header .closeBtn {
+  width: 16px;
+  height: 16px;
+}
+[page-name=accountSetting] .deactivateAccountConfirmationPopup .offcanvas-body .removePopUp .innerText {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=accountSetting] .deactivateAccountConfirmationPopup .offcanvas-body .removePopUp .removerWarn {
+  font-weight: 400;
+  font-size: 16px;
+}
+[page-name=accountSetting] .deactivateAccountConfirmationPopup .offcanvas-body .removePopUp .removerWarn2 {
+  font-weight: 400;
+  font-size: 12px;
+  color: #dc3545;
+}
+[page-name=accountSetting] .deactivateAccountConfirmationPopup .offcanvas-body .removeOption .Confirm {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=accountSetting] .deactivateAccountConfirmationPopup .offcanvas-body .removeOption .Cancel {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2873F0;
+}
+[page-name=accountSetting] .otpForDeletionPopup {
+  background-color: #fff;
+  height: auto;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-header .offcanvas-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-header .closeBtn {
+  width: 16px;
+  height: 16px;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .loginSignupTitle {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .inputLabel {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .needs-validation-otpForDeletionPopup .mobileInput input {
+  height: 48px;
+  font-size: 14px;
+  border-width: 2px;
+  background-image: none !important;
+  border-radius: 8px;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .needs-validation-otpForDeletionPopup .mobileInput input.phoneNumberInput {
+  padding-left: 46px;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .needs-validation-otpForDeletionPopup .mobileInput input.commonOtps {
+  max-width: 48px !important;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .needs-validation-otpForDeletionPopup .mobileInput input:valid {
+  border-color: #cccccc;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .needs-validation-otpForDeletionPopup .mobileInput input::-moz-placeholder {
+  color: #cccccc;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .needs-validation-otpForDeletionPopup .mobileInput input:-ms-input-placeholder {
+  color: #cccccc;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .needs-validation-otpForDeletionPopup .mobileInput input::placeholder {
+  color: #cccccc;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .needs-validation-otpForDeletionPopup .mobileInput input:-webkit-autofill, [page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .needs-validation-otpForDeletionPopup .mobileInput input:-webkit-autofill:hover, [page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .needs-validation-otpForDeletionPopup .mobileInput input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #000;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .needs-validation-otpForDeletionPopup .mobileInput .resendOtpBox .otpTiming {
+  font-weight: 450;
+  font-size: 12px;
+  color: #000;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .needs-validation-otpForDeletionPopup .mobileInput .resendOtpBox .otpResendBtn {
+  font-weight: 700;
+  font-size: 12px;
+  color: #2873F0;
+}
+[page-name=accountSetting] .otpForDeletionPopup .offcanvas-body .needs-validation-otpForDeletionPopup .invalid-feedback {
+  font-weight: 450;
+  font-size: 12px;
+}
+[page-name=accountSetting] .deactivateAccountReason {
+  background-color: #fff;
+  height: auto;
+}
+[page-name=accountSetting] .deactivateAccountReason .offcanvas-header .offcanvas-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=accountSetting] .deactivateAccountReason .offcanvas-header .closeBtn {
+  width: 16px;
+  height: 16px;
+}
+[page-name=accountSetting] .deactivateAccountReason .offcanvas-body .removePopUp .innerText {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=accountSetting] .deactivateAccountReason .offcanvas-body .removePopUp .removerWarn {
+  font-weight: 400;
+  font-size: 16px;
+}
+[page-name=accountSetting] .deactivateAccountReason .offcanvas-body .removeOption .Confirm {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=accountSetting] .deactivateAccountReason .offcanvas-body .removeOption .Cancel {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2873F0;
+}
+[page-name=accountSetting] .deactivateAccountReason .offcanvas-body .deactivateReason .reasonList {
+  background: #fff;
+  border-radius: 5px;
+}
+[page-name=accountSetting] .deactivateAccountReason .offcanvas-body .deactivateReason .reasonList .otherOption .form-control {
+  height: 0px !important;
+  min-height: 0px !important;
+  transition: 0.3s height;
+  visibility: hidden;
+  padding: 0px !important;
+  margin-top: -4px;
+  background-image: none;
+}
+[page-name=accountSetting] .deactivateAccountReason .offcanvas-body .deactivateReason .reasonList input ~ label {
+  padding-left: 28px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 14px;
+}
+[page-name=accountSetting] .deactivateAccountReason .offcanvas-body .deactivateReason .reasonList input ~ label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #2873F0;
+  inset: 0px auto 0px 0px;
+  margin: auto;
+}
+[page-name=accountSetting] .deactivateAccountReason .offcanvas-body .deactivateReason .reasonList input:checked ~ label::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  inset: 0px auto 0px 3px;
+  margin: auto;
+  background-color: #2873F0;
+}
+[page-name=accountSetting] .deactivateAccountReason .offcanvas-body .deactivateReason .reasonList input:checked ~ label ~ .otherOption .form-control {
+  transition: 0.3s height;
+  height: 150px !important;
+  max-height: 150px !important;
+  min-height: 0px;
+  visibility: visible;
+  margin-bottom: 12px;
+  padding: 10px !important;
+  margin-top: 12px;
+}
+[page-name=accountSetting] .accountSuccessfullyDeletedPopup {
+  background-color: #fff;
+  height: auto;
+}
+[page-name=accountSetting] .accountSuccessfullyDeletedPopup .offcanvas-body .removePopUp .innerText {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=accountSetting] .accountSuccessfullyDeletedPopup .offcanvas-body .removePopUp .removerWarn {
+  font-weight: 400;
+  font-size: 16px;
+}
+[page-name=accountSetting] .offcanvas-backdrop {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s all;
+}
+[page-name=accountSetting] .offcanvas-backdrop.show {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+[page-name=editprofile] .innerDialog .innerContent .body .accountHeading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+[page-name=editprofile] .innerDialog .innerContent .body label {
+  color: #6c757d;
+  font-weight: 500;
+  font-size: 14px;
+}
+[page-name=editprofile] .innerDialog .innerContent .body .form-control {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  border-width: 2px;
+  background-image: none;
+}
+[page-name=editprofile] .innerDialog .innerContent .body .submitBtnBox .btn {
+  height: 48px;
+}
+[page-name=editprofile] .ttOffcanvas {
+  background-color: #f0f5fe;
+  height: auto;
+}
+[page-name=editprofile] .ttOffcanvas .offcanvas-header .offcanvas-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=editprofile] .ttOffcanvas .offcanvas-header .closeBtn {
+  width: 16px;
+  height: 16px;
+}
+[page-name=editprofile] .ttOffcanvas .offcanvas-body .removePopUp .innerText {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=editprofile] .ttOffcanvas .offcanvas-body .removePopUp .removerWarn {
+  font-weight: 400;
+  font-size: 16px;
+}
+[page-name=editprofile] .ttOffcanvas .offcanvas-body .removeOption .Confirm {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=editprofile] .ttOffcanvas .offcanvas-body .removeOption .Cancel {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2873F0;
+}
+[page-name=editprofile] .offcanvas-backdrop {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s all;
+}
+[page-name=editprofile] .offcanvas-backdrop.show {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+[page-name=saveaddress] .innerDialog .innerContent .body .accountMinHeight {
+  min-height: 100%;
+}
+[page-name=saveaddress] .innerDialog .innerContent .body .accountMinHeight .accountHeading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+[page-name=saveaddress] .innerDialog .innerContent .body .accountMinHeight .saveAddAddress {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2873F0;
+  border: 2px solid #2873F0;
+  border-radius: 5px;
+  padding: 15px;
+}
+[page-name=saveaddress] .innerDialog .innerContent .body .accountMinHeight .orderCustomerName {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=saveaddress] .innerDialog .innerContent .body .accountMinHeight .orderTRackSummary {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6c757d;
+}
+[page-name=saveaddress] .DeleteItemConfirmOffcanvas {
+  background-color: #f0f5fe;
+  height: auto;
+}
+[page-name=saveaddress] .DeleteItemConfirmOffcanvas .offcanvas-header .offcanvas-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=saveaddress] .DeleteItemConfirmOffcanvas .offcanvas-header .closeBtn {
+  width: 16px;
+  height: 16px;
+}
+[page-name=saveaddress] .DeleteItemConfirmOffcanvas .offcanvas-body .removePopUp .innerText {
+  font-weight: 700;
+  font-size: 16px;
+}
+[page-name=saveaddress] .DeleteItemConfirmOffcanvas .offcanvas-body .removePopUp .removerWarn {
+  font-weight: 400;
+  font-size: 16px;
+}
+[page-name=saveaddress] .DeleteItemConfirmOffcanvas .offcanvas-body .removeOption .bagConfirm {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=saveaddress] .DeleteItemConfirmOffcanvas .offcanvas-body .removeOption .bagCancel {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2873F0;
+}
+[page-name=saveaddress] .offcanvas-backdrop {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s all;
+}
+[page-name=saveaddress] .offcanvas-backdrop.show {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+[page-name=termscondition] .innerDialog .innerContent .body .accountHeading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+[page-name=termscondition] .innerDialog .innerContent .body .settingBox {
+  border-radius: 8px;
+}
+[page-name=termscondition] .innerDialog .innerContent .body .settingBox .policyTitle {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=termscondition] .innerDialog .innerContent .body .settingBox .policyPara {
+  font-weight: 400;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+[page-name=privacypolicy] .innerDialog .innerContent .body .accountHeading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+[page-name=privacypolicy] .innerDialog .innerContent .body .settingBox {
+  border-radius: 8px;
+}
+[page-name=privacypolicy] .innerDialog .innerContent .body .settingBox .policyTitle {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=privacypolicy] .innerDialog .innerContent .body .settingBox .policyPara {
+  font-weight: 400;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+[page-name=faq] .innerDialog .innerContent .body .accountHeading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+[page-name=faq] .innerDialog .innerContent .body .settingBox {
+  border-radius: 8px;
+  border: 2px solid #dee2e6;
+}
+[page-name=faq] .innerDialog .innerContent .body .settingBox .accordion .accordion-item {
+  border: none;
+}
+[page-name=faq] .innerDialog .innerContent .body .settingBox .accordion .accordion-header .accordion-button {
+  padding: 0;
+  color: #050505;
+  cursor: pointer;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.4s;
+  position: relative;
+}
+[page-name=faq] .innerDialog .innerContent .body .settingBox .accordion .accordion-header .accordion-button:focus {
+  box-shadow: none !important;
+}
+[page-name=faq] .innerDialog .innerContent .body .settingBox .accordion .accordion-header .accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+[page-name=faq] .innerDialog .innerContent .body .settingBox .accordion .accordion-header .accordion-button::after {
+  content: "";
+  font-size: 10px;
+  position: absolute;
+  color: #777;
+  float: right;
+  height: 9px;
+  width: 9px;
+  top: 50%;
+  right: 19px;
+  margin-left: 5px;
+  background-image: url(../img/icons/plusIcon.svg);
+  transform: translate(0, -50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+[page-name=faq] .innerDialog .innerContent .body .settingBox .accordion .accordion-header .accordion-button:not(.collapsed)::after {
+  content: "";
+  font-size: 10px;
+  position: absolute;
+  color: #777;
+  float: right;
+  height: 2px;
+  width: 10px;
+  top: 50%;
+  right: 19px;
+  margin-left: 5px;
+  transform: translate(0, -50%);
+  background-image: url("../img/icons/subtractIcon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+[page-name=faq] .innerDialog .innerContent .body .settingBox .accordion .accordion-body {
+  font-size: 14px;
+  font-weight: 400;
+  color: #050505;
+}
+[page-name=faq] .innerDialog .innerContent .body .settingBox .supportIcon {
+  background: #F2F3F7;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+[page-name=faq] .innerDialog .innerContent .body .settingBox .supportheading {
+  font-weight: 400;
+  font-size: 14px;
+  color: ligthen(#000, 2);
+}
+[page-name=faq] .innerDialog .innerContent .body .settingBox .supportContent {
+  font-weight: 700;
+  font-size: 14px;
+  color: ligthen(#000, 2);
+}
+[page-name=faq] .innerDialog .innerContent .body .settingBox .policyTitle {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=faq] .innerDialog .innerContent .body .settingBox .policyPara {
+  font-weight: 400;
+  font-size: 14px;
+  color: #050505;
+}
+
+[page-name=notifications] .innerDialog .innerContent .body .title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+[page-name=notifications] .innerDialog .innerContent .body .notificationGroup .notificationGroupTitle {
+  background: #f0f5fe;
+  border: 1px solid #e9ecef;
+  height: 42px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=notifications] .innerDialog .innerContent .body .notificationGroup .items .item input ~ label {
+  height: 48px;
+}
+[page-name=notifications] .innerDialog .innerContent .body .notificationGroup .items .item input ~ label .notificationType {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=notifications] .innerDialog .innerContent .body .notificationGroup .items .item input ~ label .toggleBtn {
+  width: 38.75px;
+  height: 17.22px;
+  background: #fff;
+  border: 1px solid #adb5bd;
+  border-radius: 30px;
+  padding: 2px;
+  position: relative;
+}
+[page-name=notifications] .innerDialog .innerContent .body .notificationGroup .items .item input ~ label .toggleBtn::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50px;
+  position: absolute;
+  background-color: #adb5bd;
+  transition: 0.3s all;
+}
+[page-name=notifications] .innerDialog .innerContent .body .notificationGroup .items .item input:checked ~ label {
+  height: 48px;
+}
+[page-name=notifications] .innerDialog .innerContent .body .notificationGroup .items .item input:checked ~ label .notificationType {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+[page-name=notifications] .innerDialog .innerContent .body .notificationGroup .items .item input:checked ~ label .toggleBtn {
+  width: 38.75px;
+  height: 17.22px;
+  background-color: #21b26f;
+  border: 1px solid #21b26f;
+  border-radius: 30px;
+  padding: 2px;
+  position: relative;
+}
+[page-name=notifications] .innerDialog .innerContent .body .notificationGroup .items .item input:checked ~ label .toggleBtn::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50px;
+  position: absolute;
+  background-color: #fff;
+  transform: translateX(200%);
+}
+[page-name=notifications] .innerDialog .innerContent .body .notificationGroup .items .item:last-child label {
+  border-bottom: none !important;
+}/*# sourceMappingURL=style.min.css.map */

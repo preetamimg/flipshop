@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipshop | FlipKart</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#2873F0" />
+</head>
+<body>
+    
+
+    <div class="container-fluid vh-100" page-name="products">
+        <div class="row h-100 flex-column flex-nowrap">
+            <nav class="col-12 navbar d-block py-0 bg-white shadow-sm pt-1 h-auto">
+                <div class="row navInner mx-0 h-100 align-items-center pt-2">
+                    <div class="col-12">
+                        <div class="row align-items-center pb-2 me-0">
+                            <div class="col headings text-theme1">List of Products</div>
+                            <a href="javascript:;" class="col-auto shareBtn2 bg-white d-flex align-items-center gap-1"><span class="d-grid"><img src="assets/img/icons/shareBlue.svg" alt="shareBlue"></span><span class="text-theme1">Share</span></a>
+                        </div>
+                        <div class="row listTabs">
+                            <nav class="col-12 listTabsInner">
+                                <div class="nav nav-tabs row border-0" id="nav-tab" role="tablist">
+                                    <button class="nav-link col pb-3 border-0 mb-0 position-relative active" id="nav-All-tab" data-bs-toggle="tab" data-bs-target="#nav-All" type="button" role="tab" aria-controls="nav-All" aria-selected="true">All <span>32</span></button>
+                                    <button class="nav-link col pb-3 border-0 mb-0 position-relative" id="nav-InStock-tab" data-bs-toggle="tab" data-bs-target="#nav-InStock" type="button" role="tab" aria-controls="nav-InStock" aria-selected="false">In stock <span>25</span></button>
+                                    <button class="nav-link col pb-3 border-0 mb-0 position-relative" id="nav-OutOfStock-tab" data-bs-toggle="tab" data-bs-target="#nav-OutOfStock" type="button" role="tab" aria-controls="nav-OutOfStock" aria-selected="false">Out of stock <span>7</span></button>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-12 body flex-fill">
+                <div class="row scrollPart h-100 justify-content-center">
+                    <div class="col-12 h-100 scrollInner">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-All" role="tabpanel" aria-labelledby="nav-All-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row mx-0 pt-3 align-items-center">
+                                            <div class="col search px-0 position-relative">
+                                                <input type="search" id="search" class="form-control shadow-none" placeholder="Search">
+                                                <label for="search" class="position-absolute d-grid align-items-center justify-content-center"><img src="assets/img/icons/search-blue.svg" alt="search-blue"></label>
+                                            </div>
+                                            <!-- <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#arrangeProducts" class="col-auto rearrangeCategoryBtn align-items-center justify-content-center d-flex">
+                                                <img src="assets/img/icons/rearrangeCategory.svg" alt="rearrangeCategory">
+                                            </a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row allCategories flex-nowrap pt-3 mx-0 gap-2">
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">All <span>18</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill active">Speakers <span>10</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Mobiles <span>8</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Laptops <span>6</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Smart Watch <span>4</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Cameras <span>10</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Speakers <span>10</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Speakers <span>10</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row allCategories flex-nowrap pb-1 mx-0 gap-2">
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill active">Bluetooth <span>18</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Home Audio <span>10</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Soundbars <span>8</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Bluetooth <span>6</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Home Audio <span>4</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Soundbars <span>10</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row itemsAndRearrange flex-nowrap align-items-center">
+                                            <div class="col items">8 Items</div>
+                                            <div class="col-auto">
+                                                <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#arrangeProducts" class="btn rearrangeBtn border-0 shadow-none pe-0">Rearrange</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="accordion d-flex flex-column gap-2 pb-3" id="accordionExample">
+                                                    <div class="accordion-item overflow-hidden border-0">
+                                                        <h2 class="accordion-header position-relative" id="headingOne">
+                                                            <button class="accordion-button shadow-none bg-white ps-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                <span class="badge rounded-pill d-grid align-items-center justify-content-center text-white bg-theme1 me-2 mt-n1">3</span><span class="text-dark">Bluetooth Speakers</span>
+                                                            </button>
+                                                            <a class="position-absolute top-0 bottom-0 d-inline-flex gap-1 align-items-center" href="javascript:;" data-bs-toggle="modal" data-bs-target="#arrangeItems">
+                                                                <span class="mt-n1"><img src="assets/img/icons/edit.svg" alt="edit"></span> 
+                                                                <span>Edit</span>
+                                                            </a>
+                                                        </h2>
+                                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                                                            <div class="accordion-body p-1">
+                                                                <div class="row variantsCard mx-2 pt-2">
+                                                                    <div class="col-12 variantCardBtn mb-3" data-bs-toggle="collapse" href="#collapseExample" role="button">
+                                                                        <div class="row variantBtnInner align-items-center flex-nowrap">
+                                                                            <div class="col-auto variantIcon p-0">
+                                                                                <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                            </div>
+                                                                            <div class="col variantBtnContent">
+                                                                                <div class="row variantBtnContentInner">
+                                                                                    <div class="col-auto pb-2">Mivi Play 5 W Bluetooth Speaker</div>
+                                                                                </div>
+                                                                                <div class="row variantBtnSecondInner align-items-center flex-nowrap">
+                                                                                    <div class="col-auto variantBtnPrice">₹2,149</div>
+                                                                                    <span class="col-auto variantBtnDivider px-0"></span>
+                                                                                    <div class="col-auto variantBtnColor">Colour :5</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-auto variantCardToggle">
+                                                                                <img src="assets/img/icons/rightArrow.svg" alt="rightArrow">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="collapse col-12 variantContent show" id="collapseExample">
+                                                                        <div class="card card-body variantBody ps-3 pe-0 border-0 d-flex flex-column gap-2">
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Black, 5000 mAh, Metal</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerBlue.svg" alt="speakerBlue">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Blue, 5000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerOrange.svg" alt="speakerOrange">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Orange, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerTurquies.svg" alt="speakerTurquies">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Turquise, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,090</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerWhite.svg" alt="speakerWhite">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">White, 5000 mAh, Plastic</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 variantCardBtn mb-3 collapsed" data-bs-toggle="collapse" href="#collapseExample2" role="button">
+                                                                        <div class="row variantBtnInner align-items-center flex-nowrap">
+                                                                            <div class="col-auto variantIcon p-0">
+                                                                                <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                            </div>
+                                                                            <div class="col variantBtnContent">
+                                                                                <div class="row variantBtnContentInner">
+                                                                                    <div class="col-auto pb-2">Mivi Play 5 W Bluetooth Speaker</div>
+                                                                                </div>
+                                                                                <div class="row variantBtnSecondInner align-items-center flex-nowrap">
+                                                                                    <div class="col-auto variantBtnPrice">₹2,149</div>
+                                                                                    <span class="col-auto variantBtnDivider px-0"></span>
+                                                                                    <div class="col-auto variantBtnColor">Colour :5</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-auto variantCardToggle">
+                                                                                <img src="assets/img/icons/rightArrow.svg" alt="rightArrow">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="collapse col-12 variantContent" id="collapseExample2">
+                                                                        <div class="card card-body variantBody ps-3 pe-0 border-0 d-flex flex-column gap-2">
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Black, 5000 mAh, Metal</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerBlue.svg" alt="speakerBlue">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Blue, 5000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerOrange.svg" alt="speakerOrange">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Orange, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerTurquies.svg" alt="speakerTurquies">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Turquise, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,090</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerWhite.svg" alt="speakerWhite">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">White, 5000 mAh, Plastic</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 variantCardBtn mb-3 collapsed" data-bs-toggle="collapse" href="#collapseExample3" role="button">
+                                                                        <div class="row variantBtnInner align-items-center flex-nowrap">
+                                                                            <div class="col-auto variantIcon p-0">
+                                                                                <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                            </div>
+                                                                            <div class="col variantBtnContent">
+                                                                                <div class="row variantBtnContentInner">
+                                                                                    <div class="col-auto pb-2">Mivi Play 5 W Bluetooth Speaker</div>
+                                                                                </div>
+                                                                                <div class="row variantBtnSecondInner align-items-center flex-nowrap">
+                                                                                    <div class="col-auto variantBtnPrice">₹2,149</div>
+                                                                                    <span class="col-auto variantBtnDivider px-0"></span>
+                                                                                    <div class="col-auto variantBtnColor">Colour :5</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-auto variantCardToggle">
+                                                                                <img src="assets/img/icons/rightArrow.svg" alt="rightArrow">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="collapse col-12 variantContent" id="collapseExample3">
+                                                                        <div class="card card-body variantBody ps-3 pe-0 border-0 d-flex flex-column gap-2">
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Black, 5000 mAh, Metal</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerBlue.svg" alt="speakerBlue">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Blue, 5000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerOrange.svg" alt="speakerOrange">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Orange, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerTurquies.svg" alt="speakerTurquies">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Turquise, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,090</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerWhite.svg" alt="speakerWhite">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">White, 5000 mAh, Plastic</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item overflow-hidden border-0">
+                                                        <h2 class="accordion-header position-relative" id="headingTwo">
+                                                            <button class="accordion-button shadow-none bg-white ps-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                                <span class="badge rounded-pill d-grid align-items-center justify-content-center text-white bg-theme1 me-2 mt-n1">3</span><span class="text-dark">Home Audio Speakers</span>
+                                                            </button>
+                                                            <a class="position-absolute top-0 bottom-0 d-inline-flex gap-1 align-items-center" href="javascript:;" data-bs-toggle="modal" data-bs-target="#arrangeItems">
+                                                                <span class="mt-n1"><img src="assets/img/icons/edit.svg" alt="edit"></span> 
+                                                                <span>Edit</span>
+                                                            </a>
+                                                        </h2>
+                                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample3">
+                                                            <div class="accordion-body">
+                                                                <div class="row variantsCard mx-2 pt-2">
+                                                                    <div class="col-12 variantCardBtn mb-3 collapsed" data-bs-toggle="collapse" href="#collapse3Example4" role="button" aria-expanded="false">
+                                                                        <div class="row variantBtnInner align-items-center flex-nowrap">
+                                                                            <div class="col-auto variantIcon p-0">
+                                                                                <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                            </div>
+                                                                            <div class="col variantBtnContent">
+                                                                                <div class="row variantBtnContentInner">
+                                                                                    <div class="col-auto pb-2">Mivi Play 5 W Bluetooth Speaker</div>
+                                                                                </div>
+                                                                                <div class="row variantBtnSecondInner align-items-center flex-nowrap">
+                                                                                    <div class="col-auto variantBtnPrice">₹2,149</div>
+                                                                                    <span class="col-auto variantBtnDivider px-0"></span>
+                                                                                    <div class="col-auto variantBtnColor">Colour :5</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-auto variantCardToggle">
+                                                                                <img src="assets/img/icons/rightArrow.svg" alt="rightArrow">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="collapse col-12 variantContent" id="collapse3Example4">
+                                                                        <div class="card card-body variantBody ps-3 pe-0 border-0 d-flex flex-column gap-2">
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Black, 5000 mAh, Metal</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerBlue.svg" alt="speakerBlue">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Blue, 5000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerOrange.svg" alt="speakerOrange">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Orange, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerTurquies.svg" alt="speakerTurquies">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Turquise, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,090</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerWhite.svg" alt="speakerWhite">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">White, 5000 mAh, Plastic</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 variantCardBtn mb-3">
+                                                                        <div class="row variantBtnInner align-items-center flex-nowrap">
+                                                                            <div class="col-auto variantIcon p-0">
+                                                                                <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                            </div>
+                                                                            <a href="javascript:;" class="col variantBtnContent">
+                                                                                <div class="row variantBtnContentInner">
+                                                                                    <div class="col-auto pb-2">Mivi Play 5 W Bluetooth Speaker</div>
+                                                                                </div>
+                                                                                <div class="row variantBtnSecondInner align-items-center flex-nowrap">
+                                                                                    <div class="col-auto variantBtnPrice">₹2,149</div>
+                                                                                    <span class="col-auto variantBtnDivider px-0"></span>
+                                                                                    <div class="col-auto variantBtnColor">Colour :5</div>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="javascript:;" class="col-auto variantCardToggle">Share</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 variantCardBtn mb-3 collapsed" data-bs-toggle="collapse" href="#collapse3Example3" role="button" aria-expanded="false">
+                                                                        <div class="row variantBtnInner align-items-center flex-nowrap">
+                                                                            <div class="col-auto variantIcon p-0">
+                                                                                <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                            </div>
+                                                                            <div class="col variantBtnContent">
+                                                                                <div class="row variantBtnContentInner">
+                                                                                    <div class="col-auto pb-2">Mivi Play 5 W Bluetooth Speaker</div>
+                                                                                </div>
+                                                                                <div class="row variantBtnSecondInner align-items-center flex-nowrap">
+                                                                                    <div class="col-auto variantBtnPrice">₹2,149</div>
+                                                                                    <span class="col-auto variantBtnDivider px-0"></span>
+                                                                                    <div class="col-auto variantBtnColor">Colour :5</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-auto variantCardToggle">
+                                                                                <img src="assets/img/icons/rightArrow.svg" alt="rightArrow">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="collapse col-12 variantContent" id="collapse3Example3">
+                                                                        <div class="card card-body variantBody ps-3 pe-0 border-0 d-flex flex-column gap-2">
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Black, 5000 mAh, Metal</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerBlue.svg" alt="speakerBlue">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Blue, 5000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerOrange.svg" alt="speakerOrange">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Orange, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerTurquies.svg" alt="speakerTurquies">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Turquise, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,090</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner align-items-center ms-0 flex-nowrap">
+                                                                                <div class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerWhite.svg" alt="speakerWhite">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">White, 5000 mAh, Plastic</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item overflow-hidden border-0">
+                                                        <h2 class="accordion-header position-relative" id="headingThree">
+                                                            <button class="accordion-button shadow-none bg-white ps-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                                <span class="badge rounded-pill d-grid align-items-center justify-content-center text-white bg-theme1 me-2 mt-n1">3</span><span class="text-dark">Laptops</span>
+                                                            </button>
+                                                            <a class="position-absolute top-0 bottom-0 d-inline-flex gap-1 align-items-center" href="javascript:;" data-bs-toggle="modal" data-bs-target="#arrangeItems">
+                                                                <span class="mt-n1"><img src="assets/img/icons/edit.svg" alt="edit"></span> 
+                                                                <span>Edit</span>
+                                                            </a>
+                                                        </h2>
+                                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample4">
+                                                            <div class="accordion-body">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item overflow-hidden border-0">
+                                                        <h2 class="accordion-header position-relative" id="headingFour">
+                                                            <button class="accordion-button shadow-none bg-white ps-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                                <span class="badge rounded-pill d-grid align-items-center justify-content-center text-white bg-theme1 me-2 mt-n1">3</span><span class="text-dark">Smart Watch</span>
+                                                            </button>
+                                                            <a class="position-absolute top-0 bottom-0 d-inline-flex gap-1 align-items-center" href="javascript:;" data-bs-toggle="modal" data-bs-target="#arrangeItems">
+                                                                <span class="mt-n1"><img src="assets/img/icons/edit.svg" alt="edit"></span> 
+                                                                <span>Edit</span>
+                                                            </a>
+                                                        </h2>
+                                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample5">
+                                                            <div class="accordion-body">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-InStock" role="tabpanel" aria-labelledby="nav-InStock-tab" tabindex="0">this is empty</div>
+                            <div class="tab-pane fade" id="nav-OutOfStock" role="tabpanel" aria-labelledby="nav-OutOfStock-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row mx-0 pt-3 align-items-center">
+                                            <div class="col search px-0 position-relative">
+                                                <input type="search" id="search" class="form-control shadow-none" placeholder="Search">
+                                                <label for="search" class="position-absolute d-grid align-items-center justify-content-center"><img src="assets/img/icons/search-blue.svg" alt="search-blue"></label>
+                                            </div>
+                                            <!-- <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#arrangeProducts" class="col-auto rearrangeCategoryBtn align-items-center justify-content-center d-flex">
+                                                <img src="assets/img/icons/rearrangeCategory.svg" alt="rearrangeCategory">
+                                            </a> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row allCategories flex-nowrap py-3 mx-0 gap-2">
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill active">Speakers <span>10</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Mobiles <span>8</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Laptops <span>6</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Smart Watch <span>4</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Cameras <span>10</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Speakers <span>10</span></a>
+                                            <a class="col-auto cat d-flex justify-content-center align-items-center gap-1 rounded-pill">Speakers <span>10</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row itemsAndRearrange flex-nowrap align-items-center">
+                                            <div class="col items">8 Items</div>
+                                            <div class="col-auto">
+                                                <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#arrangeProducts" class="btn rearrangeBtn border-0 shadow-none pe-0">Rearrange</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="accordion d-flex flex-column gap-2 pb-3" id="accordionExample3">
+                                                    <div class="accordion-item overflow-hidden border-0">
+                                                        <h2 class="accordion-header position-relative" id="heading3One">
+                                                            <button class="accordion-button shadow-none bg-white ps-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2One" aria-expanded="true" aria-controls="collapse2One">
+                                                                <span class="badge rounded-pill d-grid align-items-center justify-content-center text-white bg-theme1 me-2 mt-n1">3</span><span class="text-dark">Bluetooth Speakers</span>
+                                                            </button>
+                                                            <a class="position-absolute top-0 bottom-0 d-inline-flex gap-1 align-items-center" href="javascript:;" data-bs-toggle="modal" data-bs-target="#arrangeItems">
+                                                                <span class="mt-n1"><img src="assets/img/icons/edit.svg" alt="edit"></span> 
+                                                                <span>Edit</span>
+                                                            </a>
+                                                        </h2>
+                                                        <div id="collapse2One" class="accordion-collapse collapse show" aria-labelledby="heading3One" data-bs-parent="#accordionExample33">
+                                                            <div class="accordion-body p-1">
+                                                                <div class="row variantsCard mx-2 pt-2">
+                                                                    <div class="col-12 variantCardBtn mb-3" data-bs-toggle="collapse" href="#collapse3Example" role="button">
+                                                                        <div class="row variantBtnInner outOfStock align-items-center flex-nowrap">
+                                                                            <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                            </div>
+                                                                            <div class="col variantBtnContent">
+                                                                                <div class="row variantBtnContentInner">
+                                                                                    <div class="col-auto pb-2">Mivi Play 5 W Bluetooth Speaker</div>
+                                                                                </div>
+                                                                                <div class="row variantBtnSecondInner align-items-center flex-nowrap">
+                                                                                    <div class="col-auto variantBtnPrice">₹2,149</div>
+                                                                                    <span class="col-auto variantBtnDivider px-0"></span>
+                                                                                    <div class="col-auto variantBtnColor">Colour :5</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-auto variantCardToggle">
+                                                                                <img src="assets/img/icons/rightArrow.svg" alt="rightArrow">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="collapse col-12 variantContent show" id="collapse3Example">
+                                                                        <div class="card card-body variantBody ps-3 pe-0 border-0 d-flex flex-column gap-2">
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Black, 5000 mAh, Metal</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerBlue.svg" alt="speakerBlue">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Blue, 5000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerOrange.svg" alt="speakerOrange">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Orange, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerTurquies.svg" alt="speakerTurquies">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Turquise, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,090</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerWhite.svg" alt="speakerWhite">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">White, 5000 mAh, Plastic</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 variantCardBtn mb-3 collapsed" data-bs-toggle="collapse" href="#collapse3Example2" role="button">
+                                                                        <div class="row variantBtnInner outOfStock align-items-center flex-nowrap">
+                                                                            <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                            </div>
+                                                                            <div class="col variantBtnContent">
+                                                                                <div class="row variantBtnContentInner">
+                                                                                    <div class="col-auto pb-2">Mivi Play 5 W Bluetooth Speaker</div>
+                                                                                </div>
+                                                                                <div class="row variantBtnSecondInner align-items-center flex-nowrap">
+                                                                                    <div class="col-auto variantBtnPrice">₹2,149</div>
+                                                                                    <span class="col-auto variantBtnDivider px-0"></span>
+                                                                                    <div class="col-auto variantBtnColor">Colour :5</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-auto variantCardToggle">
+                                                                                <img src="assets/img/icons/rightArrow.svg" alt="rightArrow">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="collapse col-12 variantContent" id="collapse3Example2">
+                                                                        <div class="card card-body variantBody ps-3 pe-0 border-0 d-flex flex-column gap-2">
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Black, 5000 mAh, Metal</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerBlue.svg" alt="speakerBlue">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Blue, 5000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerOrange.svg" alt="speakerOrange">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Orange, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerTurquies.svg" alt="speakerTurquies">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Turquise, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,090</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerWhite.svg" alt="speakerWhite">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">White, 5000 mAh, Plastic</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 variantCardBtn mb-3 collapsed" data-bs-toggle="collapse" href="#collapse3Example3" role="button">
+                                                                        <div class="row variantBtnInner outOfStock align-items-center flex-nowrap">
+                                                                            <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                            </div>
+                                                                            <div class="col variantBtnContent">
+                                                                                <div class="row variantBtnContentInner">
+                                                                                    <div class="col-auto pb-2">Mivi Play 5 W Bluetooth Speaker</div>
+                                                                                </div>
+                                                                                <div class="row variantBtnSecondInner align-items-center flex-nowrap">
+                                                                                    <div class="col-auto variantBtnPrice">₹2,149</div>
+                                                                                    <span class="col-auto variantBtnDivider px-0"></span>
+                                                                                    <div class="col-auto variantBtnColor">Colour :5</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-auto variantCardToggle">
+                                                                                <img src="assets/img/icons/rightArrow.svg" alt="rightArrow">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="collapse col-12 variantContent" id="collapse3Example3">
+                                                                        <div class="card card-body variantBody ps-3 pe-0 border-0 d-flex flex-column gap-2">
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speaker.svg" alt="speaker">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Black, 5000 mAh, Metal</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerBlue.svg" alt="speakerBlue">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Blue, 5000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerOrange.svg" alt="speakerOrange">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Orange, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,190</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerTurquies.svg" alt="speakerTurquies">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">Turquise, 6000 mAh</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,090</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                            <div class="row variantBodyInner outOfStock align-items-center ms-0 flex-nowrap">
+                                                                                <div stockStatus="Out of Stock" class="col-auto variantIcon p-0">
+                                                                                    <img src="assets/img/others/speakerWhite.svg" alt="speakerWhite">
+                                                                                </div>
+                                                                                <a href="add-item.html" class="col variantBodyContent text-dark">
+                                                                                    <div class="row variantBodyContentInner">
+                                                                                        <div class="col-auto pb-2">White, 5000 mAh, Plastic</div>
+                                                                                    </div>
+                                                                                    <div class="row variantBodySecondInner align-items-center flex-nowrap">
+                                                                                        <div class="col-auto variantBodyPrice">₹2,149</div>
+                                                                                    </div>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="col-auto variantCardShareBtn">Share</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item overflow-hidden border-0">
+                                                        <h2 class="accordion-header position-relative" id="heading3Two">
+                                                            <button class="accordion-button shadow-none bg-white ps-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Two" aria-expanded="true" aria-controls="collapse2Two">
+                                                                <span class="badge rounded-pill d-grid align-items-center justify-content-center text-white bg-theme1 me-2 mt-n1">3</span><span class="text-dark">Mobiles</span>
+                                                            </button>
+                                                            <a class="position-absolute top-0 bottom-0 d-inline-flex gap-1 align-items-center" href="javascript:;" data-bs-toggle="modal" data-bs-target="#arrangeItems">
+                                                                <span class="mt-n1"><img src="assets/img/icons/edit.svg" alt="edit"></span> 
+                                                                <span>Edit</span>
+                                                            </a>
+                                                        </h2>
+                                                        <div id="collapse2Two" class="accordion-collapse collapse" aria-labelledby="heading3Two" data-bs-parent="#accordionExample34">
+                                                            <div class="accordion-body">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item overflow-hidden border-0">
+                                                        <h2 class="accordion-header position-relative" id="heading3Three">
+                                                            <button class="accordion-button shadow-none bg-white ps-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Three" aria-expanded="true" aria-controls="collapse2Three">
+                                                                <span class="badge rounded-pill d-grid align-items-center justify-content-center text-white bg-theme1 me-2 mt-n1">3</span><span class="text-dark">Laptops</span>
+                                                            </button>
+                                                            <a class="position-absolute top-0 bottom-0 d-inline-flex gap-1 align-items-center" href="javascript:;" data-bs-toggle="modal" data-bs-target="#arrangeItems">
+                                                                <span class="mt-n1"><img src="assets/img/icons/edit.svg" alt="edit"></span> 
+                                                                <span>Edit</span>
+                                                            </a>
+                                                        </h2>
+                                                        <div id="collapse2Three" class="accordion-collapse collapse" aria-labelledby="heading3Three" data-bs-parent="#accordionExample35">
+                                                            <div class="accordion-body">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item overflow-hidden border-0">
+                                                        <h2 class="accordion-header position-relative" id="heading3Four">
+                                                            <button class="accordion-button shadow-none bg-white ps-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2Four" aria-expanded="true" aria-controls="collapse2Four">
+                                                                <span class="badge rounded-pill d-grid align-items-center justify-content-center text-white bg-theme1 me-2 mt-n1">3</span><span class="text-dark">Smart Watch</span>
+                                                            </button>
+                                                            <a class="position-absolute top-0 bottom-0 d-inline-flex gap-1 align-items-center" href="javascript:;" data-bs-toggle="modal" data-bs-target="#arrangeItems">
+                                                                <span class="mt-n1"><img src="assets/img/icons/edit.svg" alt="edit"></span> 
+                                                                <span>Edit</span>
+                                                            </a>
+                                                        </h2>
+                                                        <div id="collapse2Four" class="accordion-collapse collapse" aria-labelledby="heading3Four" data-bs-parent="#accordionExample36">
+                                                            <div class="accordion-body">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="add-item-option.html" class="d-flex flex-row addItemFixBtn justify-content-center align-items-center">
+                            <span class="d-grid"><img src="assets/img/icons/plusCircleWhite.svg" alt="plusCircleWhite"></span> <span class="d-grid">ADD ITEM</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer col-12 shadow">
+                <div class="row footerInner bg-white shadow align-items-center">
+                    <a href="orders.html" class="col footerItem">
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemIcon"><img src="assets/img/icons/orders.svg" alt="orders"></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemText">Orders</div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" class="col footerItem active">
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemIcon"><img src="assets/img/icons/products.svg" alt="products"></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemText">Products</div>
+                        </div>
+                    </a>
+                    <a href="manage.html" class="col footerItem">
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemIcon"><img src="assets/img/icons/manage.svg" alt="manage"></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemText">Manage</div>
+                        </div>
+                    </a>
+                    <a href="setting.html" class="col footerItem">
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemIcon"><img src="assets/img/icons/settings.svg" alt="settings"></div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto footerItemText">Settings</div>
+                        </div>
+                    </a>
+                </div>
+            </footer>
+        </div>
+        
+        <!-- Modal arrangeProducts -->
+        <div class="modal fade overflow-hidden" id="arrangeProducts" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="arrangeProductsLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid vh-100" page-name="products">
+                            <div class="row h-100 flex-column flex-nowrap rearrangePopup">
+                                <nav class="col-12 navbar d-block py-0 bg-white shadow-sm">
+                                    <div class="row navInner mx-0 h-100 align-items-center">
+                                        <a href="javascript:;" class="col-auto backArrow" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="assets/img/icons/backArrow.svg" alt="backArrow">
+                                        </a>
+                                        <div class="col navTitle ps-0 text-dark">Rearrange Categories</div>
+                                    </div>
+                                </nav>
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <form class="row needs-validation-arrangeProducts h-100 flex-column flex-nowrap" novalidate autocomplete="off">
+                                                <div class="col-12 align-self-center flex-fill overflow-auto py-3">
+                                                    <div class="row gy-3">
+                                                        <div class="col-12">
+                                                            <div class="row">
+                                                                <div class="col-12 text-theme1 catHeading">6 Categories</div>
+                                                                <div class="col-12 text-theme1 catWarning">Hold and drag to rearrange items</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="row gap-2">
+                                                                <div class="col-12">
+                                                                    <div class="row mx-0 arrangeCat flex-row align-items-center bg-white position-relative">
+                                                                        <div class="col-auto arrangeCatHandle text-dark"><img src="assets/img/icons/handle.svg" alt="handle"></div>
+                                                                        <div class="col ps-0 arrangeCatCatTitle text-dark">Speakers</div>
+                                                                        <!-- <a href="javascript:;" class="col-auto arrangeCatDeleteBtn ps-0" data-bs-title="Bulk Add" data-bs-content="sfsdf" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeleteConfirm">Delete</a> -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row mx-0 arrangeCat flex-row align-items-center bg-white position-relative">
+                                                                        <div class="col-auto arrangeCatHandle text-dark"><img src="assets/img/icons/handle.svg" alt="handle"></div>
+                                                                        <div class="col ps-0 arrangeCatCatTitle text-dark">Mobiles</div>
+                                                                        <!-- <a href="javascript:;" class="col-auto arrangeCatDeleteBtn ps-0" data-bs-title="Bulk Add" data-bs-content="sfsdf" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeleteConfirm">Delete</a> -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row mx-0 arrangeCat flex-row align-items-center bg-white position-relative">
+                                                                        <div class="col-auto arrangeCatHandle text-dark"><img src="assets/img/icons/handle.svg" alt="handle"></div>
+                                                                        <div class="col ps-0 arrangeCatCatTitle text-dark">Laptops</div>
+                                                                        <!-- <a href="javascript:;" class="col-auto arrangeCatDeleteBtn ps-0" data-bs-title="Bulk Add" data-bs-content="sfsdf" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeleteConfirm">Delete</a> -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row mx-0 arrangeCat flex-row align-items-center bg-white position-relative">
+                                                                        <div class="col-auto arrangeCatHandle text-dark"><img src="assets/img/icons/handle.svg" alt="handle"></div>
+                                                                        <div class="col ps-0 arrangeCatCatTitle text-dark">Smart Watch</div>
+                                                                        <!-- <a href="javascript:;" class="col-auto arrangeCatDeleteBtn ps-0" data-bs-title="Bulk Add" data-bs-content="sfsdf" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeleteConfirm">Delete</a> -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row mx-0 arrangeCat flex-row align-items-center bg-white position-relative">
+                                                                        <div class="col-auto arrangeCatHandle text-dark"><img src="assets/img/icons/handle.svg" alt="handle"></div>
+                                                                        <div class="col ps-0 arrangeCatCatTitle text-dark">Camera</div>
+                                                                        <!-- <a href="javascript:;" class="col-auto arrangeCatDeleteBtn ps-0" data-bs-title="Bulk Add" data-bs-content="sfsdf" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeleteConfirm">Delete</a> -->
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row mx-0 arrangeCat flex-row align-items-center bg-white position-relative">
+                                                                        <div class="col-auto arrangeCatHandle text-dark"><img src="assets/img/icons/handle.svg" alt="handle"></div>
+                                                                        <div class="col ps-0 arrangeCatCatTitle text-dark">Tablet</div>
+                                                                        <!-- <a href="javascript:;" class="col-auto arrangeCatDeleteBtn ps-0" data-bs-title="Bulk Add" data-bs-content="sfsdf" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeleteConfirm">Delete</a> -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 py-3 bg-white">
+                                                    <div class="row mx-0">
+                                                        <div class="col-12">
+                                                            <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" data-bs-dismiss="modal" aria-label="Close" id="arrangeProductsBtn" type="submit">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Delte Confirmation Popup -->
+            <div class="offcanvas offcanvas-bottom ttOffcanvas border-0" tabindex="-1" id="offcanvasDeleteConfirm" aria-labelledby="offcanvasDeleteConfirmLabel">
+                <div class="offcanvas-header bg-theme1">
+                    <h5 class="offcanvas-title text-white" id="offcanvasDeleteConfirmLabel">Delete Speakers</h5>
+                    <div class="closeBtn d-grid" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <img src="assets/img/icons/closeWhite.svg" alt="closeWhite">
+                    </div>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="innerText p-3 bg-white deleteTextWarning">Note: All items in the category will be deleted!</div>
+                </div>
+                <div class="row offcanvas-footer gap-3 justify-content-center bg-white align-items-center shadow flex-nowrap mx-0 w-100 px-3">
+                    <div class="col px-0">
+                        <a class="btn w-100 deleteBtn" href="javascript:;">Delete</a>
+                    </div>
+                    <div class="col px-0">
+                        <a class="btn w-100 cancelBtn" href="javascript:;" data-bs-dismiss="offcanvas">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal arrangeItems -->
+        <div class="modal fade" id="arrangeItems" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="arrangeItemsLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="container-fluid vh-100" page-name="products">
+                            <div class="row h-100 flex-column flex-nowrap rearrangePopup">
+                                <nav class="col-12 navbar d-block py-0 bg-white shadow-sm">
+                                    <div class="row navInner mx-0 h-100 align-items-center">
+                                        <a href="javascript:;" class="col-auto backArrow" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="assets/img/icons/backArrow.svg" alt="backArrow">
+                                        </a>
+                                        <div class="col navTitle ps-0 text-dark">Rearrange Items</div>
+                                    </div>
+                                </nav>
+                                <div class="col-12 body flex-fill">
+                                    <div class="row scrollPart h-100 justify-content-center">
+                                        <div class="col-12 h-100 scrollInner">
+                                            <form class="row needs-validation-arrangeItems h-100 flex-column flex-nowrap" novalidate autocomplete="off">
+                                                <div class="col-12 align-self-center flex-fill overflow-auto py-3">
+                                                    <div class="row gy-3">
+                                                        <div class="col-12">
+                                                            <div class="row">
+                                                                <div class="col-12 text-theme1 catHeading">6 Categories</div>
+                                                                <div class="col-12 text-theme1 catWarning">Hold and drag to rearrange items</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="row gap-2">
+                                                                <div class="col-12">
+                                                                    <div class="row mx-0 arrangeCat flex-row align-items-center bg-white position-relative">
+                                                                        <div class="col-auto arrangeCatHandle text-dark"><img src="assets/img/icons/handle.svg" alt="handle"></div>
+                                                                        <div class="col ps-0 arrangeCatCatTitle text-dark">SAREGAMA Carvaan Mini Hindi...</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row mx-0 arrangeCat flex-row align-items-center bg-white position-relative">
+                                                                        <div class="col-auto arrangeCatHandle text-dark"><img src="assets/img/icons/handle.svg" alt="handle"></div>
+                                                                        <div class="col ps-0 arrangeCatCatTitle text-dark">Portronics SoundDrum P 20 W Bl...</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="row mx-0 arrangeCat flex-row align-items-center bg-white position-relative">
+                                                                        <div class="col-auto arrangeCatHandle text-dark"><img src="assets/img/icons/handle.svg" alt="handle"></div>
+                                                                        <div class="col ps-0 arrangeCatCatTitle text-dark">Mivi Play 5 W Portable Bluetooth ...</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 py-3 bg-white">
+                                                    <div class="row mx-0">
+                                                        <div class="col-12">
+                                                            <button class="btn btn-primary w-100 btnStyle2 user-select-none shadow-none rounded-pill" data-bs-dismiss="modal" aria-label="Close" id="arrangeItemsBtn" type="submit">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

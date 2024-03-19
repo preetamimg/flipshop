@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipshop | FlipKart</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#2873F0" />
+</head>
+<body>
+
+    <div class="container-fluid" page-name="personalDetail">
+        <div class="row innerDialog">
+            <div class="col-12 innerContent">
+                <div class="row header mx-0">
+                    <nav class="navbar col-12 bg-theme1 px-3">
+                        <div class="row navInner h-100 align-items-center mx-0">
+                            <div class="col-auto logo ps-0">
+                                <img src="assets/img/logo/flip.png" alt="flip">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="row body mx-0 pb-5">
+                    <div class="col-12">
+                        <div class="row mx-n1">
+                            <form class="col-12 personalDetail pb-2 needs-validation-personalDetail" novalidate autocomplete="off">
+                                <div class="row gap-4 item py-3">
+                                    <div class="col-12 py-2">
+                                        <div class="personalDetailHeading">
+                                            Personal Details
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row mb-3 mx-0">
+                                            <div class="col-12 pb-2 px-0">
+                                                <div class="personalDetailLabel">
+                                                    First Name*
+                                                </div>
+                                            </div>
+                                            <div class="col-12 px-0">
+                                                <input required type="text" class="form-control shadow-none" minlength="1" maxlength="25" id="firstName">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3 mx-0">
+                                            <div class="col-12 pb-2 px-0">
+                                                <div class="personalDetailLabel">
+                                                    Last Name
+                                                </div>
+                                            </div>
+                                            <div class="col-12 px-0">
+                                                <input type="text" class="form-control shadow-none" maxlength="25" id="lastName">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3 mx-0">
+                                            <div class="col-12 pb-2 px-0">
+                                                <div class="personalDetailLabel">
+                                                    Email*
+                                                </div>
+                                            </div>
+                                            <div class="col-12 px-0">
+                                                <input required type="email" class="form-control shadow-none" minlength="10" maxlength="80" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email">
+                                            </div>
+                                        </div>
+                                        <div class="row mx-0 pt-3">
+                                            <button type="submit" id="personalDetailBtn" disabled class="col btn btn-primary w-100 btnStyle2 user-select-none shadow-none">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

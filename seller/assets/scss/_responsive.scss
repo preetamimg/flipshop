@@ -1,0 +1,139 @@
+
+
+
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    @include login-mixin-min-sm();
+    @include shopName-mixin-min-sm();
+    @include createLink-mixin-min-sm();
+    @include businessType-mixin-min-sm();
+    @include addItemOption-mixin-min-sm();
+    @include products-mixin-min-sm();
+    @include orders-mixin-min-sm();
+    @include orderDetail-mixin-min-sm();
+    // @include XXXXXXXXXX-mixin-min-sm();
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    @include login-mixin-min-md();
+    @include shopName-mixin-min-md();
+    @include createLink-mixin-min-md();
+    @include businessType-mixin-min-md();
+    @include addItemOption-mixin-min-md();
+    @include products-mixin-min-md();
+    @include orders-mixin-min-md();
+    @include orderDetail-mixin-min-md();
+    // @include XXXXXXXXXX-mixin-min-md();
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    @include login-mixin-min-lg();
+    @include shopName-mixin-min-lg();
+    @include createLink-mixin-min-lg();
+    @include businessType-mixin-min-lg();
+    @include addItemOption-mixin-min-lg();
+    @include products-mixin-min-lg();
+    @include orders-mixin-min-lg();
+    @include orderDetail-mixin-min-lg();
+    // @include XXXXXXXXXX-mixin-min-lg();
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    @include login-mixin-min-xl();
+    @include shopName-mixin-min-xl();
+    @include createLink-mixin-min-xl();
+    @include businessType-mixin-min-xl();
+    @include addItemOption-mixin-min-xl();
+    @include products-mixin-min-xl();
+    @include orders-mixin-min-xl();
+    @include orderDetail-mixin-min-xl();
+    // @include XXXXXXXXXX-mixin-min-xl();
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    @include login-mixin-min-xxl();
+    @include shopName-mixin-min-xxl();
+    @include createLink-mixin-min-xxl();
+    @include businessType-mixin-min-xxl();
+    @include addItemOption-mixin-min-xxl();
+    @include products-mixin-min-xxl();
+    @include orders-mixin-min-xxl();
+    @include orderDetail-mixin-min-xxl();
+    // @include XXXXXXXXXX-mixin-min-xxl();
+}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+    @include login-mixin-max-xl();
+    @include shopName-mixin-max-xl();
+    @include createLink-mixin-max-xl();
+    @include businessType-mixin-max-xl();
+    @include addItemOption-mixin-max-xl();
+    @include products-mixin-max-xl();
+    @include orders-mixin-max-xl();
+    @include orderDetail-mixin-max-xl();
+    // @include XXXXXXXXXX-mixin-max-xl();
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    @include login-mixin-max-lg();
+    @include shopName-mixin-max-lg();
+    @include createLink-mixin-max-lg();
+    @include businessType-mixin-max-lg();
+    @include addItemOption-mixin-max-lg();
+    @include products-mixin-max-lg();
+    @include orders-mixin-max-lg();
+    @include orderDetail-mixin-max-lg();
+    // @include XXXXXXXXXX-mixin-max-lg();
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    @include login-mixin-max-md();
+    @include shopName-mixin-max-md();
+    @include createLink-mixin-max-md();
+    @include businessType-mixin-max-md();
+    @include addItemOption-mixin-max-md();
+    @include products-mixin-max-md();
+    @include orders-mixin-max-md();
+    @include orderDetail-mixin-max-md();
+    // @include XXXXXXXXXX-mixin-max-md();
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    @include login-mixin-max-sm();
+    @include shopName-mixin-max-sm();
+    @include createLink-mixin-max-sm();
+    @include businessType-mixin-max-sm();
+    @include addItemOption-mixin-max-sm();
+    @include products-mixin-max-sm();
+    @include orders-mixin-max-sm();
+    @include orderDetail-mixin-max-sm();
+    // @include XXXXXXXXXX-mixin-max-sm();
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    @include login-mixin-max-xs();
+    @include shopName-mixin-max-xs();
+    @include createLink-mixin-max-xs();
+    @include businessType-mixin-max-xs();
+    @include addItemOption-mixin-max-xs();
+    @include products-mixin-max-xs();
+    @include orders-mixin-max-xs();
+    @include orderDetail-mixin-max-xs();
+    // @include XXXXXXXXXX-mixin-max-xs();
+}
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width
